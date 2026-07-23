@@ -288,11 +288,11 @@ aLg(a){var s,r,q,p=new Float32Array(16)
 for(s=0;s<4;++s)for(r=s*4,q=0;q<4;++q)p[q*4+s]=a[r+q]
 return p},
 aLh(a){var s,r,q,p=new Float32Array(9)
-for(s=a.length,r=0;r<9;++r){q=B.oO[r]
+for(s=a.length,r=0;r<9;++r){q=B.oP[r]
 if(q<s)p[r]=a[q]
 else p[r]=0}return p},
 bbR(a){var s,r,q,p=new Float32Array(9)
-for(s=a.length,r=0;r<9;++r){q=B.oO[r]
+for(s=a.length,r=0;r<9;++r){q=B.oP[r]
 if(q<s)p[r]=a[q]
 else p[r]=0}return p},
 aUE(a){var s=new Float32Array(2)
@@ -8205,12 +8205,12 @@ if(a.i(0,k)==null)s=j
 else{s=B.ME.i(0,A.aq(a.i(0,k)))
 s.toString}r=a.i(0,i)==null?j:new A.MH(A.bs(a.i(0,i)))
 q=a.i(0,h)==null?j:B.JE[A.bs(a.i(0,h))]
-p=a.i(0,g)==null?j:B.Jx[A.bs(a.i(0,g))]
+p=a.i(0,g)==null?j:B.Jw[A.bs(a.i(0,g))]
 o=a.i(0,f)==null?j:new A.MI(A.bs(a.i(0,f)))
 if(a.i(0,e)==null)n=j
 else{n=t.f.a(a.i(0,e)).dB(0,t.N,t.z)
 m=A.c4(n.i(0,"contentType"))
-m=m!=null&&m<5?B.Kz[m]:B.mh
+m=m!=null&&m<5?B.Ky[m]:B.mh
 l=A.bs(n.i(0,"flags"))
 n=B.MB.i(0,A.c4(n.i(0,"usage")))
 if(n==null)n=B.mk
@@ -8501,7 +8501,7 @@ p.a(a)
 s=J.ac(a)
 r=s.i(a,0)
 r.toString
-r=B.Ka[A.bs(r)]
+r=B.K9[A.bs(r)]
 q=s.i(a,1)
 q.toString
 q=A.aJd(p.a(q))
@@ -9097,7 +9097,7 @@ t.W.a(a)
 s=J.ac(a)
 r=s.i(a,0)
 r.toString
-r=B.KO[A.bs(r)]
+r=B.KP[A.bs(r)]
 s=s.i(a,1)
 s.toString
 return new A.Eu(r,t.Hb.a(s))},
@@ -12978,8 +12978,8 @@ break
 case 4:s=l.a
 s===$&&A.b()
 s=A.bA(s,200)
-r=A.bA(A.a9A(l,B.oS,B.Js),24)
-q=A.bA(A.a9A(l,B.oS,B.K8),32)
+r=A.bA(A.a9A(l,B.oS,B.Jr),24)
+q=A.bA(A.a9A(l,B.oS,B.K7),32)
 p=A.bA(l.a,10)
 o=A.bA(l.a,12)
 l.d===$&&A.b()
@@ -12989,8 +12989,8 @@ break
 case 5:s=l.a
 s===$&&A.b()
 s=A.bA(A.DM(s+240),40)
-r=A.bA(A.a9A(l,B.oV,B.KS),24)
-q=A.bA(A.a9A(l,B.oV,B.KT),32)
+r=A.bA(A.a9A(l,B.oV,B.KT),24)
+q=A.bA(A.a9A(l,B.oV,B.KU),32)
 p=A.bA(l.a+15,8)
 o=A.bA(l.a+15,12)
 l.d===$&&A.b()
@@ -21040,7 +21040,7 @@ r.toString
 A.fh(r)
 q=a.i(0,"swipeEdge")
 q.toString
-return new A.oU(s,r,B.JS[A.bs(q)])},
+return new A.oU(s,r,B.JR[A.bs(q)])},
 GD:function GD(a,b){this.a=a
 this.b=b},
 oU:function oU(a,b,c){this.a=a
@@ -23177,7 +23177,7 @@ if(a.as!==q)return q?-1:1
 return 0},
 b_Q(a,b){var s=A.X(b).h("V<1,e1>")
 s=A.U(new A.V(b,new A.aar(),s),s.h("ab.E"))
-return A.b_7(!0,s,a,B.Kv,!0,B.FJ,null)},
+return A.b_7(!0,s,a,B.Ku,!0,B.FJ,null)},
 aIg(a){var s
 try{a.dI()}catch(s){a.Rh()}a.w=B.aEq
 try{a.bj(A.bak())}catch(s){}},
@@ -23747,7 +23747,7 @@ _.as=!0
 _.at=!1
 _.$ti=d},
 afh(a,b){var s
-if(a.k(0,b))return new A.ND(B.Ki)
+if(a.k(0,b))return new A.ND(B.Kh)
 s=A.c([],t.fJ)
 A.bQ()
 a.og(new A.afi(b,A.aK(t.u),s))
@@ -27188,7 +27188,7 @@ B.c.M(r,A.c(b.split("/"),s))
 return"/"+new A.aF(r,new A.aFU(),A.X(r).h("aF<1>")).av(0,"/")},
 aEB:function aEB(){},
 aFU:function aFU(){},
-o9(a,b){var s=A.c([],t.s),r=new A.CU(b,a,s,null,B.Ku,null)
+o9(a,b){var s=A.c([],t.s),r=new A.CU(b,a,s,null,B.Kt,null)
 r.y=A.aUt(b,s)
 return r},
 xz:function xz(){},
@@ -27532,7 +27532,7 @@ a1=A.vm(!1,a1)
 l=A.ig(e,!1,l)
 h=A.amd(!0,t.U2)
 g=B.fh.E2()
-f=new A.a5b(B.Ks,B.Kt)
+f=new A.a5b(B.Kr,B.Ks)
 h=new A.a5c(g,new A.a_z(A.y(d,t.FM)),A.y(d,t.IN),f,c,b,a,a0,a2,a4,a5,a3,s,r,q,p,o,n,m,k,j,i,a1,l,h)
 h.a8L(!0,!1,e,e,!0,!0,!0,e)
 return h},
@@ -29380,12 +29380,12 @@ this.c=c},
 yH:function yH(a,b,c){this.c=a
 this.d=b
 this.a=c},
-b5F(a){switch(a){case"Family":return B.oP
-case"School":return B.K6
-case"Food":return B.JR
-case"Playground":return B.L3
-case"Daily Activities":return B.Jf
-default:return B.oP}},
+b5F(a){switch(a){case"Family":return B.oO
+case"School":return B.JC
+case"Food":return B.K5
+case"Playground":return B.KG
+case"Daily Activities":return B.KA
+default:return B.oO}},
 rd:function rd(a,b){this.c=a
 this.a=b},
 IB:function IB(){var _=this
@@ -30119,7 +30119,7 @@ adU(a){var s=a/100
 return(s<=0.0031308?s*12.92:1.055*Math.pow(s,0.4166666666666667)-0.055)*255},
 aID(a){var s=Math.pow(Math.abs(a),0.42)
 return A.t0(a)*400*s/(s+27.13)},
-aIE(a){var s=A.oA(a,B.KR),r=A.aID(s[0]),q=A.aID(s[1]),p=A.aID(s[2])
+aIE(a){var s=A.oA(a,B.KS),r=A.aID(s[0]),q=A.aID(s[1]),p=A.aID(s[2])
 return Math.atan2((r+q-2*p)/9,(11*r+-12*q+p)/11)},
 b0Q(a,b){var s,r,q,p,o,n=B.f.bv(b,4)<=1?0:100,m=(b&1)===0?0:100
 if(b<4){s=(a-n*0.7152-m*0.0722)/0.2126
@@ -30154,7 +30154,7 @@ if(q!==p){if(q<p){o=B.e.hk(A.adU(q)-0.5)
 n=B.e.md(A.adU(a[r])-0.5)}else{o=B.e.md(A.adU(q)-0.5)
 n=B.e.hk(A.adU(a[r])-0.5)}for(m=0;m<8;++m)if(Math.abs(n-o)<=1)break
 else{l=B.e.hk((o+n)/2)
-k=B.L1[l]
+k=B.L2[l]
 q=c[r]
 j=(k-q)/(a[r]-q)
 q=c[0]
@@ -31372,7 +31372,7 @@ xq(){var s=this.Q
 s===$&&A.b()
 return s},
 xs(a,b,c,d){var s,r,q,p
-if(a<0||b<0)return B.Kk
+if(a<0||b<0)return B.Kj
 s=this.a
 s===$&&A.b()
 s=s.a
@@ -31391,7 +31391,7 @@ l.push(new A.eC(n[0],n[1],n[2],n[3],B.ki[m]))}return l},
 cU(a){var s,r,q=this.a
 q===$&&A.b()
 s=q.a.getGlyphPositionAtCoordinate(a.a,a.b)
-r=B.JU[J.au(s.affinity.value)]
+r=B.JT[J.au(s.affinity.value)]
 return new A.ak(J.au(s.pos),r)},
 Nj(a){var s=this.a
 s===$&&A.b()
@@ -31879,7 +31879,7 @@ A.qD.prototype={
 H(){return"CanvasKitVariant."+this.b}}
 A.ac4.prototype={
 gnu(){var s=this.b,r=s==null?null:s.canvasKitVariant
-return A.aIj(B.K2,r==null?"auto":r)},
+return A.aIj(B.K1,r==null?"auto":r)},
 gJe(){var s,r=this.b
 if(r==null)s=null
 else{r=r.canvasKitMaximumSurfaces
@@ -33711,7 +33711,7 @@ if(e.b){q=t.f
 d=q.a(q.a(B.bT.hg(a2)).i(0,"data"))
 c=A.a2(d.i(0,"message"))
 if(c!=null&&c.length!==0){b=A.aIT(d,"assertiveness")
-e.a.Xd(c,B.Jp[b==null?0:b])}}a.fe(a3,B.bT.c4(!0))
+e.a.Xd(c,B.Jo[b==null?0:b])}}a.fe(a3,B.bT.c4(!0))
 return
 case"flutter/navigation":q=a.gcQ().b
 p=t.e8
@@ -36544,14 +36544,14 @@ adA(){var s=this,r=s.r
 if(r==null){r=s.r=new A.MQ(s.c)
 r.d=new A.ab0(s)}return r},
 Mm(a){var s,r=this
-if(B.c.A(B.KY,a.type)){s=r.adA()
+if(B.c.A(B.KZ,a.type)){s=r.adA()
 s.toString
 s.sarF(r.c.$0().Pw(5e5))
 if(r.f!==B.on){r.f=B.on
 r.Tp()}}return r.d.a.a41(a)},
 Tp(){var s,r
 for(s=this.w,r=0;r<s.length;++r)s[r].$1(this.f)},
-a40(a){if(B.c.A(B.Kd,a))return this.f===B.fX
+a40(a){if(B.c.A(B.Kc,a))return this.f===B.fX
 return!1}}
 A.ab1.prototype={
 $0(){return new A.cR(Date.now(),0,!1)},
@@ -38139,7 +38139,7 @@ o=A.bs(s.i(0,"textAlignIndex"))
 n=A.bs(s.i(0,"textDirectionIndex"))
 m=A.c4(s.i(0,"fontWeightIndex"))
 l=m!=null?A.aKS(m):"normal"
-p=new A.asq(new A.aan(A.afB(s,"fontSize"),l,A.a2(s.i(0,"fontFamily")),B.Jn[o],B.ki[n],A.afB(s,"letterSpacing"),A.afB(s,"wordSpacing"),A.afB(s,"lineHeight")))
+p=new A.asq(new A.aan(A.afB(s,"fontSize"),l,A.a2(s.i(0,"fontFamily")),B.Jm[o],B.ki[n],A.afB(s,"letterSpacing"),A.afB(s,"wordSpacing"),A.afB(s,"lineHeight")))
 break
 case"TextInput.clearClient":p=B.Dz
 break
@@ -39949,9 +39949,9 @@ $1(a){if(!this.a.$1(a))this.b.$0()},
 $S:29}
 A.aeI.prototype={
 $0(){var s,r,q,p,o,n,m,l,k,j=this
-for(s=j.a,r=j.b,q=j.c,p=0;p<7;++p){o=B.JZ[p]
+for(s=j.a,r=j.b,q=j.c,p=0;p<7;++p){o=B.JY[p]
 n=s.a
-if(n+3<=r&&A.aF0(q,n,3,o,0)){m=B.Jv[p]
+if(n+3<=r&&A.aF0(q,n,3,o,0)){m=B.Ju[p]
 n=s.a
 l=m.length
 if(n+l<=r&&A.aF0(q,n+3,l-3,m,3)){s.a+=l
@@ -44049,7 +44049,7 @@ if(s==null||s.length<a)s=this.c=new Uint8Array(a)
 return J.iW(B.x.gbK(s),s.byteOffset,a)}}
 A.av_.prototype={
 u(a,b){this.yG(b,0,J.bS(b),!1)},
-a4(){this.yG(B.Kh,0,0,!0)},
+a4(){this.yG(B.Kg,0,0,!0)},
 dz(a,b,c,d){A.dy(b,c,a.length,null,null)
 this.yG(a,b,c,d)}}
 A.auF.prototype={
@@ -47342,7 +47342,7 @@ r.a(s)
 q=J.ac(s)
 p=q.i(s,0)
 p.toString
-p=B.Kc[A.bs(p)]
+p=B.Kb[A.bs(p)]
 o=q.i(s,1)
 o.toString
 A.aq(o)
@@ -48110,7 +48110,7 @@ h=r[4]
 g=r[5]
 f=r[6]
 e=r[7]
-for(d=l,q=0;q<64;++q,e=f,f=g,g=h,h=b,i=j,j=k,k=d,d=a){c=(e+(((h>>>6|h<<26)^(h>>>11|h<<21)^(h>>>25|h<<7))>>>0)>>>0)+(((h&g^~h&f)>>>0)+(B.Jz[q]+s[q]>>>0)>>>0)>>>0
+for(d=l,q=0;q<64;++q,e=f,f=g,g=h,h=b,i=j,j=k,k=d,d=a){c=(e+(((h>>>6|h<<26)^(h>>>11|h<<21)^(h>>>25|h<<7))>>>0)>>>0)+(((h&g^~h&f)>>>0)+(B.Jy[q]+s[q]>>>0)>>>0)>>>0
 b=i+c>>>0
 a=c+((((d>>>2|d<<30)^(d>>>13|d<<19)^(d>>>22|d<<10))>>>0)+((d&k^d&j^k&j)>>>0)>>>0)>>>0}r.$flags&2&&A.ar(r)
 r[0]=d+l>>>0
@@ -54039,7 +54039,7 @@ A.yL.prototype={
 H(){return"_CornerId."+this.b}}
 A.ne.prototype={}
 A.wO.prototype={
-lS(){var s,r,q,p=this,o=A.b8x(B.K5,new A.aiG(p,p.b.gaW().V(0,p.a.gaW()))),n=p.a
+lS(){var s,r,q,p=this,o=A.b8x(B.K4,new A.aiG(p,p.b.gaW().V(0,p.a.gaW()))),n=p.a
 n.toString
 s=o.a
 r=p.qv(n,s)
@@ -56982,7 +56982,7 @@ $R:3,
 $S:157}
 A.RH.prototype={
 a9Q(a){var s=t.Tr
-s=A.U(new A.V(B.K4,new A.akE(a),s),s.h("ab.E"))
+s=A.U(new A.V(B.K3,new A.akE(a),s),s.h("ab.E"))
 return s},
 k(a,b){if(b==null)return!1
 if(this===b)return!0
@@ -62068,7 +62068,7 @@ return new A.o8(r.a.dm(s.giN()),r.b,r.c)},
 cU(a){var s=this.b
 return s.a.c.cU(a.V(0,s.giN()))},
 rj(){var s,r,q=this.b,p=q.giN()
-if(!isFinite(p.a)||!isFinite(p.b))return B.Km
+if(!isFinite(p.a)||!isFinite(p.b))return B.Kl
 s=q.f
 if(s==null){s=q.a.c.rj()
 q.f=s}if(p.k(0,B.j))r=s
@@ -62260,7 +62260,7 @@ p=e==null?h.goP():e
 o=h.r
 o=o==null?g:o*a2+a1
 n=h.w
-n=n==null?g:B.L_[B.f.ee(n.gnV(),0,8)]
+n=n==null?g:B.L0[B.f.ee(n.gnV(),0,8)]
 m=h.y
 m=m==null?g:m*a6+a5
 l=h.z
@@ -71131,7 +71131,7 @@ break
 case 1:return A.r(q,r)}})
 return A.t($async$GO,r)},
 adj(a,b){var s,r,q,p
-if(a===b)return B.Kp
+if(a===b)return B.Ko
 s=A.c([],t.QP)
 if(a==null)s.push(b)
 else{r=B.c.h_(B.es,a)
@@ -73109,7 +73109,7 @@ A.mE.prototype={}
 A.S9.prototype={
 my(a,b){var s,r,q,p,o,n=$.a3.ab$.d.c
 if(n==null||n.e==null)return!1
-for(s=t.F,r=0;r<2;++r){q=B.Ke[r]
+for(s=t.F,r=0;r<2;++r){q=B.Kd[r]
 p=n.e
 p.toString
 o=A.aHG(p,q,s)
@@ -73348,7 +73348,7 @@ r=n.gahB()
 q=n.a
 q=q.ch
 q.toString
-l.a=A.b0p(!0,A.aJ4(B.v,r,s,q,A.aL6(),n.gajj(),m,n.gajN(),B.Kj,!0,"nav",B.aCt),"Navigator Scope",!0,m,m,m,m)}else{s=n.a.z
+l.a=A.b0p(!0,A.aJ4(B.v,r,s,q,A.aL6(),n.gajj(),m,n.gajN(),B.Ki,!0,"nav",B.aCt),"Navigator Scope",!0,m,m,m,m)}else{s=n.a.z
 if(s!=null){r=s.d
 r===$&&A.b()
 q=s.e
@@ -75016,7 +75016,7 @@ q.bf()
 q.cv$.u(0,s.gaj5())
 s.e=q}return q},
 gSY(){var s=this.f
-return s===$?this.f=new A.awW(1,B.Jm,B.bn):s},
+return s===$?this.f=new A.awW(1,B.Jl,B.bn):s},
 gfJ(){var s=this.z
 s=s==null?null:$.ck().d===s
 return s===!0},
@@ -75690,7 +75690,7 @@ h.IC()
 r=h.gae6()
 q=q.wl
 h.e!==$&&A.b3()
-h.e=new A.Tu(s,new A.bM(B.Mz,l,t.kr),new A.rS(),p,B.c7,0,j,h.gagn(),h.gagp(),r,B.c7,0,i,h.gagh(),h.gagj(),r,k,B.Kl,f,g.CW,g.cx,g.cy,o,g,n,m,g.x,q,new A.Oh(),new A.Oh())
+h.e=new A.Tu(s,new A.bM(B.Mz,l,t.kr),new A.rS(),p,B.c7,0,j,h.gagn(),h.gagp(),r,B.c7,0,i,h.gagh(),h.gagj(),r,k,B.Kk,f,g.CW,g.cx,g.cy,o,g,n,m,g.x,q,new A.Oh(),new A.Oh())
 return h},
 yR(a,b){var s,r,q,p=this,o=p.a.c,n=o.a.a.length
 if(n<a.b||n<a.a)return
@@ -79072,7 +79072,7 @@ if(b==null)return!1
 if(J.T(b)!==A.x(s))return!1
 return b instanceof A.cT&&b.a===s.a&&b.b==s.b&&b.c==s.c&&b.d===s.d&&A.cH(null,null)},
 gn(a){var s=this
-return A.O(s.a,s.b,s.c,s.d,A.bl(B.Kr),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
+return A.O(s.a,s.b,s.c,s.d,A.bl(B.Kq),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 j(a){return"IconData(U+"+B.d.pK(B.f.lG(this.a,16).toUpperCase(),5,"0")+")"}}
 A.rB.prototype={
 bZ(a){return!this.w.k(0,a.w)},
@@ -80009,7 +80009,7 @@ b=r?a1:a3.fr
 if(b==null)b=a2.b.c.z
 a3=r?a1:a3.fx
 if(a3==null)a3=a2.b.c.Q
-a=new A.DN(a4,s,q,p,m,o,n,a5,g===!0,a6,a7,i,h,l,k,j,f,new A.vV(a1),B.Kn,e===!0,d,c,b,a3,A.b1E(a2))
+a=new A.DN(a4,s,q,p,m,o,n,a5,g===!0,a6,a7,i,h,l,k,j,f,new A.vV(a1),B.Km,e===!0,d,c,b,a3,A.b1E(a2))
 if(!a.k(0,a0.e))a0.ao(new A.azC(a0,a))},
 Yz(){if(this.d==null)this.r1()},
 JX(){this.r1()},
@@ -86372,7 +86372,7 @@ r.Ab()
 return s.aC()},
 l(){var s,r,q,p,o=this
 for(s=o.b,r=s.length,q=o.gGR(),p=0;p<s.length;s.length===r||(0,A.E)(s),++p)s[p].K(q)
-o.b=B.Ko
+o.b=B.Kn
 o.y=!1
 o.eP()},
 e5(a,b){return a.nD(b)},
@@ -89766,7 +89766,7 @@ RB(a){return new A.V(a,new A.ao2(),A.X(a).h("V<1,k>")).av(0," => ")},
 j(a){return"RouterConfiguration: "+A.m(this.a.a.a)},
 arG(){var s,r,q=new A.cf("")
 q.a="Full paths for routes:\n"
-this.QS(this.a.a.a,"",B.Kq,q)
+this.QS(this.a.a.a,"",B.Kp,q)
 s=this.d
 if(s.a!==0){q.a+="known full paths for route names:\n"
 for(s=new A.dw(s,A.j(s).h("dw<1,2>")).gP(0);s.p();){r=s.d
@@ -91403,7 +91403,7 @@ if(q!=null)r.a.k1.u(0,q)
 q=a.d
 if(q!=null)r.a.k2.u(0,q)
 q=a.e
-if(q!=null)r.a.rx.u(0,B.KK[q.a])
+if(q!=null)r.a.rx.u(0,B.KL[q.a])
 q=a.f
 if(q!=null)r.a.ry.u(0,q!==B.l7)},
 $S:620}
@@ -91422,7 +91422,7 @@ k=J.hy(s,j).d}else{s=s.e.b!==B.a_?s.gq():l
 s.toString
 J.hy(s,j).d=k}}s=m.a
 r=s.X
-r=(r&&a.a!==B.cS?s.X=!1:r)?B.hw:B.Jy[a.a.a]
+r=(r&&a.a!==B.cS?s.X=!1:r)?B.hw:B.Jx[a.a.a]
 q=a.f
 if(q==null)q=l
 else{p=q.a
@@ -92095,7 +92095,7 @@ break
 case 1:return A.r(q,r)}})
 return A.t($async$mj,r)}}
 A.aiY.prototype={
-$1(a){var s,r,q,p=null,o="duration",n="icyMetadata",m=B.KI[A.bs(a.i(0,"processingState"))],l=A.Ox(A.bs(a.i(0,"updateTime")),0,!1),k=A.d7(A.bs(a.i(0,"updatePosition")),0,0),j=A.d7(A.bs(a.i(0,"bufferedPosition")),0,0),i=a.i(0,o)==null||A.bs(a.i(0,o))<0?p:A.d7(A.bs(a.i(0,o)),0,0)
+$1(a){var s,r,q,p=null,o="duration",n="icyMetadata",m=B.KJ[A.bs(a.i(0,"processingState"))],l=A.Ox(A.bs(a.i(0,"updateTime")),0,!1),k=A.d7(A.bs(a.i(0,"updatePosition")),0,0),j=A.d7(A.bs(a.i(0,"bufferedPosition")),0,0),i=a.i(0,o)==null||A.bs(a.i(0,o))<0?p:A.d7(A.bs(a.i(0,o)),0,0)
 if(a.i(0,n)==null)s=p
 else{s=t.f
 r=s.a(a.i(0,n))
@@ -96061,7 +96061,7 @@ A.abX.prototype={
 $2(a,b){return B.by},
 $S:686}
 A.abW.prototype={
-$2(a,b){var s=B.L0[b]
+$2(a,b){var s=B.L1[b]
 return new A.yH(s,new A.abU(a,s),null)},
 $S:687}
 A.abU.prototype={
@@ -96202,7 +96202,7 @@ A.a74.prototype={
 $2(a,b){return A.aOf(new A.U1(2,10,10,(b.b-10)/2/((b.d-20)/3)),new A.a73(this.a),6,B.bb,B.ar0)},
 $S:694}
 A.a73.prototype={
-$2(a,b){var s=B.K1[b],r=this.a
+$2(a,b){var s=B.K0[b],r=this.a
 return new A.yG(s,s.a==="Flash Cards"?r.d:new A.a72(r,s),null)},
 $S:695}
 A.a72.prototype={
@@ -96553,7 +96553,7 @@ $2(a,b){return this.a2i(a,b)},
 a2i(a,b){var s=0,r=A.u(t.kV),q,p
 var $async$$2=A.v(function(c,d){if(c===1)return A.q(d,r)
 for(;;)switch(s){case 0:p=t.Mm
-p=A.U(new A.dj(new A.aF(B.KM,new A.aGB(b),t.w_),new A.aGC(),p),p.h("A.E"))
+p=A.U(new A.dj(new A.aF(B.KN,new A.aGB(b),t.w_),new A.aGC(),p),p.h("A.E"))
 B.c.es(p,new A.aGD())
 q=p
 s=1
@@ -100010,8 +100010,8 @@ B.z7=new A.aW(24,24)
 B.Cu=new A.d3(B.z7,B.z7,B.G,B.G)
 B.bM=new A.H9(0,"clamp")
 B.En=new A.M(1,0.611764705882353,0.5803921568627451,1,B.h)
-B.KX=s([B.E,B.En],t.t_)
-B.Ir=new A.kS(B.bA,B.f9,B.bM,B.KX,null,null)
+B.KY=s([B.E,B.En],t.t_)
+B.Ir=new A.kS(B.bA,B.f9,B.bM,B.KY,null,null)
 B.a6=new A.Nv(0,"rectangle")
 B.CH=new A.cl(null,null,null,B.Cu,null,B.Ir,B.a6)
 B.CI=new A.Ns(2,"cover")
@@ -100245,7 +100245,7 @@ B.K=new A.Vi()
 B.bU=new A.Vj()
 B.fh=new A.atE()
 B.dI=new A.Vq(0,0,0,0)
-B.Kn=s([],A.a0("B<a93>"))
+B.Km=s([],A.a0("B<a93>"))
 B.aFJ=new A.atM()
 B.dV=new A.VL()
 B.bs=new A.VM()
@@ -100856,34 +100856,56 @@ B.oL=new A.Dx(0,"opportunity")
 B.kg=new A.Dx(2,"mandatory")
 B.oM=new A.Dx(3,"endOfText")
 B.Et=new A.M(1,0.23921568627450981,0.20784313725490197,0.8,B.h)
-B.KZ=s([B.E,B.Et],t.t_)
-B.Iq=new A.kS(B.bA,B.f9,B.bM,B.KZ,null,null)
+B.L_=s([B.E,B.Et],t.t_)
+B.Iq=new A.kS(B.bA,B.f9,B.bM,B.L_,null,null)
 B.Is=new A.ou(B.ch,A.a0("ou<fv>"))
 B.It=new A.ou(B.ch,t.wO)
 B.Iu=new A.DA(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.K7=s([1373.2198709594231,-1100.4251190754821,-7.278681089101213],t.n)
+B.K6=s([1373.2198709594231,-1100.4251190754821,-7.278681089101213],t.n)
 B.JN=s([-271.815969077903,559.6580465940733,-32.46047482791194],t.n)
-B.L2=s([1.9622899599665666,-57.173814538844006,308.7233197812385],t.n)
-B.Ix=s([B.K7,B.JN,B.L2],t.zg)
+B.L3=s([1.9622899599665666,-57.173814538844006,308.7233197812385],t.n)
+B.Ix=s([B.K6,B.JN,B.L3],t.zg)
 B.oN=s(["text","multiline","number","phone","datetime","emailAddress","url","visiblePassword","name","address","none","webSearch","twitter"],t.s)
 B.Iz=s([239,191,189],t.t)
 B.IC=s(["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],t.s)
 B.ID=s(["https://www.googleapis.com/auth/userinfo.profile","https://www.googleapis.com/auth/userinfo.email"],t.s)
+B.r={id:0,category:1,front:2,tanglish:3,meaning:4,emoji:5,present:6,past:7,future:8,presentRoman:9,pastRoman:10,futureRoman:11,difficulty:12}
+B.apM=new A.a(B.r,["fc_fam_001","Family","\u0c05\u0c2e\u0c4d\u0c2e","Amma","Mother","\ud83d\udc69","\u0c05\u0c2e\u0c4d\u0c2e \u0c35\u0c02\u0c1f \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c4b\u0c02\u0c26\u0c3f","\u0c05\u0c2e\u0c4d\u0c2e \u0c35\u0c02\u0c1f \u0c1a\u0c47\u0c38\u0c3f\u0c02\u0c26\u0c3f","\u0c05\u0c2e\u0c4d\u0c2e \u0c35\u0c02\u0c1f \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c41\u0c02\u0c26\u0c3f","Amma vanta chestoondi","Amma vanta chesindi","Amma vanta chestuundi","Beginner"],t.R)
+B.apS=new A.a(B.r,["fc_fam_002","Family","\u0c28\u0c3e\u0c28\u0c4d\u0c28","Naanna","Father","\ud83d\udc68","\u0c28\u0c3e\u0c28\u0c4d\u0c28 \u0c2a\u0c28\u0c3f\u0c15\u0c3f \u0c35\u0c46\u0c33\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c21\u0c41","\u0c28\u0c3e\u0c28\u0c4d\u0c28 \u0c2a\u0c28\u0c3f\u0c15\u0c3f \u0c35\u0c46\u0c33\u0c4d\u0c33\u0c3e\u0c21\u0c41","\u0c28\u0c3e\u0c28\u0c4d\u0c28 \u0c2a\u0c28\u0c3f\u0c15\u0c3f \u0c35\u0c46\u0c33\u0c4d\u0c24\u0c3e\u0c21\u0c41","Naanna paniki veltunaadu","Naanna paniki vellaadu","Naanna paniki veltaadu","Beginner"],t.R)
+B.aq9=new A.a(B.r,["fc_fam_003","Family","\u0c05\u0c15\u0c4d\u0c15","Akka","Elder Sister","\ud83d\udc67","\u0c05\u0c15\u0c4d\u0c15 \u0c28\u0c3e\u0c15\u0c41 \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c4b\u0c02\u0c26\u0c3f","\u0c05\u0c15\u0c4d\u0c15 \u0c28\u0c3e\u0c15\u0c41 \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c1a\u0c47\u0c38\u0c3f\u0c02\u0c26\u0c3f","\u0c05\u0c15\u0c4d\u0c15 \u0c28\u0c3e\u0c15\u0c41 \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c41\u0c02\u0c26\u0c3f","Akka naaku sahaayam chestoondi","Akka naaku sahaayam chesindi","Akka naaku sahaayam chestuundi","Beginner"],t.R)
+B.aqt=new A.a(B.r,["fc_fam_004","Family","\u0c1a\u0c46\u0c32\u0c4d\u0c32\u0c3f","Chelli","Younger Sister","\ud83e\uddd2","\u0c1a\u0c46\u0c32\u0c4d\u0c32\u0c3f \u0c2c\u0c4a\u0c2e\u0c4d\u0c2e\u0c32\u0c24\u0c4b \u0c06\u0c21\u0c41\u0c24\u0c4b\u0c02\u0c26\u0c3f","\u0c1a\u0c46\u0c32\u0c4d\u0c32\u0c3f \u0c2c\u0c4a\u0c2e\u0c4d\u0c2e\u0c32\u0c24\u0c4b \u0c06\u0c21\u0c3f\u0c02\u0c26\u0c3f","\u0c1a\u0c46\u0c32\u0c4d\u0c32\u0c3f \u0c2c\u0c4a\u0c2e\u0c4d\u0c2e\u0c32\u0c24\u0c4b \u0c06\u0c21\u0c41\u0c24\u0c41\u0c02\u0c26\u0c3f","Chelli bommalato aadutoondi","Chelli bommalato aadindi","Chelli bommalato aadutuundi","Beginner"],t.R)
+B.apQ=new A.a(B.r,["fc_fam_005","Family","\u0c05\u0c28\u0c4d\u0c28","Anna","Elder Brother","\ud83e\uddd1","\u0c05\u0c28\u0c4d\u0c28 \u0c15\u0c4d\u0c30\u0c3f\u0c15\u0c46\u0c1f\u0c4d \u0c06\u0c21\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c21\u0c41","\u0c05\u0c28\u0c4d\u0c28 \u0c15\u0c4d\u0c30\u0c3f\u0c15\u0c46\u0c1f\u0c4d \u0c06\u0c21\u0c3e\u0c21\u0c41","\u0c05\u0c28\u0c4d\u0c28 \u0c15\u0c4d\u0c30\u0c3f\u0c15\u0c46\u0c1f\u0c4d \u0c06\u0c21\u0c24\u0c3e\u0c21\u0c41","Anna cricket aadutunaadu","Anna cricket aadaadu","Anna cricket aadataadu","Beginner"],t.R)
+B.aqy=new A.a(B.r,["fc_fam_006","Family","\u0c24\u0c2e\u0c4d\u0c2e\u0c41\u0c21\u0c41","Thammudu","Younger Brother","\ud83d\udc76","\u0c24\u0c2e\u0c4d\u0c2e\u0c41\u0c21\u0c41 \u0c2a\u0c30\u0c3f\u0c17\u0c46\u0c24\u0c4d\u0c24\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c21\u0c41","\u0c24\u0c2e\u0c4d\u0c2e\u0c41\u0c21\u0c41 \u0c2a\u0c30\u0c3f\u0c17\u0c46\u0c24\u0c4d\u0c24\u0c3e\u0c21\u0c41","\u0c24\u0c2e\u0c4d\u0c2e\u0c41\u0c21\u0c41 \u0c2a\u0c30\u0c3f\u0c17\u0c46\u0c24\u0c4d\u0c24\u0c41\u0c24\u0c3e\u0c21\u0c41","Thammudu parigettuutunaadu","Thammudu parigettaadu","Thammudu parigettuutaadu","Beginner"],t.R)
+B.apK=new A.a(B.r,["fc_fam_007","Family","\u0c05\u0c2e\u0c4d\u0c2e\u0c2e\u0c4d\u0c2e","Ammamma","Grandmother","\ud83d\udc75","\u0c05\u0c2e\u0c4d\u0c2e\u0c2e\u0c4d\u0c2e \u0c15\u0c25\u0c32\u0c41 \u0c1a\u0c46\u0c2a\u0c4d\u0c24\u0c4b\u0c02\u0c26\u0c3f","\u0c05\u0c2e\u0c4d\u0c2e\u0c2e\u0c4d\u0c2e \u0c15\u0c25\u0c32\u0c41 \u0c1a\u0c46\u0c2a\u0c4d\u0c2a\u0c3f\u0c02\u0c26\u0c3f","\u0c05\u0c2e\u0c4d\u0c2e\u0c2e\u0c4d\u0c2e \u0c15\u0c25\u0c32\u0c41 \u0c1a\u0c46\u0c2a\u0c4d\u0c24\u0c41\u0c02\u0c26\u0c3f","Ammamma kathalu cheptoondi","Ammamma kathalu cheppindi","Ammamma kathalu cheptuundi","Beginner"],t.R)
+B.aqc=new A.a(B.r,["fc_fam_008","Family","\u0c24\u0c3e\u0c24","Thaatha","Grandfather","\ud83d\udc74","\u0c24\u0c3e\u0c24 \u0c24\u0c4b\u0c1f\u0c32\u0c4b \u0c28\u0c21\u0c41\u0c38\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c21\u0c41","\u0c24\u0c3e\u0c24 \u0c24\u0c4b\u0c1f\u0c32\u0c4b \u0c28\u0c21\u0c3f\u0c1a\u0c3e\u0c21\u0c41","\u0c24\u0c3e\u0c24 \u0c24\u0c4b\u0c1f\u0c32\u0c4b \u0c28\u0c21\u0c41\u0c38\u0c4d\u0c24\u0c3e\u0c21\u0c41","Thaatha thotalo nadustunaadu","Thaatha thotalo nadichaadu","Thaatha thotalo nadustaadu","Beginner"],t.R)
+B.aqd=new A.a(B.r,["fc_fam_009","Family","\u0c2e\u0c3e\u0c2e","Mama","Uncle","\ud83e\uddd4","\u0c2e\u0c3e\u0c2e \u0c2e\u0c3e \u0c07\u0c02\u0c1f\u0c3f\u0c15\u0c3f \u0c35\u0c38\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c21\u0c41","\u0c2e\u0c3e\u0c2e \u0c2e\u0c3e \u0c07\u0c02\u0c1f\u0c3f\u0c15\u0c3f \u0c35\u0c1a\u0c4d\u0c1a\u0c3e\u0c21\u0c41","\u0c2e\u0c3e\u0c2e \u0c2e\u0c3e \u0c07\u0c02\u0c1f\u0c3f\u0c15\u0c3f \u0c35\u0c38\u0c4d\u0c24\u0c3e\u0c21\u0c41","Mama maa intiki vastunaadu","Mama maa intiki vacchaadu","Mama maa intiki vastaadu","Intermediate"],t.R)
+B.aql=new A.a(B.r,["fc_fam_010","Family","\u0c05\u0c24\u0c4d\u0c24","Attha","Aunt","\ud83d\udc69","\u0c05\u0c24\u0c4d\u0c24 \u0c28\u0c35\u0c4d\u0c35\u0c41\u0c24\u0c4b\u0c02\u0c26\u0c3f","\u0c05\u0c24\u0c4d\u0c24 \u0c28\u0c35\u0c4d\u0c35\u0c3f\u0c02\u0c26\u0c3f","\u0c05\u0c24\u0c4d\u0c24 \u0c28\u0c35\u0c4d\u0c35\u0c41\u0c24\u0c41\u0c02\u0c26\u0c3f","Attha navvutoondi","Attha navvindi","Attha navvutuundi","Intermediate"],t.R)
+B.aq2=new A.a(B.r,["fc_fam_011","Family","\u0c2a\u0c3e\u0c2a\u0c41","Paapu","Baby","\ud83c\udf7c","\u0c2a\u0c3e\u0c2a\u0c41 \u0c28\u0c3f\u0c26\u0c4d\u0c30\u0c2a\u0c4b\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c21\u0c41","\u0c2a\u0c3e\u0c2a\u0c41 \u0c28\u0c3f\u0c26\u0c4d\u0c30\u0c2a\u0c4b\u0c2f\u0c3e\u0c21\u0c41","\u0c2a\u0c3e\u0c2a\u0c41 \u0c28\u0c3f\u0c26\u0c4d\u0c30\u0c2a\u0c4b\u0c24\u0c3e\u0c21\u0c41","Paapu nidrapotunaadu","Paapu nidrapoyaadu","Paapu nidrapotaadu","Beginner"],t.R)
+B.aqf=new A.a(B.r,["fc_fam_012","Family","\u0c15\u0c41\u0c1f\u0c41\u0c02\u0c2c\u0c02","Kutumbam","Family","\ud83c\udfe0","\u0c15\u0c41\u0c1f\u0c41\u0c02\u0c2c\u0c02 \u0c15\u0c32\u0c3f\u0c38\u0c3f \u0c09\u0c02\u0c26\u0c3f","\u0c15\u0c41\u0c1f\u0c41\u0c02\u0c2c\u0c02 \u0c15\u0c32\u0c3f\u0c38\u0c3f \u0c09\u0c02\u0c26\u0c3f","\u0c15\u0c41\u0c1f\u0c41\u0c02\u0c2c\u0c02 \u0c15\u0c32\u0c3f\u0c38\u0c3f \u0c09\u0c02\u0c1f\u0c41\u0c02\u0c26\u0c3f","Kutumbam kalisi undi","Kutumbam kalisi undi","Kutumbam kalisi untuundi","Intermediate"],t.R)
+B.aqp=new A.a(B.r,["fc_fam_013","Family","\u0c2a\u0c4d\u0c30\u0c47\u0c2e","Prema","Love","\u2764\ufe0f","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c4d\u0c30\u0c47\u0c2e\u0c3f\u0c38\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c4d\u0c30\u0c47\u0c2e\u0c3f\u0c02\u0c1a\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c4d\u0c30\u0c47\u0c2e\u0c3f\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu premistunaanu","Nenu preminchaanu","Nenu premistanu","Beginner"],t.R)
+B.apL=new A.a(B.r,["fc_fam_014","Family","\u0c07\u0c32\u0c4d\u0c32\u0c41","Illu","Home","\ud83c\udfe1","\u0c28\u0c47\u0c28\u0c41 \u0c07\u0c02\u0c1f\u0c4d\u0c32\u0c4b \u0c09\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c07\u0c02\u0c1f\u0c4d\u0c32\u0c4b \u0c09\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c07\u0c02\u0c1f\u0c3f\u0c15\u0c3f \u0c35\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu intlo unnaanu","Nenu intlo unnaanu","Nenu intiki vastanu","Beginner"],t.R)
+B.apT=new A.a(B.r,["fc_fam_015","Family","\u0c15\u0c4a\u0c21\u0c41\u0c15\u0c41","Koduku","Son","\ud83d\udc66","\u0c15\u0c4a\u0c21\u0c41\u0c15\u0c41 \u0c06\u0c21\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c21\u0c41","\u0c15\u0c4a\u0c21\u0c41\u0c15\u0c41 \u0c06\u0c21\u0c3e\u0c21\u0c41","\u0c15\u0c4a\u0c21\u0c41\u0c15\u0c41 \u0c06\u0c21\u0c24\u0c3e\u0c21\u0c41","Koduku aadutunaadu","Koduku aadaadu","Koduku aadataadu","Intermediate"],t.R)
+B.apR=new A.a(B.r,["fc_fam_016","Family","\u0c15\u0c42\u0c24\u0c41\u0c30\u0c41","Kooturu","Daughter","\ud83d\udc67","\u0c15\u0c42\u0c24\u0c41\u0c30\u0c41 \u0c2a\u0c3e\u0c21\u0c41\u0c24\u0c4b\u0c02\u0c26\u0c3f","\u0c15\u0c42\u0c24\u0c41\u0c30\u0c41 \u0c2a\u0c3e\u0c21\u0c3f\u0c02\u0c26\u0c3f","\u0c15\u0c42\u0c24\u0c41\u0c30\u0c41 \u0c2a\u0c3e\u0c21\u0c41\u0c24\u0c41\u0c02\u0c26\u0c3f","Kooturu paadutoondi","Kooturu paadindi","Kooturu paadutuundi","Intermediate"],t.R)
+B.aqs=new A.a(B.r,["fc_fam_017","Family","\u0c15\u0c32\u0c3f\u0c38\u0c3f","Kalisi","Together","\ud83e\udd1d","\u0c2e\u0c28\u0c02 \u0c15\u0c32\u0c3f\u0c38\u0c3f \u0c09\u0c28\u0c4d\u0c28\u0c3e\u0c02","\u0c2e\u0c28\u0c02 \u0c15\u0c32\u0c3f\u0c38\u0c3f \u0c09\u0c28\u0c4d\u0c28\u0c3e\u0c02","\u0c2e\u0c28\u0c02 \u0c15\u0c32\u0c3f\u0c38\u0c3f \u0c09\u0c02\u0c1f\u0c3e\u0c02","Manam kalisi unnaam","Manam kalisi unnaam","Manam kalisi untaam","Intermediate"],t.R)
+B.aqw=new A.a(B.r,["fc_fam_018","Family","\u0c28\u0c2e\u0c4d\u0c2e\u0c15\u0c02","Nammakam","Trust","\ud83e\udd32","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c2e\u0c4d\u0c2e\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c2e\u0c4d\u0c2e\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c2e\u0c4d\u0c2e\u0c41\u0c24\u0c3e\u0c28\u0c41","Nenu nammutunaanu","Nenu nammaanu","Nenu nammutanu","Advanced"],t.R)
+B.apU=new A.a(B.r,["fc_fam_019","Family","\u0c06\u0c32\u0c3f\u0c02\u0c17\u0c28\u0c02","Aalinganam","Hug","\ud83e\udd17","\u0c28\u0c47\u0c28\u0c41 \u0c06\u0c32\u0c3f\u0c02\u0c17\u0c28\u0c02 \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c06\u0c32\u0c3f\u0c02\u0c17\u0c28\u0c02 \u0c1a\u0c47\u0c36\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c06\u0c32\u0c3f\u0c02\u0c17\u0c28\u0c02 \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu aalinganam chestunaanu","Nenu aalinganam cheshaanu","Nenu aalinganam chestanu","Advanced"],t.R)
+B.aqx=new A.a(B.r,["fc_fam_020","Family","\u0c17\u0c4c\u0c30\u0c35\u0c02","Gauvaram","Respect","\ud83d\ude4f","\u0c28\u0c47\u0c28\u0c41 \u0c17\u0c4c\u0c30\u0c35\u0c3f\u0c38\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c17\u0c4c\u0c30\u0c35\u0c3f\u0c02\u0c1a\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c17\u0c4c\u0c30\u0c35\u0c3f\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu gaurravistunaanu","Nenu gauravinchaanu","Nenu gaurravistanu","Advanced"],t.R)
+B.oO=s([B.apM,B.apS,B.aq9,B.aqt,B.apQ,B.aqy,B.apK,B.aqc,B.aqd,B.aql,B.aq2,B.aqf,B.aqp,B.apL,B.apT,B.apR,B.aqs,B.aqw,B.apU,B.aqx],t.H7)
 B.IZ=s([4,9,14,19],t.t)
-B.KL=s([137,80,78,71,13,10,26,10],t.Z)
+B.KM=s([137,80,78,71,13,10,26,10],t.Z)
 B.HJ=new A.og(0,"png")
 B.HR=new A.kO(B.HJ,!1,0,"png")
-B.HH=new A.mf(B.KL,B.HR,0,"png")
-B.KN=s([71,73,70,56,55,97],t.Z)
-B.HG=new A.mf(B.KN,B.fZ,1,"gif87a")
-B.K3=s([71,73,70,56,57,97],t.Z)
-B.HF=new A.mf(B.K3,B.fZ,2,"gif89a")
+B.HH=new A.mf(B.KM,B.HR,0,"png")
+B.KO=s([71,73,70,56,55,97],t.Z)
+B.HG=new A.mf(B.KO,B.fZ,1,"gif87a")
+B.K2=s([71,73,70,56,57,97],t.Z)
+B.HF=new A.mf(B.K2,B.fZ,2,"gif89a")
 B.IA=s([255,216,255],t.Z)
 B.HK=new A.og(2,"jpeg")
 B.HV=new A.kO(B.HK,!1,3,"jpeg")
 B.HI=new A.mf(B.IA,B.HV,3,"jpeg")
-B.Jl=s([82,73,70,70,null,null,null,null,87,69,66,80],t.Z)
-B.HE=new A.mf(B.Jl,B.oE,4,"webp")
+B.Jk=s([82,73,70,70,null,null,null,null,87,69,66,80],t.Z)
+B.HE=new A.mf(B.Jk,B.oE,4,"webp")
 B.Jd=s([66,77],t.Z)
 B.HL=new A.og(4,"bmp")
 B.HT=new A.kO(B.HL,!1,6,"bmp")
@@ -100893,44 +100915,11 @@ B.m4=new A.Kc(0,"named")
 B.B7=new A.Kc(1,"anonymous")
 B.J9=s([B.m4,B.B7],A.a0("B<Kc>"))
 B.JQ=s([0.41233895,0.35762064,0.18051042],t.n)
-B.Ju=s([0.2126,0.7152,0.0722],t.n)
-B.KW=s([0.01932141,0.11916382,0.95034478],t.n)
-B.cH=s([B.JQ,B.Ju,B.KW],t.zg)
-B.oO=s([0,4,12,1,5,13,3,7,15],t.t)
+B.Jt=s([0.2126,0.7152,0.0722],t.n)
+B.KX=s([0.01932141,0.11916382,0.95034478],t.n)
+B.cH=s([B.JQ,B.Jt,B.KX],t.zg)
+B.oP=s([0,4,12,1,5,13,3,7,15],t.t)
 B.Jc=s([65533],t.t)
-B.r={id:0,category:1,front:2,tanglish:3,meaning:4,emoji:5,present:6,past:7,future:8,presentRoman:9,pastRoman:10,futureRoman:11,difficulty:12}
-B.aqh=new A.a(B.r,["fc_fam_001","Family","\u0c05\u0c2e\u0c4d\u0c2e","Amma","Mother","\ud83d\udc69","\u0c05\u0c2e\u0c4d\u0c2e \u0c35\u0c02\u0c1f \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c41\u0c02\u0c26\u0c3f","\u0c05\u0c2e\u0c4d\u0c2e \u0c35\u0c02\u0c1f \u0c1a\u0c47\u0c38\u0c3f\u0c02\u0c26\u0c3f","\u0c05\u0c2e\u0c4d\u0c2e \u0c35\u0c02\u0c1f \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c41\u0c02\u0c26\u0c3f","Amma vanta chestuundi","Amma vanta chesindi","Amma vanta chestuundi","Beginner"],t.R)
-B.apT=new A.a(B.r,["fc_fam_002","Family","\u0c28\u0c3e\u0c28\u0c4d\u0c28","Naanna","Father","\ud83d\udc68","\u0c28\u0c3e\u0c28\u0c4d\u0c28 \u0c2a\u0c28\u0c3f\u0c15\u0c3f \u0c35\u0c46\u0c33\u0c4d\u0c24\u0c3e\u0c21\u0c41","\u0c28\u0c3e\u0c28\u0c4d\u0c28 \u0c2a\u0c28\u0c3f\u0c15\u0c3f \u0c35\u0c46\u0c33\u0c4d\u0c33\u0c3e\u0c21\u0c41","\u0c28\u0c3e\u0c28\u0c4d\u0c28 \u0c2a\u0c28\u0c3f\u0c15\u0c3f \u0c35\u0c46\u0c33\u0c4d\u0c24\u0c3e\u0c21\u0c41","Naanna paniki veltaadu","Naanna paniki vellaadu","Naanna paniki veltaadu","Beginner"],t.R)
-B.aq7=new A.a(B.r,["fc_fam_003","Family","\u0c05\u0c15\u0c4d\u0c15","Akka","Elder Sister","\ud83d\udc67","\u0c05\u0c15\u0c4d\u0c15 \u0c28\u0c3e\u0c15\u0c41 \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c41\u0c02\u0c26\u0c3f","\u0c05\u0c15\u0c4d\u0c15 \u0c28\u0c3e\u0c15\u0c41 \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c1a\u0c47\u0c38\u0c3f\u0c02\u0c26\u0c3f","\u0c05\u0c15\u0c4d\u0c15 \u0c28\u0c3e\u0c15\u0c41 \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c41\u0c02\u0c26\u0c3f","Akka naaku sahaayam chestuundi","Akka naaku sahaayam chesindi","Akka naaku sahaayam chestuundi","Beginner"],t.R)
-B.apM=new A.a(B.r,["fc_fam_004","Family","\u0c1a\u0c46\u0c32\u0c4d\u0c32\u0c3f","Chelli","Younger Sister","\ud83e\uddd2","\u0c1a\u0c46\u0c32\u0c4d\u0c32\u0c3f \u0c2c\u0c4a\u0c2e\u0c4d\u0c2e\u0c32\u0c24\u0c4b \u0c06\u0c21\u0c41\u0c24\u0c41\u0c02\u0c26\u0c3f","\u0c1a\u0c46\u0c32\u0c4d\u0c32\u0c3f \u0c2c\u0c4a\u0c2e\u0c4d\u0c2e\u0c32\u0c24\u0c4b \u0c06\u0c21\u0c3f\u0c02\u0c26\u0c3f","\u0c1a\u0c46\u0c32\u0c4d\u0c32\u0c3f \u0c2c\u0c4a\u0c2e\u0c4d\u0c2e\u0c32\u0c24\u0c4b \u0c06\u0c21\u0c41\u0c24\u0c41\u0c02\u0c26\u0c3f","Chelli bommalato aadutuundi","Chelli bommalato aadindi","Chelli bommalato aadutuundi","Beginner"],t.R)
-B.aqw=new A.a(B.r,["fc_fam_005","Family","\u0c05\u0c28\u0c4d\u0c28","Anna","Elder Brother","\ud83e\uddd1","\u0c05\u0c28\u0c4d\u0c28 \u0c15\u0c4d\u0c30\u0c3f\u0c15\u0c46\u0c1f\u0c4d \u0c06\u0c21\u0c24\u0c3e\u0c21\u0c41","\u0c05\u0c28\u0c4d\u0c28 \u0c15\u0c4d\u0c30\u0c3f\u0c15\u0c46\u0c1f\u0c4d \u0c06\u0c21\u0c3e\u0c21\u0c41","\u0c05\u0c28\u0c4d\u0c28 \u0c15\u0c4d\u0c30\u0c3f\u0c15\u0c46\u0c1f\u0c4d \u0c06\u0c21\u0c24\u0c3e\u0c21\u0c41","Anna cricket aadataadu","Anna cricket aadaadu","Anna cricket aadataadu","Beginner"],t.R)
-B.aq8=new A.a(B.r,["fc_fam_006","Family","\u0c24\u0c2e\u0c4d\u0c2e\u0c41\u0c21\u0c41","Thammudu","Younger Brother","\ud83d\udc76","\u0c24\u0c2e\u0c4d\u0c2e\u0c41\u0c21\u0c41 \u0c2a\u0c30\u0c3f\u0c17\u0c46\u0c24\u0c4d\u0c24\u0c41\u0c24\u0c3e\u0c21\u0c41","\u0c24\u0c2e\u0c4d\u0c2e\u0c41\u0c21\u0c41 \u0c2a\u0c30\u0c3f\u0c17\u0c46\u0c24\u0c4d\u0c24\u0c3e\u0c21\u0c41","\u0c24\u0c2e\u0c4d\u0c2e\u0c41\u0c21\u0c41 \u0c2a\u0c30\u0c3f\u0c17\u0c46\u0c24\u0c4d\u0c24\u0c41\u0c24\u0c3e\u0c21\u0c41","Thammudu parigettuutaadu","Thammudu parigettaadu","Thammudu parigettuutaadu","Beginner"],t.R)
-B.apU=new A.a(B.r,["fc_fam_007","Family","\u0c05\u0c2e\u0c4d\u0c2e\u0c2e\u0c4d\u0c2e","Ammamma","Grandmother","\ud83d\udc75","\u0c05\u0c2e\u0c4d\u0c2e\u0c2e\u0c4d\u0c2e \u0c15\u0c25\u0c32\u0c41 \u0c1a\u0c46\u0c2a\u0c4d\u0c24\u0c41\u0c02\u0c26\u0c3f","\u0c05\u0c2e\u0c4d\u0c2e\u0c2e\u0c4d\u0c2e \u0c15\u0c25\u0c32\u0c41 \u0c1a\u0c46\u0c2a\u0c4d\u0c2a\u0c3f\u0c02\u0c26\u0c3f","\u0c05\u0c2e\u0c4d\u0c2e\u0c2e\u0c4d\u0c2e \u0c15\u0c25\u0c32\u0c41 \u0c1a\u0c46\u0c2a\u0c4d\u0c24\u0c41\u0c02\u0c26\u0c3f","Ammamma kathalu cheptuundi","Ammamma kathalu cheppindi","Ammamma kathalu cheptuundi","Beginner"],t.R)
-B.aqx=new A.a(B.r,["fc_fam_008","Family","\u0c24\u0c3e\u0c24","Thaatha","Grandfather","\ud83d\udc74","\u0c24\u0c3e\u0c24 \u0c24\u0c4b\u0c1f\u0c32\u0c4b \u0c28\u0c21\u0c41\u0c38\u0c4d\u0c24\u0c3e\u0c21\u0c41","\u0c24\u0c3e\u0c24 \u0c24\u0c4b\u0c1f\u0c32\u0c4b \u0c28\u0c21\u0c3f\u0c1a\u0c3e\u0c21\u0c41","\u0c24\u0c3e\u0c24 \u0c24\u0c4b\u0c1f\u0c32\u0c4b \u0c28\u0c21\u0c41\u0c38\u0c4d\u0c24\u0c3e\u0c21\u0c41","Thaatha thotalo nadustaadu","Thaatha thotalo nadichaadu","Thaatha thotalo nadustaadu","Beginner"],t.R)
-B.aqs=new A.a(B.r,["fc_fam_009","Family","\u0c2e\u0c3e\u0c2e","Mama","Uncle","\ud83e\uddd4","\u0c2e\u0c3e\u0c2e \u0c2e\u0c3e \u0c07\u0c02\u0c1f\u0c3f\u0c15\u0c3f \u0c35\u0c38\u0c4d\u0c24\u0c3e\u0c21\u0c41","\u0c2e\u0c3e\u0c2e \u0c2e\u0c3e \u0c07\u0c02\u0c1f\u0c3f\u0c15\u0c3f \u0c35\u0c1a\u0c4d\u0c1a\u0c3e\u0c21\u0c41","\u0c2e\u0c3e\u0c2e \u0c2e\u0c3e \u0c07\u0c02\u0c1f\u0c3f\u0c15\u0c3f \u0c35\u0c38\u0c4d\u0c24\u0c3e\u0c21\u0c41","Mama maa intiki vastaadu","Mama maa intiki vacchaadu","Mama maa intiki vastaadu","Intermediate"],t.R)
-B.apZ=new A.a(B.r,["fc_fam_010","Family","\u0c05\u0c24\u0c4d\u0c24","Attha","Aunt","\ud83d\udc69","\u0c05\u0c24\u0c4d\u0c24 \u0c28\u0c35\u0c4d\u0c35\u0c41\u0c24\u0c41\u0c02\u0c26\u0c3f","\u0c05\u0c24\u0c4d\u0c24 \u0c28\u0c35\u0c4d\u0c35\u0c3f\u0c02\u0c26\u0c3f","\u0c05\u0c24\u0c4d\u0c24 \u0c28\u0c35\u0c4d\u0c35\u0c41\u0c24\u0c41\u0c02\u0c26\u0c3f","Attha navvutuundi","Attha navvindi","Attha navvutuundi","Intermediate"],t.R)
-B.apY=new A.a(B.r,["fc_fam_011","Family","\u0c2a\u0c3e\u0c2a\u0c41","Paapu","Baby","\ud83c\udf7c","\u0c2a\u0c3e\u0c2a\u0c41 \u0c28\u0c3f\u0c26\u0c4d\u0c30\u0c2a\u0c4b\u0c24\u0c3e\u0c21\u0c41","\u0c2a\u0c3e\u0c2a\u0c41 \u0c28\u0c3f\u0c26\u0c4d\u0c30\u0c2a\u0c4b\u0c2f\u0c3e\u0c21\u0c41","\u0c2a\u0c3e\u0c2a\u0c41 \u0c28\u0c3f\u0c26\u0c4d\u0c30\u0c2a\u0c4b\u0c24\u0c3e\u0c21\u0c41","Paapu nidrapotaadu","Paapu nidrapoyaadu","Paapu nidrapotaadu","Beginner"],t.R)
-B.aqm=new A.a(B.r,["fc_fam_012","Family","\u0c15\u0c41\u0c1f\u0c41\u0c02\u0c2c\u0c02","Kutumbam","Family","\ud83c\udfe0","\u0c15\u0c41\u0c1f\u0c41\u0c02\u0c2c\u0c02 \u0c15\u0c32\u0c3f\u0c38\u0c3f \u0c09\u0c02\u0c1f\u0c41\u0c02\u0c26\u0c3f","\u0c15\u0c41\u0c1f\u0c41\u0c02\u0c2c\u0c02 \u0c15\u0c32\u0c3f\u0c38\u0c3f \u0c09\u0c02\u0c26\u0c3f","\u0c15\u0c41\u0c1f\u0c41\u0c02\u0c2c\u0c02 \u0c15\u0c32\u0c3f\u0c38\u0c3f \u0c09\u0c02\u0c1f\u0c41\u0c02\u0c26\u0c3f","Kutumbam kalisi untuundi","Kutumbam kalisi undi","Kutumbam kalisi untuundi","Intermediate"],t.R)
-B.aqe=new A.a(B.r,["fc_fam_013","Family","\u0c2a\u0c4d\u0c30\u0c47\u0c2e","Prema","Love","\u2764\ufe0f","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c4d\u0c30\u0c47\u0c2e\u0c3f\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c4d\u0c30\u0c47\u0c2e\u0c3f\u0c02\u0c1a\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c4d\u0c30\u0c47\u0c2e\u0c3f\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu premistanu","Nenu preminchaanu","Nenu premistanu","Beginner"],t.R)
-B.apO=new A.a(B.r,["fc_fam_014","Family","\u0c07\u0c32\u0c4d\u0c32\u0c41","Illu","Home","\ud83c\udfe1","\u0c28\u0c47\u0c28\u0c41 \u0c07\u0c02\u0c1f\u0c4d\u0c32\u0c4b \u0c09\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c07\u0c02\u0c1f\u0c4d\u0c32\u0c4b \u0c09\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c07\u0c02\u0c1f\u0c3f\u0c15\u0c3f \u0c35\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu intlo unnaanu","Nenu intlo unnaanu","Nenu intiki vastanu","Beginner"],t.R)
-B.aqq=new A.a(B.r,["fc_fam_015","Family","\u0c15\u0c4a\u0c21\u0c41\u0c15\u0c41","Koduku","Son","\ud83d\udc66","\u0c15\u0c4a\u0c21\u0c41\u0c15\u0c41 \u0c06\u0c21\u0c24\u0c3e\u0c21\u0c41","\u0c15\u0c4a\u0c21\u0c41\u0c15\u0c41 \u0c06\u0c21\u0c3e\u0c21\u0c41","\u0c15\u0c4a\u0c21\u0c41\u0c15\u0c41 \u0c06\u0c21\u0c24\u0c3e\u0c21\u0c41","Koduku aadataadu","Koduku aadaadu","Koduku aadataadu","Intermediate"],t.R)
-B.apV=new A.a(B.r,["fc_fam_016","Family","\u0c15\u0c42\u0c24\u0c41\u0c30\u0c41","Kooturu","Daughter","\ud83d\udc67","\u0c15\u0c42\u0c24\u0c41\u0c30\u0c41 \u0c2a\u0c3e\u0c21\u0c41\u0c24\u0c41\u0c02\u0c26\u0c3f","\u0c15\u0c42\u0c24\u0c41\u0c30\u0c41 \u0c2a\u0c3e\u0c21\u0c3f\u0c02\u0c26\u0c3f","\u0c15\u0c42\u0c24\u0c41\u0c30\u0c41 \u0c2a\u0c3e\u0c21\u0c41\u0c24\u0c41\u0c02\u0c26\u0c3f","Kooturu paadutuundi","Kooturu paadindi","Kooturu paadutuundi","Intermediate"],t.R)
-B.aqr=new A.a(B.r,["fc_fam_017","Family","\u0c15\u0c32\u0c3f\u0c38\u0c3f","Kalisi","Together","\ud83e\udd1d","\u0c2e\u0c28\u0c02 \u0c15\u0c32\u0c3f\u0c38\u0c3f \u0c09\u0c28\u0c4d\u0c28\u0c3e\u0c02","\u0c2e\u0c28\u0c02 \u0c15\u0c32\u0c3f\u0c38\u0c3f \u0c09\u0c28\u0c4d\u0c28\u0c3e\u0c02","\u0c2e\u0c28\u0c02 \u0c15\u0c32\u0c3f\u0c38\u0c3f \u0c09\u0c02\u0c1f\u0c3e\u0c02","Manam kalisi unnaam","Manam kalisi unnaam","Manam kalisi untaam","Intermediate"],t.R)
-B.apQ=new A.a(B.r,["fc_fam_018","Family","\u0c28\u0c2e\u0c4d\u0c2e\u0c15\u0c02","Nammakam","Trust","\ud83e\udd32","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c2e\u0c4d\u0c2e\u0c41\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c2e\u0c4d\u0c2e\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c2e\u0c4d\u0c2e\u0c41\u0c24\u0c3e\u0c28\u0c41","Nenu nammutanu","Nenu nammaanu","Nenu nammutanu","Advanced"],t.R)
-B.apK=new A.a(B.r,["fc_fam_019","Family","\u0c06\u0c32\u0c3f\u0c02\u0c17\u0c28\u0c02","Aalinganam","Hug","\ud83e\udd17","\u0c28\u0c47\u0c28\u0c41 \u0c06\u0c32\u0c3f\u0c02\u0c17\u0c28\u0c02 \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c06\u0c32\u0c3f\u0c02\u0c17\u0c28\u0c02 \u0c1a\u0c47\u0c36\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c06\u0c32\u0c3f\u0c02\u0c17\u0c28\u0c02 \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu aalinganam chestanu","Nenu aalinganam cheshaanu","Nenu aalinganam chestanu","Advanced"],t.R)
-B.aqj=new A.a(B.r,["fc_fam_020","Family","\u0c17\u0c4c\u0c30\u0c35\u0c02","Gauvaram","Respect","\ud83d\ude4f","\u0c28\u0c47\u0c28\u0c41 \u0c17\u0c4c\u0c30\u0c35\u0c3f\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c17\u0c4c\u0c30\u0c35\u0c3f\u0c02\u0c1a\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c17\u0c4c\u0c30\u0c35\u0c3f\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu gaurravistanu","Nenu gauravinchaanu","Nenu gaurravistanu","Advanced"],t.R)
-B.oP=s([B.aqh,B.apT,B.aq7,B.apM,B.aqw,B.aq8,B.apU,B.aqx,B.aqs,B.apZ,B.apY,B.aqm,B.aqe,B.apO,B.aqq,B.apV,B.aqr,B.apQ,B.apK,B.aqj],t.H7)
-B.apR=new A.a(B.r,["fc_daily_001","Daily Activities","\u0c28\u0c3f\u0c26\u0c4d\u0c30","Nidra","Sleep","\ud83d\ude34","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c3f\u0c26\u0c4d\u0c30\u0c2a\u0c4b\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c3f\u0c26\u0c4d\u0c30\u0c2a\u0c4b\u0c2f\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c3f\u0c26\u0c4d\u0c30\u0c2a\u0c4b\u0c24\u0c3e\u0c28\u0c41","Nenu nidrapotanu","Nenu nidrapoyaanu","Nenu nidrapotanu","Beginner"],t.R)
-B.aqv=new A.a(B.r,["fc_daily_002","Daily Activities","\u0c38\u0c4d\u0c28\u0c3e\u0c28\u0c02","Snaanam","Bath","\ud83d\udec1","\u0c28\u0c47\u0c28\u0c41 \u0c38\u0c4d\u0c28\u0c3e\u0c28\u0c02 \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c38\u0c4d\u0c28\u0c3e\u0c28\u0c02 \u0c1a\u0c47\u0c36\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c38\u0c4d\u0c28\u0c3e\u0c28\u0c02 \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu snaanam chestanu","Nenu snaanam cheshaanu","Nenu snaanam chestanu","Beginner"],t.R)
-B.aq5=new A.a(B.r,["fc_daily_003","Daily Activities","\u0c35\u0c02\u0c1f","Vanta","Cooking","\ud83c\udf73","\u0c28\u0c47\u0c28\u0c41 \u0c35\u0c02\u0c1f \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c35\u0c02\u0c1f \u0c1a\u0c47\u0c36\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c35\u0c02\u0c1f \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu vanta chestanu","Nenu vanta cheshaanu","Nenu vanta chestanu","Beginner"],t.R)
-B.aqc=new A.a(B.r,["fc_daily_004","Daily Activities","\u0c1a\u0c26\u0c35\u0c21\u0c02","Chadavadm","Reading","\ud83d\udcd6","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c41\u0c38\u0c4d\u0c24\u0c15\u0c02 \u0c1a\u0c26\u0c41\u0c35\u0c41\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c41\u0c38\u0c4d\u0c24\u0c15\u0c02 \u0c1a\u0c26\u0c3f\u0c35\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c41\u0c38\u0c4d\u0c24\u0c15\u0c02 \u0c1a\u0c26\u0c41\u0c35\u0c41\u0c24\u0c3e\u0c28\u0c41","Nenu pustakam chaduutanu","Nenu pustakam chadivanu","Nenu pustakam chaduutanu","Beginner"],t.R)
-B.aqy=new A.a(B.r,["fc_daily_005","Daily Activities","\u0c28\u0c21\u0c15","Nadaka","Walk","\ud83d\udeb6","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c30\u0c4d\u0c15\u0c41\u0c32\u0c4b \u0c28\u0c21\u0c41\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c30\u0c4d\u0c15\u0c41\u0c32\u0c4b \u0c28\u0c21\u0c3f\u0c1a\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c30\u0c4d\u0c15\u0c41\u0c32\u0c4b \u0c28\u0c21\u0c41\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu paarkulo nadustanu","Nenu paarkulo nadichaanu","Nenu paarkulo nadustanu","Beginner"],t.R)
-B.aq4=new A.a(B.r,["fc_daily_006","Daily Activities","\u0c2a\u0c28\u0c3f","Pani","Work","\ud83d\udcbc","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c28\u0c3f \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c28\u0c3f \u0c1a\u0c47\u0c36\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c28\u0c3f \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu pani chestanu","Nenu pani cheshaanu","Nenu pani chestanu","Beginner"],t.R)
-B.aqa=new A.a(B.r,["fc_daily_007","Daily Activities","\u0c2a\u0c4d\u0c30\u0c3e\u0c30\u0c4d\u0c25\u0c28","Praarthana","Prayer","\ud83d\ude4f","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c4d\u0c30\u0c3e\u0c30\u0c4d\u0c25\u0c28 \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c4d\u0c30\u0c3e\u0c30\u0c4d\u0c25\u0c28 \u0c1a\u0c47\u0c36\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c4d\u0c30\u0c3e\u0c30\u0c4d\u0c25\u0c28 \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu praarthana chestanu","Nenu praarthana cheshaanu","Nenu praarthana chestanu","Intermediate"],t.R)
-B.apP=new A.a(B.r,["fc_daily_008","Daily Activities","\u0c06\u0c21\u0c21\u0c02","Aadadam","Playing","\ud83c\udfaf","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3f\u0c32\u0c4d\u0c32\u0c32\u0c24\u0c4b \u0c06\u0c21\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3f\u0c32\u0c4d\u0c32\u0c32\u0c24\u0c4b \u0c06\u0c21\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3f\u0c32\u0c4d\u0c32\u0c32\u0c24\u0c4b \u0c06\u0c21\u0c24\u0c3e\u0c28\u0c41","Nenu pillalato aadatanu","Nenu pillalato aadaanu","Nenu pillalato aadatanu","Beginner"],t.R)
-B.apN=new A.a(B.r,["fc_daily_009","Daily Activities","\u0c30\u0c3e\u0c2f\u0c21\u0c02","Raayadam","Writing","\u270d\ufe0f","\u0c28\u0c47\u0c28\u0c41 \u0c09\u0c24\u0c4d\u0c24\u0c30\u0c02 \u0c30\u0c3e\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c09\u0c24\u0c4d\u0c24\u0c30\u0c02 \u0c30\u0c3e\u0c36\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c09\u0c24\u0c4d\u0c24\u0c30\u0c02 \u0c30\u0c3e\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu uttaram raastanu","Nenu uttaram rashaanu","Nenu uttaram raastanu","Intermediate"],t.R)
-B.aq3=new A.a(B.r,["fc_daily_010","Daily Activities","\u0c2a\u0c3e\u0c1f","Paata","Song","\ud83c\udfb5","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c1f \u0c2a\u0c3e\u0c21\u0c41\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c1f \u0c2a\u0c3e\u0c21\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c1f \u0c2a\u0c3e\u0c21\u0c41\u0c24\u0c3e\u0c28\u0c41","Nenu paata paadutanu","Nenu paata paadaanu","Nenu paata paadutanu","Beginner"],t.R)
-B.Jf=s([B.apR,B.aqv,B.aq5,B.aqc,B.aqy,B.aq4,B.aqa,B.apP,B.apN,B.aq3],t.H7)
 B.aEH=new A.i8(0,1)
 B.aEM=new A.i8(0.5,1)
 B.aEP=new A.i8(0.5375,0.75)
@@ -100942,40 +100931,40 @@ B.aEQ=new A.i8(0.8875,0.25)
 B.aEO=new A.i8(0.925,0.5)
 B.aEI=new A.i8(0.9625,0.75)
 B.aEJ=new A.i8(1,1)
-B.Jm=s([B.aEH,B.aEM,B.aEP,B.aER,B.aEN,B.aEL,B.aEK,B.aEQ,B.aEO,B.aEI,B.aEJ],A.a0("B<i8>"))
+B.Jl=s([B.aEH,B.aEM,B.aEP,B.aER,B.aEN,B.aEL,B.aEK,B.aEQ,B.aEO,B.aEI,B.aEJ],A.a0("B<i8>"))
 B.cs=new A.mZ(0,"left")
 B.dG=new A.mZ(1,"right")
 B.f1=new A.mZ(3,"justify")
 B.aX=new A.mZ(4,"start")
 B.i2=new A.mZ(5,"end")
-B.Jn=s([B.cs,B.dG,B.aF,B.f1,B.aX,B.i2],A.a0("B<mZ>"))
-B.JB=s([2,1.13276676],t.n)
+B.Jm=s([B.cs,B.dG,B.aF,B.f1,B.aX,B.i2],A.a0("B<mZ>"))
+B.JA=s([2,1.13276676],t.n)
 B.IE=s([2.18349805,1.20311921],t.n)
-B.Ky=s([2.33888662,1.28698796],t.n)
+B.Kx=s([2.33888662,1.28698796],t.n)
 B.KC=s([2.48660575,1.36351941],t.n)
-B.Jq=s([2.62226596,1.44717976],t.n)
-B.Jw=s([2.7514899,1.53385819],t.n)
-B.K0=s([3.36298265,1.98288283],t.n)
+B.Jp=s([2.62226596,1.44717976],t.n)
+B.Jv=s([2.7514899,1.53385819],t.n)
+B.K_=s([3.36298265,1.98288283],t.n)
 B.JF=s([4.08649929,2.23811846],t.n)
-B.JT=s([4.85481134,2.47563463],t.n)
-B.Jt=s([5.62945551,2.72948597],t.n)
-B.JC=s([6.43023796,2.98020421],t.n)
-B.oQ=s([B.JB,B.IE,B.Ky,B.KC,B.Jq,B.Jw,B.K0,B.JF,B.JT,B.Jt,B.JC],t.zg)
-B.Jp=s([B.iR,B.iS],A.a0("B<AK>"))
-B.Js=s([18,15,10,12,15,18,15,12,12],t.n)
-B.Jv=s(["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],t.s)
+B.JS=s([4.85481134,2.47563463],t.n)
+B.Js=s([5.62945551,2.72948597],t.n)
+B.JB=s([6.43023796,2.98020421],t.n)
+B.oQ=s([B.JA,B.IE,B.Kx,B.KC,B.Jp,B.Jv,B.K_,B.JF,B.JS,B.Js,B.JB],t.zg)
+B.Jo=s([B.iR,B.iS],A.a0("B<AK>"))
+B.Jr=s([18,15,10,12,15,18,15,12,12],t.n)
+B.Ju=s(["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],t.s)
 B.Bn=new A.ql(0,"defaultPolicy")
 B.Bo=new A.ql(1,"longFormAudio")
 B.Bp=new A.ql(2,"longFormVideo")
 B.Bq=new A.ql(3,"independent")
-B.Jx=s([B.Bn,B.Bo,B.Bp,B.Bq],A.a0("B<ql>"))
+B.Jw=s([B.Bn,B.Bo,B.Bp,B.Bq],A.a0("B<ql>"))
 B.hv=new A.hY(0,"idle")
 B.hw=new A.hY(1,"loading")
 B.asQ=new A.hY(2,"buffering")
 B.z5=new A.hY(3,"ready")
 B.asR=new A.hY(4,"completed")
-B.Jy=s([B.hv,B.hw,B.asQ,B.z5,B.asR],A.a0("B<hY>"))
-B.Jz=s([1116352408,1899447441,3049323471,3921009573,961987163,1508970993,2453635748,2870763221,3624381080,310598401,607225278,1426881987,1925078388,2162078206,2614888103,3248222580,3835390401,4022224774,264347078,604807628,770255983,1249150122,1555081692,1996064986,2554220882,2821834349,2952996808,3210313671,3336571891,3584528711,113926993,338241895,666307205,773529912,1294757372,1396182291,1695183700,1986661051,2177026350,2456956037,2730485921,2820302411,3259730800,3345764771,3516065817,3600352804,4094571909,275423344,430227734,506948616,659060556,883997877,958139571,1322822218,1537002063,1747873779,1955562222,2024104815,2227730452,2361852424,2428436474,2756734187,3204031479,3329325298],t.t)
+B.Jx=s([B.hv,B.hw,B.asQ,B.z5,B.asR],A.a0("B<hY>"))
+B.Jy=s([1116352408,1899447441,3049323471,3921009573,961987163,1508970993,2453635748,2870763221,3624381080,310598401,607225278,1426881987,1925078388,2162078206,2614888103,3248222580,3835390401,4022224774,264347078,604807628,770255983,1249150122,1555081692,1996064986,2554220882,2821834349,2952996808,3210313671,3336571891,3584528711,113926993,338241895,666307205,773529912,1294757372,1396182291,1695183700,1986661051,2177026350,2456956037,2730485921,2820302411,3259730800,3345764771,3516065817,3600352804,4094571909,275423344,430227734,506948616,659060556,883997877,958139571,1322822218,1537002063,1747873779,1955562222,2024104815,2227730452,2361852424,2428436474,2756734187,3204031479,3329325298],t.t)
 B.H4=new A.rt("missing_required_parameter",0,"missing_required_parameter")
 B.H5=new A.rt("popup_closed",1,"popup_closed")
 B.H3=new A.rt("popup_failed_to_open",2,"popup_failed_to_open")
@@ -100984,6 +100973,17 @@ B.oR=s([B.H4,B.H5,B.H3,B.H6],A.a0("B<rt>"))
 B.L5=new A.rQ("en",null,"US")
 B.kh=s([B.L5],t.ss)
 B.oS=s([0,41,61,101,131,181,251,301,360],t.n)
+B.aqh=new A.a(B.r,["fc_sch_001","School","\u0c2a\u0c3e\u0c20\u0c36\u0c3e\u0c32","Paathashaala","School","\ud83c\udfeb","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c20\u0c36\u0c3e\u0c32\u0c15\u0c41 \u0c35\u0c46\u0c33\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c20\u0c36\u0c3e\u0c32\u0c15\u0c41 \u0c35\u0c46\u0c33\u0c4d\u0c33\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c20\u0c36\u0c3e\u0c32\u0c15\u0c41 \u0c35\u0c46\u0c33\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu paathashaalaaku veltunaanu","Nenu paathashaalaaku vellaanu","Nenu paathashaalaaku veltanu","Beginner"],t.R)
+B.aqu=new A.a(B.r,["fc_sch_002","School","\u0c2a\u0c41\u0c38\u0c4d\u0c24\u0c15\u0c02","Pustakam","Book","\ud83d\udcda","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c41\u0c38\u0c4d\u0c24\u0c15\u0c02 \u0c1a\u0c26\u0c41\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c41\u0c38\u0c4d\u0c24\u0c15\u0c02 \u0c1a\u0c26\u0c3f\u0c35\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c41\u0c38\u0c4d\u0c24\u0c15\u0c02 \u0c1a\u0c26\u0c41\u0c35\u0c41\u0c24\u0c3e\u0c28\u0c41","Nenu pustakam chaduutunaanu","Nenu pustakam chadivanu","Nenu pustakam chaduutanu","Beginner"],t.R)
+B.aq5=new A.a(B.r,["fc_sch_003","School","\u0c15\u0c32\u0c02","Kalam","Pen","\u270f\ufe0f","\u0c28\u0c47\u0c28\u0c41 \u0c15\u0c32\u0c02\u0c24\u0c4b \u0c30\u0c3e\u0c38\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c15\u0c32\u0c02\u0c24\u0c4b \u0c30\u0c3e\u0c36\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c15\u0c32\u0c02\u0c24\u0c4b \u0c30\u0c3e\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu kalamto raastunaanu","Nenu kalamto rashaanu","Nenu kalamto raastanu","Beginner"],t.R)
+B.aqq=new A.a(B.r,["fc_sch_004","School","\u0c2a\u0c46\u0c28\u0c4d\u0c38\u0c3f\u0c32\u0c4d","Pencil","Pencil","\ud83d\udd8d\ufe0f","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c46\u0c28\u0c4d\u0c38\u0c3f\u0c32\u0c4d\u0c24\u0c4b \u0c17\u0c40\u0c38\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c46\u0c28\u0c4d\u0c38\u0c3f\u0c32\u0c4d\u0c24\u0c4b \u0c17\u0c40\u0c36\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c46\u0c28\u0c4d\u0c38\u0c3f\u0c32\u0c4d\u0c24\u0c4b \u0c17\u0c40\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu pencilto geestunaanu","Nenu pencilto geeshaanu","Nenu pencilto geestanu","Beginner"],t.R)
+B.aqa=new A.a(B.r,["fc_sch_005","School","\u0c05\u0c27\u0c4d\u0c2f\u0c3e\u0c2a\u0c15\u0c41\u0c21\u0c41","Adhyaapakudu","Teacher","\ud83d\udc68\u200d\ud83c\udfeb","\u0c05\u0c27\u0c4d\u0c2f\u0c3e\u0c2a\u0c15\u0c41\u0c21\u0c41 \u0c2a\u0c3e\u0c20\u0c02 \u0c1a\u0c46\u0c2a\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c21\u0c41","\u0c05\u0c27\u0c4d\u0c2f\u0c3e\u0c2a\u0c15\u0c41\u0c21\u0c41 \u0c2a\u0c3e\u0c20\u0c02 \u0c1a\u0c46\u0c2a\u0c4d\u0c2a\u0c3e\u0c21\u0c41","\u0c05\u0c27\u0c4d\u0c2f\u0c3e\u0c2a\u0c15\u0c41\u0c21\u0c41 \u0c2a\u0c3e\u0c20\u0c02 \u0c1a\u0c46\u0c2a\u0c4d\u0c24\u0c3e\u0c21\u0c41","Adhyaapakudu paatham cheptunaadu","Adhyaapakudu paatham cheppaadu","Adhyaapakudu paatham cheptaadu","Intermediate"],t.R)
+B.apI=new A.a(B.r,["fc_sch_006","School","\u0c35\u0c3f\u0c26\u0c4d\u0c2f\u0c3e\u0c30\u0c4d\u0c25\u0c3f","Vidyaarthi","Student","\ud83d\udc69\u200d\ud83c\udf93","\u0c35\u0c3f\u0c26\u0c4d\u0c2f\u0c3e\u0c30\u0c4d\u0c25\u0c3f \u0c36\u0c4d\u0c30\u0c26\u0c4d\u0c27\u0c17\u0c3e \u0c1a\u0c26\u0c41\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c21\u0c41","\u0c35\u0c3f\u0c26\u0c4d\u0c2f\u0c3e\u0c30\u0c4d\u0c25\u0c3f \u0c36\u0c4d\u0c30\u0c26\u0c4d\u0c27\u0c17\u0c3e \u0c1a\u0c26\u0c3f\u0c35\u0c3e\u0c21\u0c41","\u0c35\u0c3f\u0c26\u0c4d\u0c2f\u0c3e\u0c30\u0c4d\u0c25\u0c3f \u0c36\u0c4d\u0c30\u0c26\u0c4d\u0c27\u0c17\u0c3e \u0c1a\u0c26\u0c41\u0c35\u0c41\u0c24\u0c3e\u0c21\u0c41","Vidyaarthi shraddhaga chaduutunaadu","Vidyaarthi shraddhaga chadivaaadu","Vidyaarthi shraddhaga chaduutaadu","Intermediate"],t.R)
+B.aqv=new A.a(B.r,["fc_sch_007","School","\u0c2a\u0c30\u0c40\u0c15\u0c4d\u0c37","Pareeksha","Exam","\ud83d\udcdd","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c30\u0c40\u0c15\u0c4d\u0c37 \u0c30\u0c3e\u0c38\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c30\u0c40\u0c15\u0c4d\u0c37 \u0c30\u0c3e\u0c36\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c30\u0c40\u0c15\u0c4d\u0c37 \u0c30\u0c3e\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu pareeksha raastunaanu","Nenu pareeksha rashaanu","Nenu pareeksha raastanu","Intermediate"],t.R)
+B.apX=new A.a(B.r,["fc_sch_008","School","\u0c24\u0c30\u0c17\u0c24\u0c3f","Taragati","Class","\ud83c\udfdb\ufe0f","\u0c2e\u0c47\u0c2e\u0c41 \u0c24\u0c30\u0c17\u0c24\u0c3f\u0c32\u0c4b \u0c1a\u0c26\u0c41\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c02","\u0c2e\u0c47\u0c2e\u0c41 \u0c24\u0c30\u0c17\u0c24\u0c3f\u0c32\u0c4b \u0c1a\u0c26\u0c3f\u0c35\u0c3e\u0c02","\u0c2e\u0c47\u0c2e\u0c41 \u0c24\u0c30\u0c17\u0c24\u0c3f\u0c32\u0c4b \u0c1a\u0c26\u0c41\u0c35\u0c41\u0c24\u0c3e\u0c02","Memu taragatilo chaduutunnaam","Memu taragatilo chadivaam","Memu taragatilo chaduutaam","Beginner"],t.R)
+B.aqb=new A.a(B.r,["fc_sch_009","School","\u0c2c\u0c4d\u0c2f\u0c3e\u0c17\u0c4d","Byaag","Bag","\ud83c\udf92","\u0c28\u0c47\u0c28\u0c41 \u0c2c\u0c4d\u0c2f\u0c3e\u0c17\u0c4d \u0c2e\u0c4b\u0c38\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2c\u0c4d\u0c2f\u0c3e\u0c17\u0c4d \u0c2e\u0c4b\u0c36\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2c\u0c4d\u0c2f\u0c3e\u0c17\u0c4d \u0c2e\u0c4b\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu byaag mostunaanu","Nenu byaag moshaanu","Nenu byaag mostanu","Beginner"],t.R)
+B.aqm=new A.a(B.r,["fc_sch_010","School","\u0c39\u0c4b\u0c2e\u0c4d\u200c\u0c35\u0c30\u0c4d\u0c15\u0c4d","Homvark","Homework","\ud83d\udccb","\u0c28\u0c47\u0c28\u0c41 \u0c39\u0c4b\u0c2e\u0c4d\u200c\u0c35\u0c30\u0c4d\u0c15\u0c4d \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c39\u0c4b\u0c2e\u0c4d\u200c\u0c35\u0c30\u0c4d\u0c15\u0c4d \u0c1a\u0c47\u0c36\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c39\u0c4b\u0c2e\u0c4d\u200c\u0c35\u0c30\u0c4d\u0c15\u0c4d \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu homvark chestunaanu","Nenu homvark cheshaanu","Nenu homvark chestanu","Intermediate"],t.R)
+B.JC=s([B.aqh,B.aqu,B.aq5,B.aqq,B.aqa,B.apI,B.aqv,B.apX,B.aqb,B.aqm],t.H7)
 B.l7=new A.Ge(0,"none")
 B.l8=new A.Ge(1,"all")
 B.JD=s([B.l7,B.l8],A.a0("B<Ge>"))
@@ -101016,26 +101016,15 @@ B.n7=new A.M(0.09803921568627451,0,0,0,B.h)
 B.j=new A.l(0,0)
 B.CM=new A.dG(0.2,B.Cp,B.n7,B.j,11)
 B.JP=s([B.CM],t.sq)
-B.apF=new A.a(B.r,["fc_food_001","Food","\u0c05\u0c28\u0c4d\u0c28\u0c02","Annam","Rice","\ud83c\udf5a","\u0c28\u0c47\u0c28\u0c41 \u0c05\u0c28\u0c4d\u0c28\u0c02 \u0c24\u0c3f\u0c02\u0c1f\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c05\u0c28\u0c4d\u0c28\u0c02 \u0c24\u0c3f\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c05\u0c28\u0c4d\u0c28\u0c02 \u0c24\u0c3f\u0c02\u0c1f\u0c3e\u0c28\u0c41","Nenu annam tintanu","Nenu annam tinnaanu","Nenu annam tintanu","Beginner"],t.R)
-B.aq_=new A.a(B.r,["fc_food_002","Food","\u0c2a\u0c2a\u0c4d\u0c2a\u0c41","Pappu","Dal","\ud83e\uded8","\u0c2a\u0c2a\u0c4d\u0c2a\u0c41 \u0c30\u0c41\u0c1a\u0c3f\u0c17\u0c3e \u0c09\u0c02\u0c26\u0c3f","\u0c2a\u0c2a\u0c4d\u0c2a\u0c41 \u0c30\u0c41\u0c1a\u0c3f\u0c17\u0c3e \u0c09\u0c02\u0c26\u0c3f","\u0c2a\u0c2a\u0c4d\u0c2a\u0c41 \u0c30\u0c41\u0c1a\u0c3f\u0c17\u0c3e \u0c09\u0c02\u0c1f\u0c41\u0c02\u0c26\u0c3f","Pappu ruchiga undi","Pappu ruchiga undi","Pappu ruchiga untundi","Beginner"],t.R)
-B.aqu=new A.a(B.r,["fc_food_003","Food","\u0c2a\u0c3e\u0c32\u0c41","Paalu","Milk","\ud83e\udd5b","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c32\u0c41 \u0c24\u0c3e\u0c17\u0c41\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c32\u0c41 \u0c24\u0c3e\u0c17\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c32\u0c41 \u0c24\u0c3e\u0c17\u0c41\u0c24\u0c3e\u0c28\u0c41","Nenu paalu taagutanu","Nenu paalu taagaanu","Nenu paalu taagutanu","Beginner"],t.R)
-B.apW=new A.a(B.r,["fc_food_004","Food","\u0c2a\u0c02\u0c21\u0c41","Pandu","Fruit","\ud83c\udf4e","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c02\u0c21\u0c41 \u0c24\u0c3f\u0c02\u0c1f\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c02\u0c21\u0c41 \u0c24\u0c3f\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c02\u0c21\u0c41 \u0c24\u0c3f\u0c02\u0c1f\u0c3e\u0c28\u0c41","Nenu pandu tintanu","Nenu pandu tinnaanu","Nenu pandu tintanu","Beginner"],t.R)
-B.apL=new A.a(B.r,["fc_food_005","Food","\u0c15\u0c42\u0c30","Koora","Curry","\ud83c\udf5b","\u0c05\u0c2e\u0c4d\u0c2e \u0c15\u0c42\u0c30 \u0c35\u0c02\u0c21\u0c41\u0c24\u0c41\u0c02\u0c26\u0c3f","\u0c05\u0c2e\u0c4d\u0c2e \u0c15\u0c42\u0c30 \u0c35\u0c02\u0c21\u0c3f\u0c02\u0c26\u0c3f","\u0c05\u0c2e\u0c4d\u0c2e \u0c15\u0c42\u0c30 \u0c35\u0c02\u0c21\u0c41\u0c24\u0c41\u0c02\u0c26\u0c3f","Amma koora vandutuundi","Amma koora vandindi","Amma koora vandutuundi","Beginner"],t.R)
-B.aqk=new A.a(B.r,["fc_food_006","Food","\u0c28\u0c40\u0c33\u0c4d\u0c33\u0c41","Neellu","Water","\ud83d\udca7","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c40\u0c33\u0c4d\u0c33\u0c41 \u0c24\u0c3e\u0c17\u0c41\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c40\u0c33\u0c4d\u0c33\u0c41 \u0c24\u0c3e\u0c17\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c40\u0c33\u0c4d\u0c33\u0c41 \u0c24\u0c3e\u0c17\u0c41\u0c24\u0c3e\u0c28\u0c41","Nenu neellu taagutanu","Nenu neellu taagaanu","Nenu neellu taagutanu","Beginner"],t.R)
-B.apE=new A.a(B.r,["fc_food_007","Food","\u0c1a\u0c2a\u0c3e\u0c24\u0c40","Chapaati","Chapati","\ud83e\uded3","\u0c28\u0c47\u0c28\u0c41 \u0c1a\u0c2a\u0c3e\u0c24\u0c40 \u0c24\u0c3f\u0c02\u0c1f\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c1a\u0c2a\u0c3e\u0c24\u0c40 \u0c24\u0c3f\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c1a\u0c2a\u0c3e\u0c24\u0c40 \u0c24\u0c3f\u0c02\u0c1f\u0c3e\u0c28\u0c41","Nenu chapaati tintanu","Nenu chapaati tinnaanu","Nenu chapaati tintanu","Beginner"],t.R)
-B.aqd=new A.a(B.r,["fc_food_008","Food","\u0c07\u0c21\u0c4d\u0c32\u0c40","Idli","Idli","\ud83e\udd5f","\u0c28\u0c47\u0c28\u0c41 \u0c07\u0c21\u0c4d\u0c32\u0c40 \u0c24\u0c3f\u0c02\u0c1f\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c07\u0c21\u0c4d\u0c32\u0c40 \u0c24\u0c3f\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c07\u0c21\u0c4d\u0c32\u0c40 \u0c24\u0c3f\u0c02\u0c1f\u0c3e\u0c28\u0c41","Nenu idli tintanu","Nenu idli tinnaanu","Nenu idli tintanu","Beginner"],t.R)
-B.aqg=new A.a(B.r,["fc_food_009","Food","\u0c15\u0c3e\u0c2b\u0c40","Kaafi","Coffee","\u2615","\u0c28\u0c47\u0c28\u0c41 \u0c15\u0c3e\u0c2b\u0c40 \u0c24\u0c3e\u0c17\u0c41\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c15\u0c3e\u0c2b\u0c40 \u0c24\u0c3e\u0c17\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c15\u0c3e\u0c2b\u0c40 \u0c24\u0c3e\u0c17\u0c41\u0c24\u0c3e\u0c28\u0c41","Nenu kaafi taagutanu","Nenu kaafi taagaanu","Nenu kaafi taagutanu","Intermediate"],t.R)
-B.apJ=new A.a(B.r,["fc_food_010","Food","\u0c05\u0c32\u0c4d\u0c2a\u0c3e\u0c39\u0c3e\u0c30\u0c02","Alpaaharam","Breakfast","\ud83c\udf71","\u0c28\u0c47\u0c28\u0c41 \u0c05\u0c32\u0c4d\u0c2a\u0c3e\u0c39\u0c3e\u0c30\u0c02 \u0c24\u0c3f\u0c02\u0c1f\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c05\u0c32\u0c4d\u0c2a\u0c3e\u0c39\u0c3e\u0c30\u0c02 \u0c24\u0c3f\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c05\u0c32\u0c4d\u0c2a\u0c3e\u0c39\u0c3e\u0c30\u0c02 \u0c24\u0c3f\u0c02\u0c1f\u0c3e\u0c28\u0c41","Nenu alpaaharam tintanu","Nenu alpaaharam tinnaanu","Nenu alpaaharam tintanu","Intermediate"],t.R)
-B.JR=s([B.apF,B.aq_,B.aqu,B.apW,B.apL,B.aqk,B.apE,B.aqd,B.aqg,B.apJ],t.H7)
 B.Ab=new A.GD(0,"left")
 B.Ac=new A.GD(1,"right")
-B.JS=s([B.Ab,B.Ac],A.a0("B<GD>"))
+B.JR=s([B.Ab,B.Ac],A.a0("B<GD>"))
 B.a9=new A.GQ(0,"upstream")
-B.JU=s([B.a9,B.l],A.a0("B<GQ>"))
+B.JT=s([B.a9,B.l],A.a0("B<GQ>"))
 B.ak=new A.GU(0,"rtl")
 B.V=new A.GU(1,"ltr")
 B.ki=s([B.ak,B.V],A.a0("B<GU>"))
-B.JZ=s(["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],t.s)
+B.JY=s(["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],t.s)
 B.ou=new A.cT(63283,"MaterialIcons",null,!1)
 B.aE8=new A.na("Family",B.ou,B.ap)
 B.ox=new A.cT(983342,"MaterialIcons",null,!1)
@@ -101049,17 +101038,17 @@ B.aE5=new A.na("Daily Activities",B.oA,B.ag)
 B.Hj=new A.cT(983528,"MaterialIcons",null,!1)
 B.F6=new A.M(1,0.9882352941176471,0.3607843137254902,0.49019607843137253,B.h)
 B.aE6=new A.na("Flash Cards",B.Hj,B.F6)
-B.K1=s([B.aE8,B.aE9,B.aE7,B.aEa,B.aE5,B.aE6],A.a0("B<na>"))
+B.K0=s([B.aE8,B.aE9,B.aE7,B.aEa,B.aE5,B.aE6],A.a0("B<na>"))
 B.DV=new A.qD(0,"auto")
 B.DW=new A.qD(1,"full")
 B.DX=new A.qD(2,"chromium")
-B.K2=s([B.DV,B.DW,B.DX,B.cj],A.a0("B<qD>"))
+B.K1=s([B.DV,B.DW,B.DX,B.cj],A.a0("B<qD>"))
 B.uX=new A.wK(0,"off")
 B.uY=new A.wK(1,"one")
 B.uZ=new A.wK(2,"all")
 B.oW=s([B.uX,B.uY,B.uZ],A.a0("B<wK>"))
 B.aW=new A.fW(1,"fuchsia")
-B.K4=s([B.a8,B.aW,B.B,B.aP,B.aw,B.aQ],A.a0("B<fW>"))
+B.K3=s([B.a8,B.aW,B.B,B.aP,B.aw,B.aQ],A.a0("B<fW>"))
 B.AP=new A.yL(0,"topLeft")
 B.AS=new A.yL(3,"bottomRight")
 B.aEm=new A.ne(B.AP,B.AS)
@@ -101068,59 +101057,70 @@ B.AQ=new A.yL(1,"topRight")
 B.AR=new A.yL(2,"bottomLeft")
 B.aEn=new A.ne(B.AQ,B.AR)
 B.aEo=new A.ne(B.AR,B.AQ)
-B.K5=s([B.aEm,B.aEp,B.aEn,B.aEo],A.a0("B<ne>"))
-B.apS=new A.a(B.r,["fc_sch_001","School","\u0c2a\u0c3e\u0c20\u0c36\u0c3e\u0c32","Paathashaala","School","\ud83c\udfeb","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c20\u0c36\u0c3e\u0c32\u0c15\u0c41 \u0c35\u0c46\u0c33\u0c4d\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c20\u0c36\u0c3e\u0c32\u0c15\u0c41 \u0c35\u0c46\u0c33\u0c4d\u0c33\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c20\u0c36\u0c3e\u0c32\u0c15\u0c41 \u0c35\u0c46\u0c33\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu paathashaalaaku veltanu","Nenu paathashaalaaku vellaanu","Nenu paathashaalaaku veltanu","Beginner"],t.R)
-B.aq1=new A.a(B.r,["fc_sch_002","School","\u0c2a\u0c41\u0c38\u0c4d\u0c24\u0c15\u0c02","Pustakam","Book","\ud83d\udcda","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c41\u0c38\u0c4d\u0c24\u0c15\u0c02 \u0c1a\u0c26\u0c41\u0c35\u0c41\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c41\u0c38\u0c4d\u0c24\u0c15\u0c02 \u0c1a\u0c26\u0c3f\u0c35\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c41\u0c38\u0c4d\u0c24\u0c15\u0c02 \u0c1a\u0c26\u0c41\u0c35\u0c41\u0c24\u0c3e\u0c28\u0c41","Nenu pustakam chaduutanu","Nenu pustakam chadivanu","Nenu pustakam chaduutanu","Beginner"],t.R)
-B.apX=new A.a(B.r,["fc_sch_003","School","\u0c15\u0c32\u0c02","Kalam","Pen","\u270f\ufe0f","\u0c28\u0c47\u0c28\u0c41 \u0c15\u0c32\u0c02\u0c24\u0c4b \u0c30\u0c3e\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c15\u0c32\u0c02\u0c24\u0c4b \u0c30\u0c3e\u0c36\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c15\u0c32\u0c02\u0c24\u0c4b \u0c30\u0c3e\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu kalamto raastanu","Nenu kalamto rashaanu","Nenu kalamto raastanu","Beginner"],t.R)
-B.aql=new A.a(B.r,["fc_sch_004","School","\u0c2a\u0c46\u0c28\u0c4d\u0c38\u0c3f\u0c32\u0c4d","Pencil","Pencil","\ud83d\udd8d\ufe0f","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c46\u0c28\u0c4d\u0c38\u0c3f\u0c32\u0c4d\u0c24\u0c4b \u0c17\u0c40\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c46\u0c28\u0c4d\u0c38\u0c3f\u0c32\u0c4d\u0c24\u0c4b \u0c17\u0c40\u0c36\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c46\u0c28\u0c4d\u0c38\u0c3f\u0c32\u0c4d\u0c24\u0c4b \u0c17\u0c40\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu pencilto geestanu","Nenu pencilto geeshaanu","Nenu pencilto geestanu","Beginner"],t.R)
-B.apH=new A.a(B.r,["fc_sch_005","School","\u0c05\u0c27\u0c4d\u0c2f\u0c3e\u0c2a\u0c15\u0c41\u0c21\u0c41","Adhyaapakudu","Teacher","\ud83d\udc68\u200d\ud83c\udfeb","\u0c05\u0c27\u0c4d\u0c2f\u0c3e\u0c2a\u0c15\u0c41\u0c21\u0c41 \u0c2a\u0c3e\u0c20\u0c02 \u0c1a\u0c46\u0c2a\u0c4d\u0c24\u0c3e\u0c21\u0c41","\u0c05\u0c27\u0c4d\u0c2f\u0c3e\u0c2a\u0c15\u0c41\u0c21\u0c41 \u0c2a\u0c3e\u0c20\u0c02 \u0c1a\u0c46\u0c2a\u0c4d\u0c2a\u0c3e\u0c21\u0c41","\u0c05\u0c27\u0c4d\u0c2f\u0c3e\u0c2a\u0c15\u0c41\u0c21\u0c41 \u0c2a\u0c3e\u0c20\u0c02 \u0c1a\u0c46\u0c2a\u0c4d\u0c24\u0c3e\u0c21\u0c41","Adhyaapakudu paatham cheptaadu","Adhyaapakudu paatham cheppaadu","Adhyaapakudu paatham cheptaadu","Intermediate"],t.R)
-B.aqn=new A.a(B.r,["fc_sch_006","School","\u0c35\u0c3f\u0c26\u0c4d\u0c2f\u0c3e\u0c30\u0c4d\u0c25\u0c3f","Vidyaarthi","Student","\ud83d\udc69\u200d\ud83c\udf93","\u0c35\u0c3f\u0c26\u0c4d\u0c2f\u0c3e\u0c30\u0c4d\u0c25\u0c3f \u0c36\u0c4d\u0c30\u0c26\u0c4d\u0c27\u0c17\u0c3e \u0c1a\u0c26\u0c41\u0c35\u0c41\u0c24\u0c3e\u0c21\u0c41","\u0c35\u0c3f\u0c26\u0c4d\u0c2f\u0c3e\u0c30\u0c4d\u0c25\u0c3f \u0c36\u0c4d\u0c30\u0c26\u0c4d\u0c27\u0c17\u0c3e \u0c1a\u0c26\u0c3f\u0c35\u0c3e\u0c21\u0c41","\u0c35\u0c3f\u0c26\u0c4d\u0c2f\u0c3e\u0c30\u0c4d\u0c25\u0c3f \u0c36\u0c4d\u0c30\u0c26\u0c4d\u0c27\u0c17\u0c3e \u0c1a\u0c26\u0c41\u0c35\u0c41\u0c24\u0c3e\u0c21\u0c41","Vidyaarthi shraddhaga chaduutaadu","Vidyaarthi shraddhaga chadivaaadu","Vidyaarthi shraddhaga chaduutaadu","Intermediate"],t.R)
-B.apI=new A.a(B.r,["fc_sch_007","School","\u0c2a\u0c30\u0c40\u0c15\u0c4d\u0c37","Pareeksha","Exam","\ud83d\udcdd","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c30\u0c40\u0c15\u0c4d\u0c37 \u0c30\u0c3e\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c30\u0c40\u0c15\u0c4d\u0c37 \u0c30\u0c3e\u0c36\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c30\u0c40\u0c15\u0c4d\u0c37 \u0c30\u0c3e\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu pareeksha raastanu","Nenu pareeksha rashaanu","Nenu pareeksha raastanu","Intermediate"],t.R)
-B.aqp=new A.a(B.r,["fc_sch_008","School","\u0c24\u0c30\u0c17\u0c24\u0c3f","Taragati","Class","\ud83c\udfdb\ufe0f","\u0c2e\u0c47\u0c2e\u0c41 \u0c24\u0c30\u0c17\u0c24\u0c3f\u0c32\u0c4b \u0c1a\u0c26\u0c41\u0c35\u0c41\u0c24\u0c3e\u0c02","\u0c2e\u0c47\u0c2e\u0c41 \u0c24\u0c30\u0c17\u0c24\u0c3f\u0c32\u0c4b \u0c1a\u0c26\u0c3f\u0c35\u0c3e\u0c02","\u0c2e\u0c47\u0c2e\u0c41 \u0c24\u0c30\u0c17\u0c24\u0c3f\u0c32\u0c4b \u0c1a\u0c26\u0c41\u0c35\u0c41\u0c24\u0c3e\u0c02","Memu taragatilo chaduutaam","Memu taragatilo chadivaam","Memu taragatilo chaduutaam","Beginner"],t.R)
-B.aqt=new A.a(B.r,["fc_sch_009","School","\u0c2c\u0c4d\u0c2f\u0c3e\u0c17\u0c4d","Byaag","Bag","\ud83c\udf92","\u0c28\u0c47\u0c28\u0c41 \u0c2c\u0c4d\u0c2f\u0c3e\u0c17\u0c4d \u0c2e\u0c4b\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2c\u0c4d\u0c2f\u0c3e\u0c17\u0c4d \u0c2e\u0c4b\u0c36\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2c\u0c4d\u0c2f\u0c3e\u0c17\u0c4d \u0c2e\u0c4b\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu byaag mostanu","Nenu byaag moshaanu","Nenu byaag mostanu","Beginner"],t.R)
-B.aq9=new A.a(B.r,["fc_sch_010","School","\u0c39\u0c4b\u0c2e\u0c4d\u200c\u0c35\u0c30\u0c4d\u0c15\u0c4d","Homvark","Homework","\ud83d\udccb","\u0c28\u0c47\u0c28\u0c41 \u0c39\u0c4b\u0c2e\u0c4d\u200c\u0c35\u0c30\u0c4d\u0c15\u0c4d \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c39\u0c4b\u0c2e\u0c4d\u200c\u0c35\u0c30\u0c4d\u0c15\u0c4d \u0c1a\u0c47\u0c36\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c39\u0c4b\u0c2e\u0c4d\u200c\u0c35\u0c30\u0c4d\u0c15\u0c4d \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu homvark chestanu","Nenu homvark cheshaanu","Nenu homvark chestanu","Intermediate"],t.R)
-B.K6=s([B.apS,B.aq1,B.apX,B.aql,B.apH,B.aqn,B.apI,B.aqp,B.aqt,B.aq9],t.H7)
-B.K8=s([35,30,20,25,30,35,30,25,25],t.n)
-B.Ka=s([B.nD,B.nE,B.nF],A.a0("B<vZ>"))
+B.K4=s([B.aEm,B.aEp,B.aEn,B.aEo],A.a0("B<ne>"))
+B.aqe=new A.a(B.r,["fc_food_001","Food","\u0c05\u0c28\u0c4d\u0c28\u0c02","Annam","Rice","\ud83c\udf5a","\u0c28\u0c47\u0c28\u0c41 \u0c05\u0c28\u0c4d\u0c28\u0c02 \u0c24\u0c3f\u0c02\u0c1f\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c05\u0c28\u0c4d\u0c28\u0c02 \u0c24\u0c3f\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c05\u0c28\u0c4d\u0c28\u0c02 \u0c24\u0c3f\u0c02\u0c1f\u0c3e\u0c28\u0c41","Nenu annam tintunaanu","Nenu annam tinnaanu","Nenu annam tintanu","Beginner"],t.R)
+B.aq_=new A.a(B.r,["fc_food_002","Food","\u0c2a\u0c2a\u0c4d\u0c2a\u0c41","Pappu","Dal","\ud83e\uded8","\u0c2a\u0c2a\u0c4d\u0c2a\u0c41 \u0c30\u0c41\u0c1a\u0c3f\u0c17\u0c3e \u0c09\u0c02\u0c26\u0c3f","\u0c2a\u0c2a\u0c4d\u0c2a\u0c41 \u0c30\u0c41\u0c1a\u0c3f\u0c17\u0c3e \u0c09\u0c02\u0c26\u0c3f","\u0c2a\u0c2a\u0c4d\u0c2a\u0c41 \u0c30\u0c41\u0c1a\u0c3f\u0c17\u0c3e \u0c09\u0c02\u0c1f\u0c41\u0c02\u0c26\u0c3f","Pappu ruchiga undi","Pappu ruchiga undi","Pappu ruchiga untundi","Beginner"],t.R)
+B.aq1=new A.a(B.r,["fc_food_003","Food","\u0c2a\u0c3e\u0c32\u0c41","Paalu","Milk","\ud83e\udd5b","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c32\u0c41 \u0c24\u0c3e\u0c17\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c32\u0c41 \u0c24\u0c3e\u0c17\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c32\u0c41 \u0c24\u0c3e\u0c17\u0c41\u0c24\u0c3e\u0c28\u0c41","Nenu paalu taagutunaanu","Nenu paalu taagaanu","Nenu paalu taagutanu","Beginner"],t.R)
+B.aqj=new A.a(B.r,["fc_food_004","Food","\u0c2a\u0c02\u0c21\u0c41","Pandu","Fruit","\ud83c\udf4e","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c02\u0c21\u0c41 \u0c24\u0c3f\u0c02\u0c1f\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c02\u0c21\u0c41 \u0c24\u0c3f\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c02\u0c21\u0c41 \u0c24\u0c3f\u0c02\u0c1f\u0c3e\u0c28\u0c41","Nenu pandu tintunaanu","Nenu pandu tinnaanu","Nenu pandu tintanu","Beginner"],t.R)
+B.aq8=new A.a(B.r,["fc_food_005","Food","\u0c15\u0c42\u0c30","Koora","Curry","\ud83c\udf5b","\u0c05\u0c2e\u0c4d\u0c2e \u0c15\u0c42\u0c30 \u0c35\u0c02\u0c21\u0c41\u0c24\u0c4b\u0c02\u0c26\u0c3f","\u0c05\u0c2e\u0c4d\u0c2e \u0c15\u0c42\u0c30 \u0c35\u0c02\u0c21\u0c3f\u0c02\u0c26\u0c3f","\u0c05\u0c2e\u0c4d\u0c2e \u0c15\u0c42\u0c30 \u0c35\u0c02\u0c21\u0c41\u0c24\u0c41\u0c02\u0c26\u0c3f","Amma koora vandutoondi","Amma koora vandindi","Amma koora vandutuundi","Beginner"],t.R)
+B.aqk=new A.a(B.r,["fc_food_006","Food","\u0c28\u0c40\u0c33\u0c4d\u0c33\u0c41","Neellu","Water","\ud83d\udca7","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c40\u0c33\u0c4d\u0c33\u0c41 \u0c24\u0c3e\u0c17\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c40\u0c33\u0c4d\u0c33\u0c41 \u0c24\u0c3e\u0c17\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c40\u0c33\u0c4d\u0c33\u0c41 \u0c24\u0c3e\u0c17\u0c41\u0c24\u0c3e\u0c28\u0c41","Nenu neellu taagutunaanu","Nenu neellu taagaanu","Nenu neellu taagutanu","Beginner"],t.R)
+B.apZ=new A.a(B.r,["fc_food_007","Food","\u0c1a\u0c2a\u0c3e\u0c24\u0c40","Chapaati","Chapati","\ud83e\uded3","\u0c28\u0c47\u0c28\u0c41 \u0c1a\u0c2a\u0c3e\u0c24\u0c40 \u0c24\u0c3f\u0c02\u0c1f\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c1a\u0c2a\u0c3e\u0c24\u0c40 \u0c24\u0c3f\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c1a\u0c2a\u0c3e\u0c24\u0c40 \u0c24\u0c3f\u0c02\u0c1f\u0c3e\u0c28\u0c41","Nenu chapaati tintunaanu","Nenu chapaati tinnaanu","Nenu chapaati tintanu","Beginner"],t.R)
+B.apC=new A.a(B.r,["fc_food_008","Food","\u0c07\u0c21\u0c4d\u0c32\u0c40","Idli","Idli","\ud83e\udd5f","\u0c28\u0c47\u0c28\u0c41 \u0c07\u0c21\u0c4d\u0c32\u0c40 \u0c24\u0c3f\u0c02\u0c1f\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c07\u0c21\u0c4d\u0c32\u0c40 \u0c24\u0c3f\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c07\u0c21\u0c4d\u0c32\u0c40 \u0c24\u0c3f\u0c02\u0c1f\u0c3e\u0c28\u0c41","Nenu idli tintunaanu","Nenu idli tinnaanu","Nenu idli tintanu","Beginner"],t.R)
+B.aqn=new A.a(B.r,["fc_food_009","Food","\u0c15\u0c3e\u0c2b\u0c40","Kaafi","Coffee","\u2615","\u0c28\u0c47\u0c28\u0c41 \u0c15\u0c3e\u0c2b\u0c40 \u0c24\u0c3e\u0c17\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c15\u0c3e\u0c2b\u0c40 \u0c24\u0c3e\u0c17\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c15\u0c3e\u0c2b\u0c40 \u0c24\u0c3e\u0c17\u0c41\u0c24\u0c3e\u0c28\u0c41","Nenu kaafi taagutunaanu","Nenu kaafi taagaanu","Nenu kaafi taagutanu","Intermediate"],t.R)
+B.aq0=new A.a(B.r,["fc_food_010","Food","\u0c05\u0c32\u0c4d\u0c2a\u0c3e\u0c39\u0c3e\u0c30\u0c02","Alpaaharam","Breakfast","\ud83c\udf71","\u0c28\u0c47\u0c28\u0c41 \u0c05\u0c32\u0c4d\u0c2a\u0c3e\u0c39\u0c3e\u0c30\u0c02 \u0c24\u0c3f\u0c02\u0c1f\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c05\u0c32\u0c4d\u0c2a\u0c3e\u0c39\u0c3e\u0c30\u0c02 \u0c24\u0c3f\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c05\u0c32\u0c4d\u0c2a\u0c3e\u0c39\u0c3e\u0c30\u0c02 \u0c24\u0c3f\u0c02\u0c1f\u0c3e\u0c28\u0c41","Nenu alpaaharam tintunaanu","Nenu alpaaharam tinnaanu","Nenu alpaaharam tintanu","Intermediate"],t.R)
+B.K5=s([B.aqe,B.aq_,B.aq1,B.aqj,B.aq8,B.aqk,B.apZ,B.apC,B.aqn,B.aq0],t.H7)
+B.K7=s([35,30,20,25,30,35,30,25,25],t.n)
+B.K9=s([B.nD,B.nE,B.nF],A.a0("B<vZ>"))
 B.asH=new A.to(0,"get")
 B.yU=new A.to(1,"update")
 B.yV=new A.to(2,"set")
 B.asI=new A.to(3,"deleteType")
-B.Kc=s([B.asH,B.yU,B.yV,B.asI],A.a0("B<to>"))
-B.Kd=s(["click","scroll"],t.s)
+B.Kb=s([B.asH,B.yU,B.yV,B.asI],A.a0("B<to>"))
+B.Kc=s(["click","scroll"],t.s)
 B.CS=new A.v6()
 B.hG=new A.To(1,"page")
 B.hH=new A.f5(B.b9,B.hG)
-B.Ke=s([B.CS,B.hH],A.a0("B<b_>"))
-B.Ks=s([],A.a0("B<aYP>"))
-B.Kp=s([],t.QP)
+B.Kd=s([B.CS,B.hH],A.a0("B<b_>"))
+B.Kr=s([],A.a0("B<aYP>"))
+B.Ko=s([],t.QP)
 B.p0=s([],A.a0("B<bci>"))
-B.Kt=s([],A.a0("B<aZS>"))
-B.Kv=s([],t.E)
-B.Ki=s([],t.fJ)
-B.Km=s([],t.ER)
+B.Ks=s([],A.a0("B<aZS>"))
+B.Ku=s([],t.E)
+B.Kh=s([],t.fJ)
+B.Kl=s([],t.ER)
 B.p_=s([],t.tc)
 B.h4=s([],t.G)
 B.oX=s([],t.wi)
 B.oZ=s([],A.a0("B<hX>"))
-B.Kj=s([],A.a0("B<eJ<@>>"))
+B.Ki=s([],A.a0("B<eJ<@>>"))
 B.kj=s([],t.AO)
-B.Ku=s([],t.yo)
+B.Kt=s([],t.yo)
 B.h3=s([],t.i3)
 B.kk=s([],t.K1)
-B.Ko=s([],t.D1)
+B.Kn=s([],t.D1)
 B.kl=s([],t.QF)
-B.Kk=s([],t.Lx)
-B.Kl=s([],t.AS)
+B.Kj=s([],t.Lx)
+B.Kk=s([],t.AS)
 B.aFS=s([],t.p)
-B.Kq=s([],A.a0("B<hv>"))
-B.Kh=s([],t.t)
+B.Kp=s([],A.a0("B<hv>"))
+B.Kg=s([],t.t)
 B.oY=s([],t.ee)
-B.Kr=s([],t._m)
+B.Kq=s([],t._m)
 B.BJ=new A.nK(1,"speech")
 B.BK=new A.nK(3,"movie")
 B.BL=new A.nK(4,"sonification")
-B.Kz=s([B.mh,B.BJ,B.mi,B.BK,B.BL],A.a0("B<nK>"))
+B.Ky=s([B.mh,B.BJ,B.mi,B.BK,B.BL],A.a0("B<nK>"))
+B.aq4=new A.a(B.r,["fc_daily_001","Daily Activities","\u0c28\u0c3f\u0c26\u0c4d\u0c30","Nidra","Sleep","\ud83d\ude34","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c3f\u0c26\u0c4d\u0c30\u0c2a\u0c4b\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c3f\u0c26\u0c4d\u0c30\u0c2a\u0c4b\u0c2f\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c3f\u0c26\u0c4d\u0c30\u0c2a\u0c4b\u0c24\u0c3e\u0c28\u0c41","Nenu nidrapotunaanu","Nenu nidrapoyaanu","Nenu nidrapotanu","Beginner"],t.R)
+B.apJ=new A.a(B.r,["fc_daily_002","Daily Activities","\u0c38\u0c4d\u0c28\u0c3e\u0c28\u0c02","Snaanam","Bath","\ud83d\udec1","\u0c28\u0c47\u0c28\u0c41 \u0c38\u0c4d\u0c28\u0c3e\u0c28\u0c02 \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c38\u0c4d\u0c28\u0c3e\u0c28\u0c02 \u0c1a\u0c47\u0c36\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c38\u0c4d\u0c28\u0c3e\u0c28\u0c02 \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu snaanam chestunaanu","Nenu snaanam cheshaanu","Nenu snaanam chestanu","Beginner"],t.R)
+B.aqi=new A.a(B.r,["fc_daily_003","Daily Activities","\u0c35\u0c02\u0c1f","Vanta","Cooking","\ud83c\udf73","\u0c28\u0c47\u0c28\u0c41 \u0c35\u0c02\u0c1f \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c35\u0c02\u0c1f \u0c1a\u0c47\u0c36\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c35\u0c02\u0c1f \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu vanta chestunaanu","Nenu vanta cheshaanu","Nenu vanta chestanu","Beginner"],t.R)
+B.aqo=new A.a(B.r,["fc_daily_004","Daily Activities","\u0c1a\u0c26\u0c35\u0c21\u0c02","Chadavadm","Reading","\ud83d\udcd6","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c41\u0c38\u0c4d\u0c24\u0c15\u0c02 \u0c1a\u0c26\u0c41\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c41\u0c38\u0c4d\u0c24\u0c15\u0c02 \u0c1a\u0c26\u0c3f\u0c35\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c41\u0c38\u0c4d\u0c24\u0c15\u0c02 \u0c1a\u0c26\u0c41\u0c35\u0c41\u0c24\u0c3e\u0c28\u0c41","Nenu pustakam chaduutunaanu","Nenu pustakam chadivanu","Nenu pustakam chaduutanu","Beginner"],t.R)
+B.apV=new A.a(B.r,["fc_daily_005","Daily Activities","\u0c28\u0c21\u0c15","Nadaka","Walk","\ud83d\udeb6","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c30\u0c4d\u0c15\u0c41\u0c32\u0c4b \u0c28\u0c21\u0c41\u0c38\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c30\u0c4d\u0c15\u0c41\u0c32\u0c4b \u0c28\u0c21\u0c3f\u0c1a\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c30\u0c4d\u0c15\u0c41\u0c32\u0c4b \u0c28\u0c21\u0c41\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu paarkulo nadustunaanu","Nenu paarkulo nadichaanu","Nenu paarkulo nadustanu","Beginner"],t.R)
+B.apP=new A.a(B.r,["fc_daily_006","Daily Activities","\u0c2a\u0c28\u0c3f","Pani","Work","\ud83d\udcbc","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c28\u0c3f \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c28\u0c3f \u0c1a\u0c47\u0c36\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c28\u0c3f \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu pani chestunaanu","Nenu pani cheshaanu","Nenu pani chestanu","Beginner"],t.R)
+B.aqg=new A.a(B.r,["fc_daily_007","Daily Activities","\u0c2a\u0c4d\u0c30\u0c3e\u0c30\u0c4d\u0c25\u0c28","Praarthana","Prayer","\ud83d\ude4f","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c4d\u0c30\u0c3e\u0c30\u0c4d\u0c25\u0c28 \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c4d\u0c30\u0c3e\u0c30\u0c4d\u0c25\u0c28 \u0c1a\u0c47\u0c36\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c4d\u0c30\u0c3e\u0c30\u0c4d\u0c25\u0c28 \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu praarthana chestunaanu","Nenu praarthana cheshaanu","Nenu praarthana chestanu","Intermediate"],t.R)
+B.apD=new A.a(B.r,["fc_daily_008","Daily Activities","\u0c06\u0c21\u0c21\u0c02","Aadadam","Playing","\ud83c\udfaf","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3f\u0c32\u0c4d\u0c32\u0c32\u0c24\u0c4b \u0c06\u0c21\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3f\u0c32\u0c4d\u0c32\u0c32\u0c24\u0c4b \u0c06\u0c21\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3f\u0c32\u0c4d\u0c32\u0c32\u0c24\u0c4b \u0c06\u0c21\u0c24\u0c3e\u0c28\u0c41","Nenu pillalato aadutunaanu","Nenu pillalato aadaanu","Nenu pillalato aadatanu","Beginner"],t.R)
+B.apE=new A.a(B.r,["fc_daily_009","Daily Activities","\u0c30\u0c3e\u0c2f\u0c21\u0c02","Raayadam","Writing","\u270d\ufe0f","\u0c28\u0c47\u0c28\u0c41 \u0c09\u0c24\u0c4d\u0c24\u0c30\u0c02 \u0c30\u0c3e\u0c38\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c09\u0c24\u0c4d\u0c24\u0c30\u0c02 \u0c30\u0c3e\u0c36\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c09\u0c24\u0c4d\u0c24\u0c30\u0c02 \u0c30\u0c3e\u0c38\u0c4d\u0c24\u0c3e\u0c28\u0c41","Nenu uttaram raastunaanu","Nenu uttaram rashaanu","Nenu uttaram raastanu","Intermediate"],t.R)
+B.apG=new A.a(B.r,["fc_daily_010","Daily Activities","\u0c2a\u0c3e\u0c1f","Paata","Song","\ud83c\udfb5","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c1f \u0c2a\u0c3e\u0c21\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c1f \u0c2a\u0c3e\u0c21\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c3e\u0c1f \u0c2a\u0c3e\u0c21\u0c41\u0c24\u0c3e\u0c28\u0c41","Nenu paata paadutunaanu","Nenu paata paadaanu","Nenu paata paadutanu","Beginner"],t.R)
+B.KA=s([B.aq4,B.apJ,B.aqi,B.aqo,B.apV,B.apP,B.aqg,B.apD,B.apE,B.apG],t.H7)
 B.atr=new A.eS("Family","\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67",B.ap)
 B.atp=new A.eS("School","\ud83c\udfeb",B.fs)
 B.atq=new A.eS("Playground","\u26bd",B.E)
@@ -101130,13 +101130,24 @@ B.KB=s([B.atr,B.atp,B.atq,B.ato,B.atn],A.a0("B<+(k,k,M)>"))
 B.ari=new A.l(0,2)
 B.CK=new A.dG(0.75,B.bR,B.n7,B.ari,1.5)
 B.KD=s([B.CK],t.sq)
+B.apO=new A.a(B.r,["fc_play_001","Playground","\u0c06\u0c1f","Aata","Game","\ud83c\udfae","\u0c28\u0c47\u0c28\u0c41 \u0c06\u0c21\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c06\u0c21\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c06\u0c21\u0c24\u0c3e\u0c28\u0c41","Nenu aadutunaanu","Nenu aadaanu","Nenu aadatanu","Beginner"],t.R)
+B.aq7=new A.a(B.r,["fc_play_002","Playground","\u0c2c\u0c02\u0c24\u0c3f","Banti","Ball","\u26bd","\u0c28\u0c47\u0c28\u0c41 \u0c2c\u0c02\u0c24\u0c3f \u0c24\u0c28\u0c4d\u0c28\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2c\u0c02\u0c24\u0c3f \u0c24\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2c\u0c02\u0c24\u0c3f \u0c24\u0c28\u0c4d\u0c28\u0c41\u0c24\u0c3e\u0c28\u0c41","Nenu banti tannutunaanu","Nenu banti tannaanu","Nenu banti tannutanu","Beginner"],t.R)
+B.aq6=new A.a(B.r,["fc_play_003","Playground","\u0c2a\u0c30\u0c41\u0c17\u0c41","Parugu","Run","\ud83c\udfc3","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c30\u0c41\u0c17\u0c46\u0c24\u0c4d\u0c24\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c30\u0c41\u0c17\u0c46\u0c24\u0c4d\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c30\u0c41\u0c17\u0c46\u0c24\u0c4d\u0c24\u0c41\u0c24\u0c3e\u0c28\u0c41","Nenu parugettuutunaanu","Nenu parugettanu","Nenu parugettuutanu","Beginner"],t.R)
+B.apW=new A.a(B.r,["fc_play_004","Playground","\u0c0a\u0c2f\u0c32","Uuyala","Swing","\ud83c\udfa0","\u0c28\u0c47\u0c28\u0c41 \u0c0a\u0c2f\u0c32\u0c32\u0c4b \u0c0a\u0c17\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c0a\u0c2f\u0c32\u0c32\u0c4b \u0c0a\u0c17\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c0a\u0c2f\u0c32\u0c32\u0c4b \u0c0a\u0c17\u0c41\u0c24\u0c3e\u0c28\u0c41","Nenu uuyalalo uugutunaanu","Nenu uuyalalo uugaanu","Nenu uuyalalo uugutanu","Beginner"],t.R)
+B.aq3=new A.a(B.r,["fc_play_005","Playground","\u0c28\u0c35\u0c4d\u0c35\u0c41","Navvu","Laugh","\ud83d\ude04","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c35\u0c4d\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c35\u0c4d\u0c35\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c35\u0c4d\u0c35\u0c41\u0c24\u0c3e\u0c28\u0c41","Nenu navvutunaanu","Nenu navvaanu","Nenu navvutanu","Beginner"],t.R)
+B.apY=new A.a(B.r,["fc_play_006","Playground","\u0c38\u0c4d\u0c28\u0c47\u0c39\u0c3f\u0c24\u0c41\u0c21\u0c41","Sneehitudu","Friend","\ud83e\udd1d","\u0c38\u0c4d\u0c28\u0c47\u0c39\u0c3f\u0c24\u0c41\u0c21\u0c41 \u0c28\u0c3e\u0c24\u0c4b \u0c06\u0c21\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c21\u0c41","\u0c38\u0c4d\u0c28\u0c47\u0c39\u0c3f\u0c24\u0c41\u0c21\u0c41 \u0c28\u0c3e\u0c24\u0c4b \u0c06\u0c21\u0c3e\u0c21\u0c41","\u0c38\u0c4d\u0c28\u0c47\u0c39\u0c3f\u0c24\u0c41\u0c21\u0c41 \u0c28\u0c3e\u0c24\u0c4b \u0c06\u0c21\u0c24\u0c3e\u0c21\u0c41","Sneehitudu naato aadutunaadu","Sneehitudu naato aadaadu","Sneehitudu naato aadataadu","Intermediate"],t.R)
+B.apF=new A.a(B.r,["fc_play_007","Playground","\u0c06\u0c28\u0c02\u0c26\u0c02","Aanandam","Joy","\ud83d\ude0a","\u0c28\u0c3e\u0c15\u0c41 \u0c06\u0c28\u0c02\u0c26\u0c02\u0c17\u0c3e \u0c09\u0c02\u0c26\u0c3f","\u0c28\u0c3e\u0c15\u0c41 \u0c06\u0c28\u0c02\u0c26\u0c02\u0c17\u0c3e \u0c09\u0c02\u0c26\u0c3f","\u0c28\u0c3e\u0c15\u0c41 \u0c06\u0c28\u0c02\u0c26\u0c02\u0c17\u0c3e \u0c09\u0c02\u0c1f\u0c41\u0c02\u0c26\u0c3f","Naaku aanandamga undi","Naaku aanandamga undi","Naaku aanandamga untundi","Intermediate"],t.R)
+B.apN=new A.a(B.r,["fc_play_008","Playground","\u0c2c\u0c4a\u0c2e\u0c4d\u0c2e","Bomma","Toy","\ud83e\uddf8","\u0c28\u0c47\u0c28\u0c41 \u0c2c\u0c4a\u0c2e\u0c4d\u0c2e\u0c24\u0c4b \u0c06\u0c21\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2c\u0c4a\u0c2e\u0c4d\u0c2e\u0c24\u0c4b \u0c06\u0c21\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2c\u0c4a\u0c2e\u0c4d\u0c2e\u0c24\u0c4b \u0c06\u0c21\u0c24\u0c3e\u0c28\u0c41","Nenu bommato aadutunaanu","Nenu bommato aadaanu","Nenu bommato aadatanu","Beginner"],t.R)
+B.apH=new A.a(B.r,["fc_play_009","Playground","\u0c15\u0c4d\u0c30\u0c3f\u0c15\u0c46\u0c1f\u0c4d","Cricket","Cricket","\ud83c\udfcf","\u0c28\u0c47\u0c28\u0c41 \u0c15\u0c4d\u0c30\u0c3f\u0c15\u0c46\u0c1f\u0c4d \u0c06\u0c21\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c15\u0c4d\u0c30\u0c3f\u0c15\u0c46\u0c1f\u0c4d \u0c06\u0c21\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c15\u0c4d\u0c30\u0c3f\u0c15\u0c46\u0c1f\u0c4d \u0c06\u0c21\u0c24\u0c3e\u0c28\u0c41","Nenu cricket aadutunaanu","Nenu cricket aadaanu","Nenu cricket aadatanu","Beginner"],t.R)
+B.aqr=new A.a(B.r,["fc_play_010","Playground","\u0c2a\u0c4b\u0c1f\u0c40","Poti","Race","\ud83c\udfc5","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c4b\u0c1f\u0c40\u0c32\u0c4b \u0c2a\u0c3e\u0c32\u0c4d\u0c17\u0c4a\u0c02\u0c1f\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c4b\u0c1f\u0c40\u0c32\u0c4b \u0c2a\u0c3e\u0c32\u0c4d\u0c17\u0c4a\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c4b\u0c1f\u0c40\u0c32\u0c4b \u0c2a\u0c3e\u0c32\u0c4d\u0c17\u0c4a\u0c02\u0c1f\u0c3e\u0c28\u0c41","Nenu potilo paalgontunaanu","Nenu potilo paalgonnaanu","Nenu potilo paalgontanu","Intermediate"],t.R)
+B.KG=s([B.apO,B.aq7,B.aq6,B.apW,B.aq3,B.apY,B.apF,B.apN,B.apH,B.aqr],t.H7)
 B.es=s([B.cv,B.bQ,B.fa,B.fb,B.iO],t.QP)
 B.cS=new A.oV(0,"idle")
 B.z3=new A.oV(1,"loading")
 B.hu=new A.oV(2,"buffering")
 B.kQ=new A.oV(3,"ready")
 B.z4=new A.oV(4,"completed")
-B.KI=s([B.cS,B.z3,B.hu,B.kQ,B.z4],A.a0("B<oV>"))
+B.KJ=s([B.cS,B.z3,B.hu,B.kQ,B.z4],A.a0("B<oV>"))
 B.BA=new A.v8(0,"count")
 B.BB=new A.v8(1,"sum")
 B.BC=new A.v8(2,"average")
@@ -101144,7 +101155,7 @@ B.p1=s([B.BA,B.BB,B.BC],A.a0("B<v8>"))
 B.kA=new A.mq(0,"off")
 B.v_=new A.mq(1,"one")
 B.My=new A.mq(2,"all")
-B.KK=s([B.kA,B.v_,B.My],A.a0("B<mq>"))
+B.KL=s([B.kA,B.v_,B.My],A.a0("B<mq>"))
 B.b={lessonId:0,category:1,englishPhrase:2,teluguPhrase:3,transliteration:4,audioUrl:5,order:6}
 B.aoA=new A.a(B.b,["family_001","Family","Good morning Mom","\u0c36\u0c41\u0c2d\u0c4b\u0c26\u0c2f\u0c02 \u0c05\u0c2e\u0c4d\u0c2e","Shubhodhayam Amma",null,1],t.R)
 B.aca=new A.a(B.b,["family_002","Family","Did you eat?","\u0c24\u0c3f\u0c28\u0c4d\u0c28\u0c3e\u0c35\u0c3e?","Tinnava?",null,2],t.R)
@@ -103648,7 +103659,7 @@ B.a3h=new A.a(B.b,["daily_497","Daily Activities","Every habit I build today cre
 B.a2c=new A.a(B.b,["daily_498","Daily Activities","I am grateful for every ordinary day","\u0c2a\u0c4d\u0c30\u0c24\u0c3f \u0c38\u0c3e\u0c27\u0c3e\u0c30\u0c23 \u0c30\u0c4b\u0c1c\u0c41\u0c15\u0c41 \u0c28\u0c3e\u0c15\u0c41 \u0c15\u0c43\u0c24\u0c1c\u0c4d\u0c1e\u0c24\u0c17\u0c3e \u0c09\u0c02\u0c26\u0c3f","Prathi saadharana rojuku naaku krutagjnathaga undhi",null,498],t.R)
 B.a2E=new A.a(B.b,["daily_499","Daily Activities","Great lives are built one day at a time","\u0c17\u0c4a\u0c2a\u0c4d\u0c2a \u0c1c\u0c40\u0c35\u0c3f\u0c24\u0c3e\u0c32\u0c41 \u0c12\u0c15\u0c4d\u0c15 \u0c30\u0c4b\u0c1c\u0c41 \u0c12\u0c15\u0c4d\u0c15 \u0c30\u0c4b\u0c1c\u0c41\u0c17\u0c3e \u0c28\u0c3f\u0c30\u0c4d\u0c2e\u0c3f\u0c02\u0c1a\u0c2c\u0c21\u0c24\u0c3e\u0c2f\u0c3f","Goppa jeevithaalu okka roju okka rojuga nirmimchabadatayi",null,499],t.R)
 B.a9n=new A.a(B.b,["daily_500","Daily Activities","Today I choose to be my best self always","\u0c08 \u0c30\u0c4b\u0c1c\u0c41 \u0c28\u0c47\u0c28\u0c41 \u0c0e\u0c32\u0c4d\u0c32\u0c2a\u0c4d\u0c2a\u0c41\u0c21\u0c42 \u0c28\u0c3e \u0c05\u0c24\u0c4d\u0c24\u0c41\u0c24\u0c4d\u0c24\u0c2e \u0c35\u0c4d\u0c2f\u0c15\u0c4d\u0c24\u0c3f\u0c17\u0c3e \u0c09\u0c02\u0c21\u0c1f\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c0e\u0c02\u0c1a\u0c41\u0c15\u0c41\u0c02\u0c1f\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","Ee roju nenu ellappudu naa atthutama vyakthiga undadaniki emchukuntunnaanu",null,500],t.R)
-B.KM=s([B.aoA,B.aca,B.Qn,B.akw,B.X8,B.abj,B.NF,B.ab5,B.akr,B.agc,B.akO,B.RT,B.adb,B.TT,B.O4,B.PG,B.aeU,B.agA,B.abh,B.amN,B.Oy,B.ae1,B.WY,B.a4M,B.ahi,B.amP,B.ajp,B.Yv,B.a7V,B.a7A,B.acw,B.Zd,B.a94,B.acO,B.ae_,B.a1H,B.PJ,B.VV,B.a_o,B.MX,B.a0d,B.X3,B.ae0,B.adL,B.a4P,B.a91,B.VP,B.a6O,B.a5Z,B.am3,B.aeM,B.Q9,B.anY,B.Oi,B.aiP,B.a3B,B.aeB,B.XP,B.agm,B.UZ,B.Rk,B.WI,B.a2M,B.NA,B.aiS,B.ahC,B.ajw,B.Zw,B.a03,B.alM,B.afI,B.ako,B.aa6,B.app,B.V8,B.alQ,B.a0P,B.aaV,B.aks,B.TK,B.alq,B.a9o,B.acn,B.aii,B.aj7,B.a8W,B.a4a,B.anc,B.a8X,B.alH,B.OZ,B.af8,B.Rh,B.Ot,B.a9i,B.NM,B.acR,B.abZ,B.Nc,B.ai2,B.a3v,B.ahc,B.ai4,B.a16,B.Q0,B.aiO,B.amp,B.PP,B.adK,B.QZ,B.a0s,B.aa8,B.adk,B.a_6,B.Qu,B.acp,B.a7S,B.a34,B.a0O,B.UH,B.aot,B.ak0,B.ab2,B.Rr,B.a53,B.af5,B.VX,B.OJ,B.Nk,B.SL,B.a7j,B.QU,B.aaE,B.act,B.ajH,B.Pi,B.ajY,B.SU,B.ang,B.Tg,B.OR,B.aam,B.afw,B.VH,B.Z1,B.N7,B.W1,B.Ng,B.ZO,B.anN,B.Y8,B.Uu,B.aaC,B.W8,B.agZ,B.ahN,B.Pp,B.TZ,B.UY,B.a1B,B.aia,B.a5G,B.Na,B.agj,B.a9r,B.a2m,B.amU,B.ajD,B.aao,B.a1t,B.a8o,B.adP,B.Rq,B.P_,B.a_X,B.acW,B.ap7,B.a8D,B.a99,B.ahY,B.Uh,B.acY,B.YP,B.anD,B.SC,B.aky,B.ajR,B.XR,B.ak7,B.aet,B.aeQ,B.a8S,B.a4R,B.adM,B.Sy,B.a2L,B.PD,B.aoK,B.amV,B.apj,B.a6E,B.Sq,B.aac,B.Q6,B.ady,B.Td,B.ap2,B.a9p,B.a5C,B.al1,B.ajq,B.OM,B.Wf,B.NG,B.abn,B.a1O,B.a9b,B.Wi,B.Xi,B.aiR,B.a_l,B.agp,B.anW,B.YI,B.a__,B.a3p,B.U0,B.RL,B.alB,B.a3Z,B.aj9,B.Zl,B.a2_,B.TH,B.Uo,B.acd,B.a49,B.a4g,B.Nz,B.ani,B.aiJ,B.a3L,B.ahB,B.a5K,B.a6X,B.a1i,B.aef,B.a11,B.RS,B.amQ,B.a2z,B.af0,B.aft,B.Xq,B.Wz,B.RO,B.Ps,B.aoN,B.am8,B.PZ,B.an4,B.ajn,B.Zs,B.ahJ,B.a_C,B.Yz,B.aj1,B.Tw,B.a0M,B.aaB,B.akC,B.Nm,B.ajb,B.a15,B.aob,B.a4N,B.a5N,B.a3V,B.am7,B.aht,B.aaA,B.a4Q,B.a51,B.adi,B.RK,B.a7x,B.aow,B.RP,B.a_r,B.Tc,B.a1o,B.TC,B.Z0,B.Ym,B.XD,B.a4T,B.a9M,B.a2g,B.aaU,B.YT,B.ajU,B.Sx,B.ahT,B.a7d,B.a2X,B.OT,B.aho,B.Wb,B.OH,B.a27,B.Ra,B.aev,B.a4X,B.afk,B.ao7,B.anF,B.anV,B.VL,B.abY,B.aeD,B.akZ,B.afE,B.UW,B.Qp,B.SI,B.Qv,B.ajQ,B.WL,B.ajC,B.SD,B.al4,B.PN,B.S9,B.UA,B.a5o,B.Tb,B.agD,B.agF,B.a_c,B.U5,B.OA,B.anG,B.Q5,B.a3W,B.a3d,B.a_y,B.X_,B.XL,B.Pt,B.a8f,B.WA,B.af3,B.a5y,B.XO,B.a_q,B.a68,B.alo,B.ajN,B.a7v,B.ami,B.a6U,B.a5F,B.TS,B.Ri,B.Vo,B.age,B.aik,B.W5,B.a1V,B.anP,B.Zj,B.Qt,B.abU,B.ahg,B.agk,B.XZ,B.a0z,B.aod,B.alI,B.a2h,B.Ob,B.ace,B.aj8,B.agJ,B.ajt,B.a_d,B.a14,B.a0G,B.a4L,B.anH,B.aj5,B.abu,B.Wk,B.ah2,B.aoa,B.afF,B.aa_,B.NE,B.a_7,B.OU,B.Tz,B.a47,B.RF,B.adS,B.ZA,B.a1S,B.a7K,B.aoB,B.Vg,B.ad0,B.ab1,B.aeA,B.a0R,B.Rw,B.akD,B.Vl,B.agB,B.a1z,B.ap9,B.TQ,B.ZR,B.aiw,B.a_O,B.a2y,B.a_8,B.ah8,B.Xa,B.a9W,B.Ok,B.VW,B.Zm,B.a8Z,B.a98,B.aaJ,B.ahy,B.Zk,B.Wl,B.a3m,B.Qm,B.aoc,B.agH,B.aoE,B.Od,B.ae9,B.aga,B.ae3,B.acv,B.Pm,B.R4,B.X5,B.W_,B.aaO,B.XY,B.a8Y,B.WS,B.PR,B.Sv,B.Ns,B.aae,B.a73,B.Py,B.Rn,B.a_3,B.PT,B.Qs,B.acr,B.Nl,B.a4V,B.amM,B.a28,B.Yk,B.TL,B.ame,B.a7g,B.a92,B.OV,B.ajf,B.aiX,B.aku,B.aco,B.adh,B.aaK,B.apk,B.ZY,B.a8m,B.ahz,B.amX,B.alO,B.ap8,B.OY,B.acZ,B.aay,B.Vy,B.TO,B.aeb,B.a52,B.a7b,B.a_B,B.afz,B.XS,B.Zz,B.amy,B.ZP,B.Wj,B.aie,B.akc,B.a6L,B.YW,B.adY,B.a30,B.a6n,B.a8d,B.a8v,B.ada,B.Ro,B.ajr,B.Vi,B.ND,B.a7H,B.a1k,B.a5X,B.a1h,B.aa0,B.a2Y,B.a6r,B.a4H,B.a88,B.a8H,B.Yc,B.a1a,B.Yq,B.amx,B.Wo,B.RV,B.amI,B.N4,B.afn,B.Sn,B.aiC,B.a9f,B.a8C,B.ah5,B.PO,B.aml,B.aiD,B.a3a,B.a_R,B.afe,B.a3T,B.XT,B.Nv,B.ajX,B.agu,B.afc,B.a0J,B.akR,B.a00,B.akk,B.a56,B.adV,B.Tp,B.VT,B.TA,B.ap_,B.a4h,B.aah,B.a9B,B.ahb,B.ain,B.aaD,B.a2j,B.ZW,B.a4E,B.ac8,B.a2l,B.Sr,B.a4r,B.ap5,B.agO,B.an8,B.ac0,B.ZV,B.amK,B.a24,B.alT,B.P0,B.ahX,B.acb,B.abN,B.aoS,B.a6s,B.a2d,B.ahK,B.alu,B.RI,B.agv,B.Xz,B.ag5,B.afC,B.amO,B.R6,B.aa3,B.alY,B.agQ,B.alg,B.Rt,B.Og,B.a_f,B.a57,B.ZX,B.a5h,B.NX,B.ai7,B.a5H,B.anw,B.a8y,B.a3j,B.aoJ,B.O5,B.ao6,B.RC,B.aj_,B.N3,B.adZ,B.a04,B.a41,B.adg,B.YQ,B.Nn,B.T0,B.apl,B.ahU,B.Xn,B.a1n,B.a7R,B.aiA,B.VK,B.ahw,B.a3b,B.aeF,B.amg,B.Sk,B.Yp,B.W4,B.aoD,B.a_S,B.a4o,B.a6v,B.W9,B.R_,B.am4,B.Qa,B.af1,B.PQ,B.S8,B.ah1,B.aas,B.afm,B.alE,B.a0Q,B.Ny,B.Nu,B.SA,B.a37,B.abv,B.ape,B.UV,B.a5b,B.ajk,B.a_U,B.V3,B.a_x,B.UP,B.a1j,B.agY,B.TJ,B.ZF,B.ahD,B.a9X,B.Rz,B.aaz,B.agi,B.a8G,B.Up,B.a7c,B.Sg,B.aax,B.aar,B.Xx,B.a4s,B.OI,B.a7f,B.aal,B.UE,B.acx,B.abF,B.a8k,B.Ws,B.a5B,B.a5S,B.ade,B.af6,B.XN,B.a05,B.aoL,B.abf,B.Y_,B.ahI,B.aec,B.akH,B.a7Q,B.a5R,B.agd,B.Ur,B.O0,B.a6j,B.WO,B.afr,B.acL,B.a7i,B.a1K,B.U_,B.NV,B.a4F,B.ajl,B.agq,B.ap4,B.ado,B.an1,B.a9C,B.a_0,B.X9,B.Rb,B.Zo,B.NR,B.QK,B.a6D,B.ZG,B.a84,B.a9v,B.aag,B.SN,B.a2A,B.Wt,B.al_,B.a7I,B.ae8,B.anu,B.R9,B.a72,B.R7,B.QV,B.Rg,B.T2,B.a64,B.abK,B.Ph,B.a6e,B.Si,B.a2B,B.YY,B.akN,B.Z_,B.T3,B.aiE,B.a65,B.a0e,B.St,B.agy,B.acJ,B.abd,B.TP,B.aof,B.afj,B.aj4,B.aoZ,B.ad9,B.a8q,B.Qy,B.aoe,B.a1x,B.alP,B.Qq,B.aaI,B.YO,B.ai5,B.MV,B.ap1,B.a3N,B.ake,B.a2t,B.Uq,B.a50,B.adl,B.aog,B.abk,B.a5f,B.aoG,B.Ye,B.a4l,B.RH,B.SF,B.Yx,B.a_n,B.aoT,B.a25,B.SQ,B.QM,B.an5,B.ao9,B.a1c,B.a69,B.S2,B.Tu,B.aaF,B.XK,B.afa,B.abo,B.adO,B.a1y,B.a2P,B.UT,B.a_I,B.Vx,B.adC,B.PA,B.ai8,B.abq,B.VS,B.Se,B.Xw,B.a_h,B.alR,B.a4W,B.a77,B.akX,B.a1_,B.a33,B.a4Z,B.a3u,B.YJ,B.a3x,B.YZ,B.anh,B.aiW,B.SS,B.a4k,B.a3S,B.Pd,B.TX,B.Qr,B.Rm,B.afH,B.a1A,B.NC,B.acF,B.OP,B.ak5,B.ah9,B.ak6,B.a3G,B.Y6,B.a4I,B.ahQ,B.ab7,B.acT,B.YR,B.a7p,B.QG,B.abD,B.a2O,B.Oa,B.ahx,B.apt,B.a5L,B.aly,B.ajo,B.Sh,B.aic,B.X1,B.a6S,B.any,B.RN,B.akn,B.YV,B.VN,B.XH,B.PB,B.alf,B.RG,B.agW,B.agn,B.Or,B.Qx,B.abb,B.OS,B.a7P,B.Vq,B.a_E,B.abC,B.amB,B.S1,B.a8e,B.Ze,B.aat,B.a8p,B.abI,B.P6,B.Sc,B.ajW,B.alA,B.aoM,B.ac2,B.amZ,B.U3,B.a7U,B.OX,B.VB,B.ab_,B.Y3,B.S0,B.a_N,B.a90,B.Oj,B.Z6,B.a_m,B.a2i,B.P3,B.a85,B.aou,B.amC,B.adN,B.ai6,B.aeW,B.a_i,B.a5e,B.al5,B.a9x,B.ait,B.Qi,B.aim,B.a0f,B.Pn,B.a3J,B.aed,B.ap6,B.a6Y,B.Y2,B.ahl,B.R3,B.Zi,B.ap0,B.a9V,B.ad_,B.a5U,B.a1G,B.ajd,B.RD,B.a6c,B.Xo,B.PY,B.OK,B.a0H,B.MU,B.a1m,B.a5a,B.Zr,B.a5P,B.ais,B.R2,B.aeH,B.a7J,B.a_9,B.a6q,B.On,B.agS,B.aej,B.ah3,B.adA,B.acz,B.afO,B.Zu,B.alV,B.aaL,B.ab6,B.QP,B.amD,B.alG,B.ah_,B.a7L,B.a_v,B.aio,B.a9E,B.anR,B.afq,B.a3I,B.RE,B.a0h,B.ahH,B.NJ,B.Um,B.a5d,B.a0i,B.afo,B.X2,B.aaQ,B.akL,B.ON,B.a9N,B.a06,B.OD,B.a5s,B.a8a,B.VJ,B.Vk,B.ajJ,B.Yh,B.aeG,B.XJ,B.a3y,B.aja,B.aea,B.a5E,B.a9Z,B.a7r,B.abH,B.PL,B.Rc,B.SE,B.ai0,B.N2,B.a4x,B.OL,B.Np,B.a7k,B.afK,B.aka,B.a0g,B.aaq,B.aiV,B.Rx,B.PH,B.XF,B.ajx,B.aek,B.XG,B.anB,B.a2U,B.QR,B.Ty,B.Rf,B.UN,B.WR,B.a_w,B.a_G,B.Nw,B.P2,B.ak2,B.acq,B.ahe,B.agg,B.ao8,B.a81,B.MW,B.a6J,B.adv,B.ab4,B.a2N,B.a2V,B.agN,B.a7z,B.a0w,B.amL,B.a0Y,B.apm,B.Zx,B.XC,B.a_A,B.a7F,B.RX,B.a43,B.a8B,B.SJ,B.WJ,B.af2,B.abz,B.a7T,B.alk,B.Zc,B.a8T,B.VO,B.Pr,B.YM,B.af_,B.a1l,B.a2Z,B.N5,B.Ni,B.acS,B.akQ,B.a86,B.a4G,B.alz,B.a9H,B.Tr,B.Ol,B.a4C,B.Vd,B.acE,B.a95,B.anp,B.ac9,B.a8M,B.a5W,B.ahW,B.a5v,B.ans,B.SK,B.YS,B.adI,B.abt,B.Ov,B.agx,B.SM,B.Nx,B.a5D,B.a_g,B.a6Q,B.anT,B.alU,B.VQ,B.a23,B.a3_,B.a3E,B.aig,B.aeX,B.a0r,B.abG,B.abp,B.aoR,B.a6P,B.Wx,B.a1w,B.agb,B.V2,B.Wh,B.YX,B.OG,B.UR,B.a0T,B.aiY,B.We,B.a0p,B.aav,B.VD,B.am1,B.a1g,B.a2I,B.a7B,B.alw,B.ZD,B.Te,B.afJ,B.al6,B.a17,B.QB,B.ajj,B.a9s,B.ajM,B.anQ,B.apr,B.a2p,B.a9Q,B.a3g,B.ajs,B.Wp,B.anm,B.aoX,B.aon,B.WB,B.YU,B.Ox,B.a5j,B.Xl,B.a7Z,B.anX,B.a02,B.a4t,B.U6,B.Xm,B.WV,B.a8z,B.acc,B.aeC,B.Rv,B.Px,B.aor,B.ZE,B.Sf,B.a6F,B.ai_,B.Zh,B.aaN,B.ao0,B.a5T,B.a9l,B.Q2,B.SH,B.a6R,B.ahE,B.NY,B.agG,B.Z8,B.a9k,B.a32,B.a7h,B.ag1,B.a5O,B.agf,B.anx,B.a4K,B.adD,B.TI,B.ant,B.amt,B.aoz,B.a7t,B.aol,B.aoQ,B.akq,B.a2G,B.QJ,B.adQ,B.amG,B.a48,B.Z4,B.Pq,B.X6,B.a9Y,B.RW,B.ad4,B.T6,B.UJ,B.XU,B.ad6,B.ab3,B.abA,B.abs,B.ahu,B.Wm,B.SP,B.a0v,B.apx,B.Xd,B.RZ,B.VM,B.O9,B.a_2,B.afS,B.WW,B.a1b,B.aif,B.a1U,B.a_4,B.V_,B.ajS,B.VF,B.an7,B.SG,B.R0,B.a4y,B.a9S,B.QE,B.NU,B.a6z,B.a0C,B.Zv,B.a4u,B.Yb,B.a8K,B.abJ,B.ahf,B.Ow,B.aeY,B.a7w,B.ac5,B.W3,B.a9J,B.YH,B.YE,B.ac_,B.XQ,B.aaH,B.acl,B.aaT,B.Xb,B.Rp,B.a4e,B.T9,B.afh,B.T1,B.Nb,B.abT,B.amb,B.a1X,B.aby,B.a67,B.a9g,B.ZK,B.an6,B.a9R,B.Y4,B.alD,B.a0Z,B.adf,B.a3l,B.a3r,B.Vv,B.OC,B.acg,B.a4z,B.a2f,B.Pu,B.a19,B.adr,B.a9P,B.QD,B.Ry,B.amR,B.am6,B.PI,B.ahk,B.a5p,B.a3R,B.aad,B.a5x,B.WG,B.a3s,B.Rd,B.ahV,B.adp,B.adn,B.VY,B.Vw,B.O3,B.acU,B.a9G,B.ad5,B.a0N,B.a7X,B.S4,B.UM,B.a0W,B.aeE,B.WF,B.afg,B.afl,B.Qg,B.a1R,B.ac4,B.a2S,B.a6W,B.aih,B.akx,B.No,B.a8b,B.apw,B.a3w,B.Pe,B.a6g,B.aoH,B.a6_,B.ajv,B.U4,B.acM,B.UX,B.ai1,B.apf,B.Uj,B.Qf,B.a6Z,B.aep,B.Q3,B.ag4,B.ao5,B.a_P,B.abm,B.a7M,B.an3,B.acB,B.a70,B.a2b,B.aov,B.alJ,B.a62,B.a9d,B.adU,B.akh,B.TE,B.a45,B.aaf,B.TY,B.Wn,B.P1,B.Nf,B.agP,B.a1L,B.Xs,B.ag7,B.aab,B.a2u,B.amF,B.amj,B.ai3,B.a9j,B.a1J,B.afB,B.a4n,B.ab9,B.a9D,B.a9e,B.Pa,B.a2Q,B.Oo,B.Vf,B.a2K,B.N9,B.a2T,B.YD,B.aiH,B.Vh,B.Wa,B.a3X,B.UK,B.ac6,B.Ww,B.Pk,B.aib,B.Zf,B.Ug,B.a_b,B.aoO,B.anE,B.Ua,B.aj2,B.akK,B.acu,B.a0U,B.api,B.a_L,B.OW,B.Os,B.ajG,B.Yr,B.akg,B.anO,B.U1,B.afU,B.a4m,B.and,B.a1Q,B.a6V,B.akB,B.Uf,B.Nr,B.aer,B.Tm,B.agL,B.a3c,B.a3P,B.ail,B.a8r,B.OO,B.a5q,B.anf,B.aoV,B.ak8,B.a8u,B.ah7,B.afd,B.a8h,B.ael,B.a5M,B.PV,B.Qc,B.ad3,B.a8i,B.a7m,B.afb,B.adJ,B.afQ,B.aiZ,B.a1d,B.ahG,B.alr,B.WN,B.a3H,B.a1W,B.ahM,B.ajO,B.Sp,B.Uc,B.VA,B.abW,B.a6A,B.aiU,B.Xg,B.XI,B.UQ,B.a0c,B.a9z,B.a8J,B.Xr,B.akW,B.akT,B.a8R,B.Xk,B.aos,B.a7e,B.a2q,B.a0y,B.T7,B.anS,B.a4j,B.Y0,B.Vj,B.a6d,B.Sa,B.Tx,B.a_e,B.a4v,B.aee,B.a8E,B.afi,B.X4,B.aeI,B.TU,B.a5Y,B.ZI,B.a1f,B.PU,B.ahj,B.amm,B.SO,B.T5,B.aei,B.a6p,B.VZ,B.UF,B.a8s,B.ag0,B.a8P,B.a6l,B.aj6,B.RM,B.a5A,B.Nh,B.ahR,B.UU,B.a5r,B.Ts,B.Uw,B.a0X,B.ajc,B.a0b,B.af4,B.W0,B.aj0,B.ZC,B.aaX,B.apb,B.alN,B.Ub,B.amT,B.YB,B.YF,B.agz,B.ao_,B.adw,B.OE,B.Vr,B.OF,B.amk,B.ahv,B.a6I,B.VR,B.ano,B.a6C,B.a5g,B.Nt,B.a5V,B.alZ,B.RJ,B.XM,B.Ql,B.a1q,B.ao2,B.a6b,B.akA,B.Zy,B.U2,B.a_p,B.adq,B.a3e,B.aip,B.a7y,B.a8n,B.an9,B.abX,B.a9h,B.ag_,B.abQ,B.Qo,B.apo,B.QN,B.XA,B.a66,B.a_T,B.ad2,B.adG,B.a78,B.amc,B.a54,B.am2,B.agR,B.aeh,B.S5,B.akf,B.a20,B.Xv,B.ack,B.akm,B.Ti,B.a_H,B.a6x,B.ag6,B.S_,B.Wu,B.anr,B.acP,B.Wd,B.S6,B.abx,B.amf,B.aeZ,B.a2n,B.a0j,B.a_u,B.Tq,B.Uk,B.a10,B.agE,B.akz,B.ZZ,B.amh,B.a9T,B.agh,B.ak_,B.a3Q,B.abw,B.a_W,B.a7C,B.a42,B.YK,B.WC,B.abr,B.a_Y,B.ad7,B.YL,B.a2e,B.ST,B.W7,B.Pz,B.aiu,B.a9y,B.TF,B.aoU,B.a6i,B.a3k,B.a8V,B.VG,B.a9q,B.OQ,B.Yd,B.ae4,B.Vm,B.a9u,B.aeK,B.Qb,B.agX,B.UC,B.a3M,B.a9t,B.Vn,B.Ud,B.NH,B.ak1,B.a4p,B.Q_,B.a79,B.ahs,B.ah6,B.anj,B.Nd,B.a5J,B.NO,B.Wr,B.apd,B.a_s,B.XB,B.a93,B.aen,B.aew,B.a63,B.V7,B.O2,B.Xh,B.US,B.abl,B.aa7,B.NP,B.a0L,B.U7,B.afY,B.a12,B.a8U,B.a0n,B.TR,B.a6y,B.ac3,B.MG,B.Th,B.Tn,B.a0S,B.a_t,B.adz,B.Vt,B.VE,B.a_F,B.aki,B.ahd,B.al3,B.Xu,B.acA,B.Op,B.a7q,B.a3K,B.RU,B.a3n,B.a6k,B.ah0,B.akJ,B.Xe,B.a4w,B.anq,B.anU,B.ab8,B.a8A,B.O_,B.Pl,B.Tj,B.aeN,B.WP,B.Q8,B.a21,B.agU,B.ab0,B.an_,B.Yl,B.Q1,B.abi,B.a_1,B.aha,B.ahr,B.a5t,B.adt,B.Yn,B.abR,B.abB,B.aap,B.Oc,B.a1s,B.anC,B.akG,B.add,B.acs,B.Wy,B.amA,B.a0K,B.agM,B.VI,B.Yo,B.V6,B.amJ,B.a2r,B.Ut,B.RR,B.Qh,B.aeo,B.a01,B.a9c,B.a0E,B.a0A,B.ama,B.ajZ,B.NQ,B.a39,B.a0x,B.aaZ,B.a4J,B.aak,B.U9,B.ajK,B.aj3,B.adu,B.a61,B.a3U,B.P7,B.QC,B.V4,B.ahZ,B.Vp,B.aid,B.aps,B.Pg,B.a1Y,B.af9,B.apg,B.Yi,B.Sj,B.abS,B.YN,B.Rl,B.UB,B.a9I,B.a7W,B.a7u,B.ak4,B.ahL,B.aoP,B.a1M,B.O7,B.a3i,B.UD,B.SW,B.adc,B.ag9,B.a4U,B.agC,B.a1D,B.ZS,B.PM,B.a8l,B.a2D,B.Nj,B.amE,B.Q7,B.akM,B.a9U,B.acV,B.aeL,B.aa4,B.aaP,B.Tv,B.X0,B.P9,B.QS,B.Rs,B.QW,B.aa5,B.alK,B.aij,B.aaa,B.ZN,B.a7O,B.a9K,B.Uv,B.N1,B.Zt,B.ahP,B.ald,B.Ys,B.alW,B.a22,B.afx,B.akF,B.aci,B.a6t,B.PW,B.a2W,B.Vs,B.PX,B.SV,B.akP,B.a58,B.Xj,B.abE,B.a6o,B.aoo,B.ahS,B.aeg,B.ae5,B.aeP,B.ZB,B.Vz,B.PC,B.ad8,B.Yf,B.a87,B.aiv,B.apa,B.Sm,B.Ve,B.Z2,B.alX,B.a6f,B.amW,B.aiM,B.a5u,B.aba,B.ZM,B.afR,B.UI,B.a6K,B.a1e,B.akd,B.a5c,B.a4f,B.WX,B.S7,B.ajB,B.aeS,B.a1C,B.a1p,B.amw,B.ajL,B.a0a,B.adm,B.QI,B.TN,B.Ul,B.afv,B.acC,B.Tt,B.Yu,B.a9m,B.a4Y,B.aan,B.aeu,B.aje,B.a0k,B.QO,B.a5I,B.a0m,B.a9O,B.ann,B.WE,B.agl,B.a3A,B.a_a,B.aln,B.Wg,B.Zg,B.NZ,B.Of,B.V0,B.a4b,B.abe,B.Sb,B.R5,B.Ne,B.alp,B.ahF,B.ahq,B.O6,B.ac1,B.aai,B.a6h,B.Pw,B.adx,B.Wq,B.QF,B.aeq,B.a13,B.a_k,B.a_J,B.SR,B.a2o,B.WT,B.aaR,B.a1P,B.anv,B.ao4,B.a2x,B.agI,B.alv,B.acj,B.a2k,B.ads,B.a5m,B.a6u,B.Xy,B.ajT,B.Qj,B.a2R,B.a4q,B.aau,B.aok,B.TG,B.Y9,B.acf,B.a08,B.a3o,B.Sl,B.ap3,B.W2,B.am9,B.Va,B.ac7,B.Rj,B.a1F,B.Oh,B.ale,B.aji,B.am5,B.aez,B.U8,B.a74,B.aey,B.ag8,B.alm,B.WM,B.QT,B.anA,B.a2J,B.aiF,B.W6,B.akE,B.a_D,B.a9_,B.ajA,B.alt,B.a0t,B.a75,B.Xf,B.aaS,B.Ou,B.Su,B.aiz,B.alx,B.a46,B.Uz,B.acH,B.aeJ,B.a8_,B.aaj,B.Pc,B.aff,B.ana,B.XV,B.ao3,B.NN,B.a31,B.a_Q,B.V9,B.a_j,B.a9L,B.XW,B.Tl,B.O8,B.a3Y,B.a_5,B.aiQ,B.RB,B.a8t,B.apn,B.aiy,B.a4A,B.alc,B.amd,B.a1Z,B.amn,B.alL,B.a3t,B.RA,B.ZU,B.acI,B.ZQ,B.a7Y,B.aiB,B.akS,B.aiq,B.a8c,B.a44,B.a0I,B.ae6,B.a6G,B.anK,B.PE,B.Za,B.PF,B.abM,B.a80,B.a38,B.a7G,B.ahn,B.amv,B.a6w,B.afV,B.Xc,B.apc,B.Z9,B.Qz,B.O1,B.a36,B.ag2,B.a0o,B.N8,B.ajg,B.WK,B.agV,B.amo,B.OB,B.Tk,B.a5l,B.a7l,B.ach,B.TV,B.aiI,B.acQ,B.Z7,B.anJ,B.afZ,B.ahp,B.NL,B.ak3,B.anM,B.aop,B.ajz,B.agT,B.a2H,B.ajP,B.ali,B.aem,B.NW,B.akv,B.VC,B.an2,B.Y5,B.aa2,B.Ux,B.Wv,B.a_Z,B.amS,B.aox,B.QY,B.Tf,B.aiG,B.akt,B.QA,B.aoy,B.P5,B.Pv,B.a1I,B.ams,B.a4D,B.ao1,B.ai9,B.UO,B.aeT,B.ZL,B.TM,B.afP,B.afN,B.T8,B.afL,B.Ui,B.a8w,B.a6N,B.Uy,B.adj,B.WU,B.NI,B.Qw,B.Xt,B.Sw,B.a4O,B.aom,B.a_M,B.a3z,B.Ss,B.R1,B.Ru,B.PS,B.Oz,B.a0D,B.Zp,B.aoj,B.akY,B.akV,B.aiL,B.a2F,B.a40,B.To,B.TD,B.ajh,B.V5,B.YC,B.a8F,B.Ta,B.ae2,B.QH,B.ala,B.a5n,B.a3f,B.aoh,B.Qk,B.al7,B.aph,B.ahh,B.a5z,B.akb,B.abO,B.a6T,B.a5w,B.XX,B.al0,B.a5Q,B.Vb,B.a9F,B.Yj,B.a7E,B.anL,B.adH,B.afy,B.acK,B.MZ,B.a_K,B.anZ,B.ZT,B.akU,B.QX,B.a8I,B.a7_,B.amu,B.a7o,B.a7N,B.Oq,B.an0,B.a0B,B.ahm,B.Yt,B.alC,B.ah4,B.a4i,B.aa9,B.aoi,B.ae7,B.a2s,B.afp,B.Vu,B.adB,B.a3O,B.acm,B.ajy,B.a0F,B.N_,B.a0l,B.a89,B.amY,B.TW,B.UG,B.ad1,B.a4S,B.alh,B.SY,B.Nq,B.ajm,B.V1,B.a71,B.a0u,B.Z5,B.afW,B.a6a,B.ajE,B.al2,B.a76,B.alj,B.Qd,B.ahO,B.T4,B.a1E,B.QQ,B.afT,B.akp,B.XE,B.ak9,B.MY,B.Pf,B.ank,B.P8,B.aaw,B.WZ,B.ZJ,B.agt,B.Po,B.So,B.a1u,B.a3C,B.NB,B.Wc,B.adR,B.aoY,B.aaY,B.a7a,B.apv,B.YA,B.a1N,B.R8,B.abP,B.SX,B.WH,B.Y1,B.NK,B.a7D,B.abV,B.a5i,B.a09,B.afu,B.a2w,B.a4B,B.RQ,B.Vc,B.alF,B.adE,B.Us,B.aoI,B.anl,B.a6M,B.ag3,B.SZ,B.a55,B.acN,B.RY,B.Y7,B.acX,B.al9,B.amq,B.NT,B.T_,B.a9a,B.a9A,B.alb,B.Qe,B.amH,B.ajF,B.S3,B.aju,B.P4,B.aaW,B.a3D,B.Sz,B.a5_,B.aaG,B.al8,B.aes,B.aex,B.ane,B.Ya,B.WD,B.acy,B.aoq,B.a0_,B.ags,B.Om,B.agw,B.Yg,B.Pj,B.a9w,B.aiT,B.akj,B.aeR,B.a4c,B.a82,B.N0,B.WQ,B.a3q,B.a2a,B.a_z,B.ZH,B.NS,B.a96,B.a07,B.Zq,B.Oe,B.a0V,B.Re,B.am0,B.a8g,B.a1T,B.adT,B.Q4,B.a4_,B.a26,B.apq,B.a1v,B.aoC,B.a5k,B.Xp,B.af7,B.N6,B.X7,B.afD,B.ajI,B.a97,B.als,B.a8L,B.Pb,B.a2C,B.afs,B.apy,B.a7s,B.a6m,B.aeO,B.a83,B.akI,B.abg,B.Yy,B.Ue,B.am_,B.Un,B.anz,B.a59,B.a8O,B.agr,B.QL,B.adW,B.ahA,B.aix,B.VU,B.a29,B.aaM,B.YG,B.acD,B.afG,B.apu,B.Sd,B.aoF,B.a8Q,B.Z3,B.a7n,B.a_V,B.a8N,B.Zn,B.ajV,B.TB,B.a8j,B.afA,B.a4d,B.aiK,B.acG,B.a2v,B.a8x,B.amr,B.a0q,B.adX,B.adF,B.all,B.a6H,B.akl,B.a18,B.anb,B.Yw,B.agK,B.afX,B.aa1,B.Zb,B.aiN,B.a60,B.a1r,B.amz,B.a6B,B.anI,B.PK,B.a3F,B.SB,B.alS,B.abc,B.air,B.aoW,B.abL,B.aeV,B.UL,B.afM,B.a35,B.ago,B.a3h,B.a2c,B.a2E,B.a9n],t.H7)
+B.KN=s([B.aoA,B.aca,B.Qn,B.akw,B.X8,B.abj,B.NF,B.ab5,B.akr,B.agc,B.akO,B.RT,B.adb,B.TT,B.O4,B.PG,B.aeU,B.agA,B.abh,B.amN,B.Oy,B.ae1,B.WY,B.a4M,B.ahi,B.amP,B.ajp,B.Yv,B.a7V,B.a7A,B.acw,B.Zd,B.a94,B.acO,B.ae_,B.a1H,B.PJ,B.VV,B.a_o,B.MX,B.a0d,B.X3,B.ae0,B.adL,B.a4P,B.a91,B.VP,B.a6O,B.a5Z,B.am3,B.aeM,B.Q9,B.anY,B.Oi,B.aiP,B.a3B,B.aeB,B.XP,B.agm,B.UZ,B.Rk,B.WI,B.a2M,B.NA,B.aiS,B.ahC,B.ajw,B.Zw,B.a03,B.alM,B.afI,B.ako,B.aa6,B.app,B.V8,B.alQ,B.a0P,B.aaV,B.aks,B.TK,B.alq,B.a9o,B.acn,B.aii,B.aj7,B.a8W,B.a4a,B.anc,B.a8X,B.alH,B.OZ,B.af8,B.Rh,B.Ot,B.a9i,B.NM,B.acR,B.abZ,B.Nc,B.ai2,B.a3v,B.ahc,B.ai4,B.a16,B.Q0,B.aiO,B.amp,B.PP,B.adK,B.QZ,B.a0s,B.aa8,B.adk,B.a_6,B.Qu,B.acp,B.a7S,B.a34,B.a0O,B.UH,B.aot,B.ak0,B.ab2,B.Rr,B.a53,B.af5,B.VX,B.OJ,B.Nk,B.SL,B.a7j,B.QU,B.aaE,B.act,B.ajH,B.Pi,B.ajY,B.SU,B.ang,B.Tg,B.OR,B.aam,B.afw,B.VH,B.Z1,B.N7,B.W1,B.Ng,B.ZO,B.anN,B.Y8,B.Uu,B.aaC,B.W8,B.agZ,B.ahN,B.Pp,B.TZ,B.UY,B.a1B,B.aia,B.a5G,B.Na,B.agj,B.a9r,B.a2m,B.amU,B.ajD,B.aao,B.a1t,B.a8o,B.adP,B.Rq,B.P_,B.a_X,B.acW,B.ap7,B.a8D,B.a99,B.ahY,B.Uh,B.acY,B.YP,B.anD,B.SC,B.aky,B.ajR,B.XR,B.ak7,B.aet,B.aeQ,B.a8S,B.a4R,B.adM,B.Sy,B.a2L,B.PD,B.aoK,B.amV,B.apj,B.a6E,B.Sq,B.aac,B.Q6,B.ady,B.Td,B.ap2,B.a9p,B.a5C,B.al1,B.ajq,B.OM,B.Wf,B.NG,B.abn,B.a1O,B.a9b,B.Wi,B.Xi,B.aiR,B.a_l,B.agp,B.anW,B.YI,B.a__,B.a3p,B.U0,B.RL,B.alB,B.a3Z,B.aj9,B.Zl,B.a2_,B.TH,B.Uo,B.acd,B.a49,B.a4g,B.Nz,B.ani,B.aiJ,B.a3L,B.ahB,B.a5K,B.a6X,B.a1i,B.aef,B.a11,B.RS,B.amQ,B.a2z,B.af0,B.aft,B.Xq,B.Wz,B.RO,B.Ps,B.aoN,B.am8,B.PZ,B.an4,B.ajn,B.Zs,B.ahJ,B.a_C,B.Yz,B.aj1,B.Tw,B.a0M,B.aaB,B.akC,B.Nm,B.ajb,B.a15,B.aob,B.a4N,B.a5N,B.a3V,B.am7,B.aht,B.aaA,B.a4Q,B.a51,B.adi,B.RK,B.a7x,B.aow,B.RP,B.a_r,B.Tc,B.a1o,B.TC,B.Z0,B.Ym,B.XD,B.a4T,B.a9M,B.a2g,B.aaU,B.YT,B.ajU,B.Sx,B.ahT,B.a7d,B.a2X,B.OT,B.aho,B.Wb,B.OH,B.a27,B.Ra,B.aev,B.a4X,B.afk,B.ao7,B.anF,B.anV,B.VL,B.abY,B.aeD,B.akZ,B.afE,B.UW,B.Qp,B.SI,B.Qv,B.ajQ,B.WL,B.ajC,B.SD,B.al4,B.PN,B.S9,B.UA,B.a5o,B.Tb,B.agD,B.agF,B.a_c,B.U5,B.OA,B.anG,B.Q5,B.a3W,B.a3d,B.a_y,B.X_,B.XL,B.Pt,B.a8f,B.WA,B.af3,B.a5y,B.XO,B.a_q,B.a68,B.alo,B.ajN,B.a7v,B.ami,B.a6U,B.a5F,B.TS,B.Ri,B.Vo,B.age,B.aik,B.W5,B.a1V,B.anP,B.Zj,B.Qt,B.abU,B.ahg,B.agk,B.XZ,B.a0z,B.aod,B.alI,B.a2h,B.Ob,B.ace,B.aj8,B.agJ,B.ajt,B.a_d,B.a14,B.a0G,B.a4L,B.anH,B.aj5,B.abu,B.Wk,B.ah2,B.aoa,B.afF,B.aa_,B.NE,B.a_7,B.OU,B.Tz,B.a47,B.RF,B.adS,B.ZA,B.a1S,B.a7K,B.aoB,B.Vg,B.ad0,B.ab1,B.aeA,B.a0R,B.Rw,B.akD,B.Vl,B.agB,B.a1z,B.ap9,B.TQ,B.ZR,B.aiw,B.a_O,B.a2y,B.a_8,B.ah8,B.Xa,B.a9W,B.Ok,B.VW,B.Zm,B.a8Z,B.a98,B.aaJ,B.ahy,B.Zk,B.Wl,B.a3m,B.Qm,B.aoc,B.agH,B.aoE,B.Od,B.ae9,B.aga,B.ae3,B.acv,B.Pm,B.R4,B.X5,B.W_,B.aaO,B.XY,B.a8Y,B.WS,B.PR,B.Sv,B.Ns,B.aae,B.a73,B.Py,B.Rn,B.a_3,B.PT,B.Qs,B.acr,B.Nl,B.a4V,B.amM,B.a28,B.Yk,B.TL,B.ame,B.a7g,B.a92,B.OV,B.ajf,B.aiX,B.aku,B.aco,B.adh,B.aaK,B.apk,B.ZY,B.a8m,B.ahz,B.amX,B.alO,B.ap8,B.OY,B.acZ,B.aay,B.Vy,B.TO,B.aeb,B.a52,B.a7b,B.a_B,B.afz,B.XS,B.Zz,B.amy,B.ZP,B.Wj,B.aie,B.akc,B.a6L,B.YW,B.adY,B.a30,B.a6n,B.a8d,B.a8v,B.ada,B.Ro,B.ajr,B.Vi,B.ND,B.a7H,B.a1k,B.a5X,B.a1h,B.aa0,B.a2Y,B.a6r,B.a4H,B.a88,B.a8H,B.Yc,B.a1a,B.Yq,B.amx,B.Wo,B.RV,B.amI,B.N4,B.afn,B.Sn,B.aiC,B.a9f,B.a8C,B.ah5,B.PO,B.aml,B.aiD,B.a3a,B.a_R,B.afe,B.a3T,B.XT,B.Nv,B.ajX,B.agu,B.afc,B.a0J,B.akR,B.a00,B.akk,B.a56,B.adV,B.Tp,B.VT,B.TA,B.ap_,B.a4h,B.aah,B.a9B,B.ahb,B.ain,B.aaD,B.a2j,B.ZW,B.a4E,B.ac8,B.a2l,B.Sr,B.a4r,B.ap5,B.agO,B.an8,B.ac0,B.ZV,B.amK,B.a24,B.alT,B.P0,B.ahX,B.acb,B.abN,B.aoS,B.a6s,B.a2d,B.ahK,B.alu,B.RI,B.agv,B.Xz,B.ag5,B.afC,B.amO,B.R6,B.aa3,B.alY,B.agQ,B.alg,B.Rt,B.Og,B.a_f,B.a57,B.ZX,B.a5h,B.NX,B.ai7,B.a5H,B.anw,B.a8y,B.a3j,B.aoJ,B.O5,B.ao6,B.RC,B.aj_,B.N3,B.adZ,B.a04,B.a41,B.adg,B.YQ,B.Nn,B.T0,B.apl,B.ahU,B.Xn,B.a1n,B.a7R,B.aiA,B.VK,B.ahw,B.a3b,B.aeF,B.amg,B.Sk,B.Yp,B.W4,B.aoD,B.a_S,B.a4o,B.a6v,B.W9,B.R_,B.am4,B.Qa,B.af1,B.PQ,B.S8,B.ah1,B.aas,B.afm,B.alE,B.a0Q,B.Ny,B.Nu,B.SA,B.a37,B.abv,B.ape,B.UV,B.a5b,B.ajk,B.a_U,B.V3,B.a_x,B.UP,B.a1j,B.agY,B.TJ,B.ZF,B.ahD,B.a9X,B.Rz,B.aaz,B.agi,B.a8G,B.Up,B.a7c,B.Sg,B.aax,B.aar,B.Xx,B.a4s,B.OI,B.a7f,B.aal,B.UE,B.acx,B.abF,B.a8k,B.Ws,B.a5B,B.a5S,B.ade,B.af6,B.XN,B.a05,B.aoL,B.abf,B.Y_,B.ahI,B.aec,B.akH,B.a7Q,B.a5R,B.agd,B.Ur,B.O0,B.a6j,B.WO,B.afr,B.acL,B.a7i,B.a1K,B.U_,B.NV,B.a4F,B.ajl,B.agq,B.ap4,B.ado,B.an1,B.a9C,B.a_0,B.X9,B.Rb,B.Zo,B.NR,B.QK,B.a6D,B.ZG,B.a84,B.a9v,B.aag,B.SN,B.a2A,B.Wt,B.al_,B.a7I,B.ae8,B.anu,B.R9,B.a72,B.R7,B.QV,B.Rg,B.T2,B.a64,B.abK,B.Ph,B.a6e,B.Si,B.a2B,B.YY,B.akN,B.Z_,B.T3,B.aiE,B.a65,B.a0e,B.St,B.agy,B.acJ,B.abd,B.TP,B.aof,B.afj,B.aj4,B.aoZ,B.ad9,B.a8q,B.Qy,B.aoe,B.a1x,B.alP,B.Qq,B.aaI,B.YO,B.ai5,B.MV,B.ap1,B.a3N,B.ake,B.a2t,B.Uq,B.a50,B.adl,B.aog,B.abk,B.a5f,B.aoG,B.Ye,B.a4l,B.RH,B.SF,B.Yx,B.a_n,B.aoT,B.a25,B.SQ,B.QM,B.an5,B.ao9,B.a1c,B.a69,B.S2,B.Tu,B.aaF,B.XK,B.afa,B.abo,B.adO,B.a1y,B.a2P,B.UT,B.a_I,B.Vx,B.adC,B.PA,B.ai8,B.abq,B.VS,B.Se,B.Xw,B.a_h,B.alR,B.a4W,B.a77,B.akX,B.a1_,B.a33,B.a4Z,B.a3u,B.YJ,B.a3x,B.YZ,B.anh,B.aiW,B.SS,B.a4k,B.a3S,B.Pd,B.TX,B.Qr,B.Rm,B.afH,B.a1A,B.NC,B.acF,B.OP,B.ak5,B.ah9,B.ak6,B.a3G,B.Y6,B.a4I,B.ahQ,B.ab7,B.acT,B.YR,B.a7p,B.QG,B.abD,B.a2O,B.Oa,B.ahx,B.apt,B.a5L,B.aly,B.ajo,B.Sh,B.aic,B.X1,B.a6S,B.any,B.RN,B.akn,B.YV,B.VN,B.XH,B.PB,B.alf,B.RG,B.agW,B.agn,B.Or,B.Qx,B.abb,B.OS,B.a7P,B.Vq,B.a_E,B.abC,B.amB,B.S1,B.a8e,B.Ze,B.aat,B.a8p,B.abI,B.P6,B.Sc,B.ajW,B.alA,B.aoM,B.ac2,B.amZ,B.U3,B.a7U,B.OX,B.VB,B.ab_,B.Y3,B.S0,B.a_N,B.a90,B.Oj,B.Z6,B.a_m,B.a2i,B.P3,B.a85,B.aou,B.amC,B.adN,B.ai6,B.aeW,B.a_i,B.a5e,B.al5,B.a9x,B.ait,B.Qi,B.aim,B.a0f,B.Pn,B.a3J,B.aed,B.ap6,B.a6Y,B.Y2,B.ahl,B.R3,B.Zi,B.ap0,B.a9V,B.ad_,B.a5U,B.a1G,B.ajd,B.RD,B.a6c,B.Xo,B.PY,B.OK,B.a0H,B.MU,B.a1m,B.a5a,B.Zr,B.a5P,B.ais,B.R2,B.aeH,B.a7J,B.a_9,B.a6q,B.On,B.agS,B.aej,B.ah3,B.adA,B.acz,B.afO,B.Zu,B.alV,B.aaL,B.ab6,B.QP,B.amD,B.alG,B.ah_,B.a7L,B.a_v,B.aio,B.a9E,B.anR,B.afq,B.a3I,B.RE,B.a0h,B.ahH,B.NJ,B.Um,B.a5d,B.a0i,B.afo,B.X2,B.aaQ,B.akL,B.ON,B.a9N,B.a06,B.OD,B.a5s,B.a8a,B.VJ,B.Vk,B.ajJ,B.Yh,B.aeG,B.XJ,B.a3y,B.aja,B.aea,B.a5E,B.a9Z,B.a7r,B.abH,B.PL,B.Rc,B.SE,B.ai0,B.N2,B.a4x,B.OL,B.Np,B.a7k,B.afK,B.aka,B.a0g,B.aaq,B.aiV,B.Rx,B.PH,B.XF,B.ajx,B.aek,B.XG,B.anB,B.a2U,B.QR,B.Ty,B.Rf,B.UN,B.WR,B.a_w,B.a_G,B.Nw,B.P2,B.ak2,B.acq,B.ahe,B.agg,B.ao8,B.a81,B.MW,B.a6J,B.adv,B.ab4,B.a2N,B.a2V,B.agN,B.a7z,B.a0w,B.amL,B.a0Y,B.apm,B.Zx,B.XC,B.a_A,B.a7F,B.RX,B.a43,B.a8B,B.SJ,B.WJ,B.af2,B.abz,B.a7T,B.alk,B.Zc,B.a8T,B.VO,B.Pr,B.YM,B.af_,B.a1l,B.a2Z,B.N5,B.Ni,B.acS,B.akQ,B.a86,B.a4G,B.alz,B.a9H,B.Tr,B.Ol,B.a4C,B.Vd,B.acE,B.a95,B.anp,B.ac9,B.a8M,B.a5W,B.ahW,B.a5v,B.ans,B.SK,B.YS,B.adI,B.abt,B.Ov,B.agx,B.SM,B.Nx,B.a5D,B.a_g,B.a6Q,B.anT,B.alU,B.VQ,B.a23,B.a3_,B.a3E,B.aig,B.aeX,B.a0r,B.abG,B.abp,B.aoR,B.a6P,B.Wx,B.a1w,B.agb,B.V2,B.Wh,B.YX,B.OG,B.UR,B.a0T,B.aiY,B.We,B.a0p,B.aav,B.VD,B.am1,B.a1g,B.a2I,B.a7B,B.alw,B.ZD,B.Te,B.afJ,B.al6,B.a17,B.QB,B.ajj,B.a9s,B.ajM,B.anQ,B.apr,B.a2p,B.a9Q,B.a3g,B.ajs,B.Wp,B.anm,B.aoX,B.aon,B.WB,B.YU,B.Ox,B.a5j,B.Xl,B.a7Z,B.anX,B.a02,B.a4t,B.U6,B.Xm,B.WV,B.a8z,B.acc,B.aeC,B.Rv,B.Px,B.aor,B.ZE,B.Sf,B.a6F,B.ai_,B.Zh,B.aaN,B.ao0,B.a5T,B.a9l,B.Q2,B.SH,B.a6R,B.ahE,B.NY,B.agG,B.Z8,B.a9k,B.a32,B.a7h,B.ag1,B.a5O,B.agf,B.anx,B.a4K,B.adD,B.TI,B.ant,B.amt,B.aoz,B.a7t,B.aol,B.aoQ,B.akq,B.a2G,B.QJ,B.adQ,B.amG,B.a48,B.Z4,B.Pq,B.X6,B.a9Y,B.RW,B.ad4,B.T6,B.UJ,B.XU,B.ad6,B.ab3,B.abA,B.abs,B.ahu,B.Wm,B.SP,B.a0v,B.apx,B.Xd,B.RZ,B.VM,B.O9,B.a_2,B.afS,B.WW,B.a1b,B.aif,B.a1U,B.a_4,B.V_,B.ajS,B.VF,B.an7,B.SG,B.R0,B.a4y,B.a9S,B.QE,B.NU,B.a6z,B.a0C,B.Zv,B.a4u,B.Yb,B.a8K,B.abJ,B.ahf,B.Ow,B.aeY,B.a7w,B.ac5,B.W3,B.a9J,B.YH,B.YE,B.ac_,B.XQ,B.aaH,B.acl,B.aaT,B.Xb,B.Rp,B.a4e,B.T9,B.afh,B.T1,B.Nb,B.abT,B.amb,B.a1X,B.aby,B.a67,B.a9g,B.ZK,B.an6,B.a9R,B.Y4,B.alD,B.a0Z,B.adf,B.a3l,B.a3r,B.Vv,B.OC,B.acg,B.a4z,B.a2f,B.Pu,B.a19,B.adr,B.a9P,B.QD,B.Ry,B.amR,B.am6,B.PI,B.ahk,B.a5p,B.a3R,B.aad,B.a5x,B.WG,B.a3s,B.Rd,B.ahV,B.adp,B.adn,B.VY,B.Vw,B.O3,B.acU,B.a9G,B.ad5,B.a0N,B.a7X,B.S4,B.UM,B.a0W,B.aeE,B.WF,B.afg,B.afl,B.Qg,B.a1R,B.ac4,B.a2S,B.a6W,B.aih,B.akx,B.No,B.a8b,B.apw,B.a3w,B.Pe,B.a6g,B.aoH,B.a6_,B.ajv,B.U4,B.acM,B.UX,B.ai1,B.apf,B.Uj,B.Qf,B.a6Z,B.aep,B.Q3,B.ag4,B.ao5,B.a_P,B.abm,B.a7M,B.an3,B.acB,B.a70,B.a2b,B.aov,B.alJ,B.a62,B.a9d,B.adU,B.akh,B.TE,B.a45,B.aaf,B.TY,B.Wn,B.P1,B.Nf,B.agP,B.a1L,B.Xs,B.ag7,B.aab,B.a2u,B.amF,B.amj,B.ai3,B.a9j,B.a1J,B.afB,B.a4n,B.ab9,B.a9D,B.a9e,B.Pa,B.a2Q,B.Oo,B.Vf,B.a2K,B.N9,B.a2T,B.YD,B.aiH,B.Vh,B.Wa,B.a3X,B.UK,B.ac6,B.Ww,B.Pk,B.aib,B.Zf,B.Ug,B.a_b,B.aoO,B.anE,B.Ua,B.aj2,B.akK,B.acu,B.a0U,B.api,B.a_L,B.OW,B.Os,B.ajG,B.Yr,B.akg,B.anO,B.U1,B.afU,B.a4m,B.and,B.a1Q,B.a6V,B.akB,B.Uf,B.Nr,B.aer,B.Tm,B.agL,B.a3c,B.a3P,B.ail,B.a8r,B.OO,B.a5q,B.anf,B.aoV,B.ak8,B.a8u,B.ah7,B.afd,B.a8h,B.ael,B.a5M,B.PV,B.Qc,B.ad3,B.a8i,B.a7m,B.afb,B.adJ,B.afQ,B.aiZ,B.a1d,B.ahG,B.alr,B.WN,B.a3H,B.a1W,B.ahM,B.ajO,B.Sp,B.Uc,B.VA,B.abW,B.a6A,B.aiU,B.Xg,B.XI,B.UQ,B.a0c,B.a9z,B.a8J,B.Xr,B.akW,B.akT,B.a8R,B.Xk,B.aos,B.a7e,B.a2q,B.a0y,B.T7,B.anS,B.a4j,B.Y0,B.Vj,B.a6d,B.Sa,B.Tx,B.a_e,B.a4v,B.aee,B.a8E,B.afi,B.X4,B.aeI,B.TU,B.a5Y,B.ZI,B.a1f,B.PU,B.ahj,B.amm,B.SO,B.T5,B.aei,B.a6p,B.VZ,B.UF,B.a8s,B.ag0,B.a8P,B.a6l,B.aj6,B.RM,B.a5A,B.Nh,B.ahR,B.UU,B.a5r,B.Ts,B.Uw,B.a0X,B.ajc,B.a0b,B.af4,B.W0,B.aj0,B.ZC,B.aaX,B.apb,B.alN,B.Ub,B.amT,B.YB,B.YF,B.agz,B.ao_,B.adw,B.OE,B.Vr,B.OF,B.amk,B.ahv,B.a6I,B.VR,B.ano,B.a6C,B.a5g,B.Nt,B.a5V,B.alZ,B.RJ,B.XM,B.Ql,B.a1q,B.ao2,B.a6b,B.akA,B.Zy,B.U2,B.a_p,B.adq,B.a3e,B.aip,B.a7y,B.a8n,B.an9,B.abX,B.a9h,B.ag_,B.abQ,B.Qo,B.apo,B.QN,B.XA,B.a66,B.a_T,B.ad2,B.adG,B.a78,B.amc,B.a54,B.am2,B.agR,B.aeh,B.S5,B.akf,B.a20,B.Xv,B.ack,B.akm,B.Ti,B.a_H,B.a6x,B.ag6,B.S_,B.Wu,B.anr,B.acP,B.Wd,B.S6,B.abx,B.amf,B.aeZ,B.a2n,B.a0j,B.a_u,B.Tq,B.Uk,B.a10,B.agE,B.akz,B.ZZ,B.amh,B.a9T,B.agh,B.ak_,B.a3Q,B.abw,B.a_W,B.a7C,B.a42,B.YK,B.WC,B.abr,B.a_Y,B.ad7,B.YL,B.a2e,B.ST,B.W7,B.Pz,B.aiu,B.a9y,B.TF,B.aoU,B.a6i,B.a3k,B.a8V,B.VG,B.a9q,B.OQ,B.Yd,B.ae4,B.Vm,B.a9u,B.aeK,B.Qb,B.agX,B.UC,B.a3M,B.a9t,B.Vn,B.Ud,B.NH,B.ak1,B.a4p,B.Q_,B.a79,B.ahs,B.ah6,B.anj,B.Nd,B.a5J,B.NO,B.Wr,B.apd,B.a_s,B.XB,B.a93,B.aen,B.aew,B.a63,B.V7,B.O2,B.Xh,B.US,B.abl,B.aa7,B.NP,B.a0L,B.U7,B.afY,B.a12,B.a8U,B.a0n,B.TR,B.a6y,B.ac3,B.MG,B.Th,B.Tn,B.a0S,B.a_t,B.adz,B.Vt,B.VE,B.a_F,B.aki,B.ahd,B.al3,B.Xu,B.acA,B.Op,B.a7q,B.a3K,B.RU,B.a3n,B.a6k,B.ah0,B.akJ,B.Xe,B.a4w,B.anq,B.anU,B.ab8,B.a8A,B.O_,B.Pl,B.Tj,B.aeN,B.WP,B.Q8,B.a21,B.agU,B.ab0,B.an_,B.Yl,B.Q1,B.abi,B.a_1,B.aha,B.ahr,B.a5t,B.adt,B.Yn,B.abR,B.abB,B.aap,B.Oc,B.a1s,B.anC,B.akG,B.add,B.acs,B.Wy,B.amA,B.a0K,B.agM,B.VI,B.Yo,B.V6,B.amJ,B.a2r,B.Ut,B.RR,B.Qh,B.aeo,B.a01,B.a9c,B.a0E,B.a0A,B.ama,B.ajZ,B.NQ,B.a39,B.a0x,B.aaZ,B.a4J,B.aak,B.U9,B.ajK,B.aj3,B.adu,B.a61,B.a3U,B.P7,B.QC,B.V4,B.ahZ,B.Vp,B.aid,B.aps,B.Pg,B.a1Y,B.af9,B.apg,B.Yi,B.Sj,B.abS,B.YN,B.Rl,B.UB,B.a9I,B.a7W,B.a7u,B.ak4,B.ahL,B.aoP,B.a1M,B.O7,B.a3i,B.UD,B.SW,B.adc,B.ag9,B.a4U,B.agC,B.a1D,B.ZS,B.PM,B.a8l,B.a2D,B.Nj,B.amE,B.Q7,B.akM,B.a9U,B.acV,B.aeL,B.aa4,B.aaP,B.Tv,B.X0,B.P9,B.QS,B.Rs,B.QW,B.aa5,B.alK,B.aij,B.aaa,B.ZN,B.a7O,B.a9K,B.Uv,B.N1,B.Zt,B.ahP,B.ald,B.Ys,B.alW,B.a22,B.afx,B.akF,B.aci,B.a6t,B.PW,B.a2W,B.Vs,B.PX,B.SV,B.akP,B.a58,B.Xj,B.abE,B.a6o,B.aoo,B.ahS,B.aeg,B.ae5,B.aeP,B.ZB,B.Vz,B.PC,B.ad8,B.Yf,B.a87,B.aiv,B.apa,B.Sm,B.Ve,B.Z2,B.alX,B.a6f,B.amW,B.aiM,B.a5u,B.aba,B.ZM,B.afR,B.UI,B.a6K,B.a1e,B.akd,B.a5c,B.a4f,B.WX,B.S7,B.ajB,B.aeS,B.a1C,B.a1p,B.amw,B.ajL,B.a0a,B.adm,B.QI,B.TN,B.Ul,B.afv,B.acC,B.Tt,B.Yu,B.a9m,B.a4Y,B.aan,B.aeu,B.aje,B.a0k,B.QO,B.a5I,B.a0m,B.a9O,B.ann,B.WE,B.agl,B.a3A,B.a_a,B.aln,B.Wg,B.Zg,B.NZ,B.Of,B.V0,B.a4b,B.abe,B.Sb,B.R5,B.Ne,B.alp,B.ahF,B.ahq,B.O6,B.ac1,B.aai,B.a6h,B.Pw,B.adx,B.Wq,B.QF,B.aeq,B.a13,B.a_k,B.a_J,B.SR,B.a2o,B.WT,B.aaR,B.a1P,B.anv,B.ao4,B.a2x,B.agI,B.alv,B.acj,B.a2k,B.ads,B.a5m,B.a6u,B.Xy,B.ajT,B.Qj,B.a2R,B.a4q,B.aau,B.aok,B.TG,B.Y9,B.acf,B.a08,B.a3o,B.Sl,B.ap3,B.W2,B.am9,B.Va,B.ac7,B.Rj,B.a1F,B.Oh,B.ale,B.aji,B.am5,B.aez,B.U8,B.a74,B.aey,B.ag8,B.alm,B.WM,B.QT,B.anA,B.a2J,B.aiF,B.W6,B.akE,B.a_D,B.a9_,B.ajA,B.alt,B.a0t,B.a75,B.Xf,B.aaS,B.Ou,B.Su,B.aiz,B.alx,B.a46,B.Uz,B.acH,B.aeJ,B.a8_,B.aaj,B.Pc,B.aff,B.ana,B.XV,B.ao3,B.NN,B.a31,B.a_Q,B.V9,B.a_j,B.a9L,B.XW,B.Tl,B.O8,B.a3Y,B.a_5,B.aiQ,B.RB,B.a8t,B.apn,B.aiy,B.a4A,B.alc,B.amd,B.a1Z,B.amn,B.alL,B.a3t,B.RA,B.ZU,B.acI,B.ZQ,B.a7Y,B.aiB,B.akS,B.aiq,B.a8c,B.a44,B.a0I,B.ae6,B.a6G,B.anK,B.PE,B.Za,B.PF,B.abM,B.a80,B.a38,B.a7G,B.ahn,B.amv,B.a6w,B.afV,B.Xc,B.apc,B.Z9,B.Qz,B.O1,B.a36,B.ag2,B.a0o,B.N8,B.ajg,B.WK,B.agV,B.amo,B.OB,B.Tk,B.a5l,B.a7l,B.ach,B.TV,B.aiI,B.acQ,B.Z7,B.anJ,B.afZ,B.ahp,B.NL,B.ak3,B.anM,B.aop,B.ajz,B.agT,B.a2H,B.ajP,B.ali,B.aem,B.NW,B.akv,B.VC,B.an2,B.Y5,B.aa2,B.Ux,B.Wv,B.a_Z,B.amS,B.aox,B.QY,B.Tf,B.aiG,B.akt,B.QA,B.aoy,B.P5,B.Pv,B.a1I,B.ams,B.a4D,B.ao1,B.ai9,B.UO,B.aeT,B.ZL,B.TM,B.afP,B.afN,B.T8,B.afL,B.Ui,B.a8w,B.a6N,B.Uy,B.adj,B.WU,B.NI,B.Qw,B.Xt,B.Sw,B.a4O,B.aom,B.a_M,B.a3z,B.Ss,B.R1,B.Ru,B.PS,B.Oz,B.a0D,B.Zp,B.aoj,B.akY,B.akV,B.aiL,B.a2F,B.a40,B.To,B.TD,B.ajh,B.V5,B.YC,B.a8F,B.Ta,B.ae2,B.QH,B.ala,B.a5n,B.a3f,B.aoh,B.Qk,B.al7,B.aph,B.ahh,B.a5z,B.akb,B.abO,B.a6T,B.a5w,B.XX,B.al0,B.a5Q,B.Vb,B.a9F,B.Yj,B.a7E,B.anL,B.adH,B.afy,B.acK,B.MZ,B.a_K,B.anZ,B.ZT,B.akU,B.QX,B.a8I,B.a7_,B.amu,B.a7o,B.a7N,B.Oq,B.an0,B.a0B,B.ahm,B.Yt,B.alC,B.ah4,B.a4i,B.aa9,B.aoi,B.ae7,B.a2s,B.afp,B.Vu,B.adB,B.a3O,B.acm,B.ajy,B.a0F,B.N_,B.a0l,B.a89,B.amY,B.TW,B.UG,B.ad1,B.a4S,B.alh,B.SY,B.Nq,B.ajm,B.V1,B.a71,B.a0u,B.Z5,B.afW,B.a6a,B.ajE,B.al2,B.a76,B.alj,B.Qd,B.ahO,B.T4,B.a1E,B.QQ,B.afT,B.akp,B.XE,B.ak9,B.MY,B.Pf,B.ank,B.P8,B.aaw,B.WZ,B.ZJ,B.agt,B.Po,B.So,B.a1u,B.a3C,B.NB,B.Wc,B.adR,B.aoY,B.aaY,B.a7a,B.apv,B.YA,B.a1N,B.R8,B.abP,B.SX,B.WH,B.Y1,B.NK,B.a7D,B.abV,B.a5i,B.a09,B.afu,B.a2w,B.a4B,B.RQ,B.Vc,B.alF,B.adE,B.Us,B.aoI,B.anl,B.a6M,B.ag3,B.SZ,B.a55,B.acN,B.RY,B.Y7,B.acX,B.al9,B.amq,B.NT,B.T_,B.a9a,B.a9A,B.alb,B.Qe,B.amH,B.ajF,B.S3,B.aju,B.P4,B.aaW,B.a3D,B.Sz,B.a5_,B.aaG,B.al8,B.aes,B.aex,B.ane,B.Ya,B.WD,B.acy,B.aoq,B.a0_,B.ags,B.Om,B.agw,B.Yg,B.Pj,B.a9w,B.aiT,B.akj,B.aeR,B.a4c,B.a82,B.N0,B.WQ,B.a3q,B.a2a,B.a_z,B.ZH,B.NS,B.a96,B.a07,B.Zq,B.Oe,B.a0V,B.Re,B.am0,B.a8g,B.a1T,B.adT,B.Q4,B.a4_,B.a26,B.apq,B.a1v,B.aoC,B.a5k,B.Xp,B.af7,B.N6,B.X7,B.afD,B.ajI,B.a97,B.als,B.a8L,B.Pb,B.a2C,B.afs,B.apy,B.a7s,B.a6m,B.aeO,B.a83,B.akI,B.abg,B.Yy,B.Ue,B.am_,B.Un,B.anz,B.a59,B.a8O,B.agr,B.QL,B.adW,B.ahA,B.aix,B.VU,B.a29,B.aaM,B.YG,B.acD,B.afG,B.apu,B.Sd,B.aoF,B.a8Q,B.Z3,B.a7n,B.a_V,B.a8N,B.Zn,B.ajV,B.TB,B.a8j,B.afA,B.a4d,B.aiK,B.acG,B.a2v,B.a8x,B.amr,B.a0q,B.adX,B.adF,B.all,B.a6H,B.akl,B.a18,B.anb,B.Yw,B.agK,B.afX,B.aa1,B.Zb,B.aiN,B.a60,B.a1r,B.amz,B.a6B,B.anI,B.PK,B.a3F,B.SB,B.alS,B.abc,B.air,B.aoW,B.abL,B.aeV,B.UL,B.afM,B.a35,B.ago,B.a3h,B.a2c,B.a2E,B.a9n],t.H7)
 B.Bt=new A.kr(0,"unknown")
 B.Bu=new A.kr(1,"passwordReset")
 B.Bv=new A.kr(2,"verifyEmail")
@@ -103656,13 +103667,13 @@ B.Bw=new A.kr(3,"recoverEmail")
 B.Bx=new A.kr(4,"emailSignIn")
 B.By=new A.kr(5,"verifyAndChangeEmail")
 B.Bz=new A.kr(6,"revertSecondFactorAddition")
-B.KO=s([B.Bt,B.Bu,B.Bv,B.Bw,B.Bx,B.By,B.Bz],A.a0("B<kr>"))
-B.Jg=s([0.001200833568784504,0.002389694492170889,0.0002795742885861124],t.n)
-B.Kf=s([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],t.n)
-B.Jr=s([0.00010146692491640572,0.0005364214359186694,0.0032979401770712076],t.n)
-B.KR=s([B.Jg,B.Kf,B.Jr],t.zg)
-B.KS=s([45,95,45,20,45,90,45,45,45],t.n)
-B.KT=s([120,120,20,45,20,15,20,120,120],t.n)
+B.KP=s([B.Bt,B.Bu,B.Bv,B.Bw,B.Bx,B.By,B.Bz],A.a0("B<kr>"))
+B.Jf=s([0.001200833568784504,0.002389694492170889,0.0002795742885861124],t.n)
+B.Ke=s([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],t.n)
+B.Jq=s([0.00010146692491640572,0.0005364214359186694,0.0032979401770712076],t.n)
+B.KS=s([B.Jf,B.Ke,B.Jq],t.zg)
+B.KT=s([45,95,45,20,45,90,45,45,45],t.n)
+B.KU=s([120,120,20,45,20,15,20,120,120],t.n)
 B.auh=new A.xM(1,"estimate")
 B.aui=new A.xM(2,"previous")
 B.p2=s([B.eS,B.auh,B.aui],A.a0("B<xM>"))
@@ -103677,32 +103688,21 @@ B.kJ=new A.iA(7,"functionModifier")
 B.vf=new A.iA(8,"symbolModifier")
 B.p3=s([B.dq,B.dr,B.ds,B.dt,B.kG,B.kH,B.kI,B.kJ,B.vf],A.a0("B<iA>"))
 B.km=s([!0,!1],t.HZ)
-B.KY=s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","wheel"],t.s)
+B.KZ=s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","wheel"],t.s)
 B.kb=new A.hO(100)
 B.GY=new A.hO(200)
 B.GZ=new A.hO(300)
 B.p=new A.hO(400)
 B.H_=new A.hO(800)
 B.ol=new A.hO(900)
-B.L_=s([B.kb,B.GY,B.GZ,B.p,B.W,B.cF,B.S,B.H_,B.ol],A.a0("B<hO>"))
+B.L0=s([B.kb,B.GY,B.GZ,B.p,B.W,B.cF,B.S,B.H_,B.ol],A.a0("B<hO>"))
 B.aEy=new A.pI("Family",B.ou,B.ap)
 B.aEA=new A.pI("School",B.ox,B.fs)
 B.aEB=new A.pI("Playground",B.oy,B.E)
 B.aEx=new A.pI("Food",B.ow,B.bX)
 B.aEz=new A.pI("Daily Activities",B.oA,B.ag)
-B.L0=s([B.aEy,B.aEA,B.aEB,B.aEx,B.aEz],A.a0("B<pI>"))
-B.L1=s([0.015176349177441876,0.045529047532325624,0.07588174588720938,0.10623444424209313,0.13658714259697685,0.16693984095186062,0.19729253930674434,0.2276452376616281,0.2579979360165119,0.28835063437139563,0.3188300904430532,0.350925934958123,0.3848314933096426,0.42057480301049466,0.458183274052838,0.4976837250274023,0.5391024159806381,0.5824650784040898,0.6277969426914107,0.6751227633498623,0.7244668422128921,0.775853049866786,0.829304845476233,0.8848452951698498,0.942497089126609,1.0022825574869039,1.0642236851973577,1.1283421258858297,1.1946592148522128,1.2631959812511864,1.3339731595349034,1.407011200216447,1.4823302800086415,1.5599503113873272,1.6398909516233677,1.7221716113234105,1.8068114625156377,1.8938294463134073,1.9832442801866852,2.075074464868551,2.1693382909216234,2.2660538449872063,2.36523901573795,2.4669114995532007,2.5710888059345764,2.6777882626779785,2.7870270208169257,2.898822059350997,3.0131901897720907,3.1301480604002863,3.2497121605402226,3.3718988244681087,3.4967242352587946,3.624204428461639,3.754355295633311,3.887192587735158,4.022731918402185,4.160988767090289,4.301978482107941,4.445716283538092,4.592217266055746,4.741496401646282,4.893568542229298,5.048448422192488,5.20615066083972,5.3666897647573375,5.5300801301023865,5.696336044816294,5.865471690767354,6.037501145825082,6.212438385869475,6.390297286737924,6.571091626112461,6.7548350853498045,6.941541251256611,7.131223617812143,7.323895587840543,7.5195704746346665,7.7182615035334345,7.919981813454504,8.124744458384042,8.332562408825165,8.543448553206703,8.757415699253682,8.974476575321063,9.194643831691977,9.417930041841839,9.644347703669503,9.873909240696694,10.106627003236781,10.342513269534024,10.58158024687427,10.8238400726681,11.069304815507364,11.317986476196008,11.569896988756009,11.825048221409341,12.083451977536606,12.345119996613247,12.610063955123938,12.878295467455942,13.149826086772048,13.42466730586372,13.702830557985108,13.984327217668513,14.269168601521828,14.55736596900856,14.848930523210871,15.143873411576273,15.44220572664832,15.743938506781891,16.04908273684337,16.35764934889634,16.66964922287304,16.985093187232053,17.30399201960269,17.62635644741625,17.95219714852476,18.281524751807332,18.614349837764564,18.95068293910138,19.290534541298456,19.633915083172692,19.98083495742689,20.331304511189067,20.685334046541502,21.042933821039977,21.404114048223256,21.76888489811322,22.137256497705877,22.50923893145328,22.884842241736916,23.264076429332462,23.6469514538663,24.033477234264016,24.42366364919083,24.817520537484558,25.21505769858089,25.61628489293138,26.021211842414342,26.429848230738664,26.842203703840827,27.258287870275353,27.678110301598522,28.10168053274597,28.529008062403893,28.96010235337422,29.39497283293396,29.83362889318845,30.276079891419332,30.722335150426627,31.172403958865512,31.62629557157785,32.08401920991837,32.54558406207592,33.010999283389665,33.4802739966603,33.953417292456834,34.430438229418264,34.911345834551085,35.39614910352207,35.88485700094671,36.37747846067349,36.87402238606382,37.37449765026789,37.87891309649659,38.38727753828926,38.89959975977785,39.41588851594697,39.93615253289054,40.460400508064545,40.98864111053629,41.520882981230194,42.05713473317016,42.597404951718396,43.141702194811224,43.6900349931913,44.24241185063697,44.798841244188324,45.35933162437017,45.92389141541209,46.49252901546552,47.065252796817916,47.64207110610409,48.22299226451468,48.808024568002054,49.3971762874833,49.9904556690408,50.587870934119984,51.189430279724725,51.79514187861014,52.40501387947288,53.0190544071392,53.637271562750364,54.259673423945976,54.88626804504493,55.517063457223934,56.15206766869424,56.79128866487574,57.43473440856916,58.08241284012621,58.734331877617365,59.39049941699807,60.05092333227251,60.715611475655585,61.38457167773311,62.057811747619894,62.7353394731159,63.417162620860914,64.10328893648692,64.79372614476921,65.48848194977529,66.18756403501224,66.89098006357258,67.59873767827808,68.31084450182222,69.02730813691093,69.74813616640164,70.47333615344107,71.20291564160104,71.93688215501312,72.67524319850172,73.41800625771542,74.16517879925733,74.9167682708136,75.67278210128072,76.43322770089146,77.1981124613393,77.96744375590167,78.74122893956174,79.51947534912904,80.30219030335869,81.08938110306934,81.88105503125999,82.67721935322541,83.4778813166706,84.28304815182372,85.09272707154808,85.90692527145302,86.72564993000343,87.54890820862819,88.3767072518277,89.2090541872801,90.04595612594655,90.88742016217518,91.73345337380438,92.58406282226491,93.43925555268066,94.29903859396902,95.16341895893969,96.03240364439274,96.9059996312159,97.78421388448044,98.6670533535366,99.55452497210776],t.n)
-B.aq6=new A.a(B.r,["fc_play_001","Playground","\u0c06\u0c1f","Aata","Game","\ud83c\udfae","\u0c28\u0c47\u0c28\u0c41 \u0c06\u0c21\u0c41\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c06\u0c21\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c06\u0c21\u0c24\u0c3e\u0c28\u0c41","Nenu aadutanu","Nenu aadaanu","Nenu aadatanu","Beginner"],t.R)
-B.apD=new A.a(B.r,["fc_play_002","Playground","\u0c2c\u0c02\u0c24\u0c3f","Banti","Ball","\u26bd","\u0c28\u0c47\u0c28\u0c41 \u0c2c\u0c02\u0c24\u0c3f \u0c24\u0c28\u0c4d\u0c28\u0c41\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2c\u0c02\u0c24\u0c3f \u0c24\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2c\u0c02\u0c24\u0c3f \u0c24\u0c28\u0c4d\u0c28\u0c41\u0c24\u0c3e\u0c28\u0c41","Nenu banti tannutanu","Nenu banti tannaanu","Nenu banti tannutanu","Beginner"],t.R)
-B.apC=new A.a(B.r,["fc_play_003","Playground","\u0c2a\u0c30\u0c41\u0c17\u0c41","Parugu","Run","\ud83c\udfc3","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c30\u0c41\u0c17\u0c46\u0c24\u0c4d\u0c24\u0c41\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c30\u0c41\u0c17\u0c46\u0c24\u0c4d\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c30\u0c41\u0c17\u0c46\u0c24\u0c4d\u0c24\u0c41\u0c24\u0c3e\u0c28\u0c41","Nenu parugettuutanu","Nenu parugettanu","Nenu parugettuutanu","Beginner"],t.R)
-B.aq0=new A.a(B.r,["fc_play_004","Playground","\u0c0a\u0c2f\u0c32","Uuyala","Swing","\ud83c\udfa0","\u0c28\u0c47\u0c28\u0c41 \u0c0a\u0c2f\u0c32\u0c32\u0c4b \u0c0a\u0c17\u0c41\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c0a\u0c2f\u0c32\u0c32\u0c4b \u0c0a\u0c17\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c0a\u0c2f\u0c32\u0c32\u0c4b \u0c0a\u0c17\u0c41\u0c24\u0c3e\u0c28\u0c41","Nenu uuyalalo uugutanu","Nenu uuyalalo uugaanu","Nenu uuyalalo uugutanu","Beginner"],t.R)
-B.aqo=new A.a(B.r,["fc_play_005","Playground","\u0c28\u0c35\u0c4d\u0c35\u0c41","Navvu","Laugh","\ud83d\ude04","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c35\u0c4d\u0c35\u0c41\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c35\u0c4d\u0c35\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c28\u0c35\u0c4d\u0c35\u0c41\u0c24\u0c3e\u0c28\u0c41","Nenu navvutanu","Nenu navvaanu","Nenu navvutanu","Beginner"],t.R)
-B.aq2=new A.a(B.r,["fc_play_006","Playground","\u0c38\u0c4d\u0c28\u0c47\u0c39\u0c3f\u0c24\u0c41\u0c21\u0c41","Sneehitudu","Friend","\ud83e\udd1d","\u0c38\u0c4d\u0c28\u0c47\u0c39\u0c3f\u0c24\u0c41\u0c21\u0c41 \u0c28\u0c3e\u0c24\u0c4b \u0c06\u0c21\u0c24\u0c3e\u0c21\u0c41","\u0c38\u0c4d\u0c28\u0c47\u0c39\u0c3f\u0c24\u0c41\u0c21\u0c41 \u0c28\u0c3e\u0c24\u0c4b \u0c06\u0c21\u0c3e\u0c21\u0c41","\u0c38\u0c4d\u0c28\u0c47\u0c39\u0c3f\u0c24\u0c41\u0c21\u0c41 \u0c28\u0c3e\u0c24\u0c4b \u0c06\u0c21\u0c24\u0c3e\u0c21\u0c41","Sneehitudu naato aadataadu","Sneehitudu naato aadaadu","Sneehitudu naato aadataadu","Intermediate"],t.R)
-B.apG=new A.a(B.r,["fc_play_007","Playground","\u0c06\u0c28\u0c02\u0c26\u0c02","Aanandam","Joy","\ud83d\ude0a","\u0c28\u0c3e\u0c15\u0c41 \u0c06\u0c28\u0c02\u0c26\u0c02\u0c17\u0c3e \u0c09\u0c02\u0c26\u0c3f","\u0c28\u0c3e\u0c15\u0c41 \u0c06\u0c28\u0c02\u0c26\u0c02\u0c17\u0c3e \u0c09\u0c02\u0c26\u0c3f","\u0c28\u0c3e\u0c15\u0c41 \u0c06\u0c28\u0c02\u0c26\u0c02\u0c17\u0c3e \u0c09\u0c02\u0c1f\u0c41\u0c02\u0c26\u0c3f","Naaku aanandamga undi","Naaku aanandamga undi","Naaku aanandamga untundi","Intermediate"],t.R)
-B.aqf=new A.a(B.r,["fc_play_008","Playground","\u0c2c\u0c4a\u0c2e\u0c4d\u0c2e","Bomma","Toy","\ud83e\uddf8","\u0c28\u0c47\u0c28\u0c41 \u0c2c\u0c4a\u0c2e\u0c4d\u0c2e\u0c24\u0c4b \u0c06\u0c21\u0c41\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2c\u0c4a\u0c2e\u0c4d\u0c2e\u0c24\u0c4b \u0c06\u0c21\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2c\u0c4a\u0c2e\u0c4d\u0c2e\u0c24\u0c4b \u0c06\u0c21\u0c24\u0c3e\u0c28\u0c41","Nenu bommato aadutanu","Nenu bommato aadaanu","Nenu bommato aadatanu","Beginner"],t.R)
-B.aqi=new A.a(B.r,["fc_play_009","Playground","\u0c15\u0c4d\u0c30\u0c3f\u0c15\u0c46\u0c1f\u0c4d","Cricket","Cricket","\ud83c\udfcf","\u0c28\u0c47\u0c28\u0c41 \u0c15\u0c4d\u0c30\u0c3f\u0c15\u0c46\u0c1f\u0c4d \u0c06\u0c21\u0c41\u0c24\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c15\u0c4d\u0c30\u0c3f\u0c15\u0c46\u0c1f\u0c4d \u0c06\u0c21\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c15\u0c4d\u0c30\u0c3f\u0c15\u0c46\u0c1f\u0c4d \u0c06\u0c21\u0c24\u0c3e\u0c28\u0c41","Nenu cricket aadutanu","Nenu cricket aadaanu","Nenu cricket aadatanu","Beginner"],t.R)
-B.aqb=new A.a(B.r,["fc_play_010","Playground","\u0c2a\u0c4b\u0c1f\u0c40","Poti","Race","\ud83c\udfc5","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c4b\u0c1f\u0c40\u0c32\u0c4b \u0c2a\u0c3e\u0c32\u0c4d\u0c17\u0c4a\u0c02\u0c1f\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c4b\u0c1f\u0c40\u0c32\u0c4b \u0c2a\u0c3e\u0c32\u0c4d\u0c17\u0c4a\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41","\u0c28\u0c47\u0c28\u0c41 \u0c2a\u0c4b\u0c1f\u0c40\u0c32\u0c4b \u0c2a\u0c3e\u0c32\u0c4d\u0c17\u0c4a\u0c02\u0c1f\u0c3e\u0c28\u0c41","Nenu potilo paalgontanu","Nenu potilo paalgonnaanu","Nenu potilo paalgontanu","Intermediate"],t.R)
-B.L3=s([B.aq6,B.apD,B.apC,B.aq0,B.aqo,B.aq2,B.apG,B.aqf,B.aqi,B.aqb],t.H7)
+B.L1=s([B.aEy,B.aEA,B.aEB,B.aEx,B.aEz],A.a0("B<pI>"))
+B.L2=s([0.015176349177441876,0.045529047532325624,0.07588174588720938,0.10623444424209313,0.13658714259697685,0.16693984095186062,0.19729253930674434,0.2276452376616281,0.2579979360165119,0.28835063437139563,0.3188300904430532,0.350925934958123,0.3848314933096426,0.42057480301049466,0.458183274052838,0.4976837250274023,0.5391024159806381,0.5824650784040898,0.6277969426914107,0.6751227633498623,0.7244668422128921,0.775853049866786,0.829304845476233,0.8848452951698498,0.942497089126609,1.0022825574869039,1.0642236851973577,1.1283421258858297,1.1946592148522128,1.2631959812511864,1.3339731595349034,1.407011200216447,1.4823302800086415,1.5599503113873272,1.6398909516233677,1.7221716113234105,1.8068114625156377,1.8938294463134073,1.9832442801866852,2.075074464868551,2.1693382909216234,2.2660538449872063,2.36523901573795,2.4669114995532007,2.5710888059345764,2.6777882626779785,2.7870270208169257,2.898822059350997,3.0131901897720907,3.1301480604002863,3.2497121605402226,3.3718988244681087,3.4967242352587946,3.624204428461639,3.754355295633311,3.887192587735158,4.022731918402185,4.160988767090289,4.301978482107941,4.445716283538092,4.592217266055746,4.741496401646282,4.893568542229298,5.048448422192488,5.20615066083972,5.3666897647573375,5.5300801301023865,5.696336044816294,5.865471690767354,6.037501145825082,6.212438385869475,6.390297286737924,6.571091626112461,6.7548350853498045,6.941541251256611,7.131223617812143,7.323895587840543,7.5195704746346665,7.7182615035334345,7.919981813454504,8.124744458384042,8.332562408825165,8.543448553206703,8.757415699253682,8.974476575321063,9.194643831691977,9.417930041841839,9.644347703669503,9.873909240696694,10.106627003236781,10.342513269534024,10.58158024687427,10.8238400726681,11.069304815507364,11.317986476196008,11.569896988756009,11.825048221409341,12.083451977536606,12.345119996613247,12.610063955123938,12.878295467455942,13.149826086772048,13.42466730586372,13.702830557985108,13.984327217668513,14.269168601521828,14.55736596900856,14.848930523210871,15.143873411576273,15.44220572664832,15.743938506781891,16.04908273684337,16.35764934889634,16.66964922287304,16.985093187232053,17.30399201960269,17.62635644741625,17.95219714852476,18.281524751807332,18.614349837764564,18.95068293910138,19.290534541298456,19.633915083172692,19.98083495742689,20.331304511189067,20.685334046541502,21.042933821039977,21.404114048223256,21.76888489811322,22.137256497705877,22.50923893145328,22.884842241736916,23.264076429332462,23.6469514538663,24.033477234264016,24.42366364919083,24.817520537484558,25.21505769858089,25.61628489293138,26.021211842414342,26.429848230738664,26.842203703840827,27.258287870275353,27.678110301598522,28.10168053274597,28.529008062403893,28.96010235337422,29.39497283293396,29.83362889318845,30.276079891419332,30.722335150426627,31.172403958865512,31.62629557157785,32.08401920991837,32.54558406207592,33.010999283389665,33.4802739966603,33.953417292456834,34.430438229418264,34.911345834551085,35.39614910352207,35.88485700094671,36.37747846067349,36.87402238606382,37.37449765026789,37.87891309649659,38.38727753828926,38.89959975977785,39.41588851594697,39.93615253289054,40.460400508064545,40.98864111053629,41.520882981230194,42.05713473317016,42.597404951718396,43.141702194811224,43.6900349931913,44.24241185063697,44.798841244188324,45.35933162437017,45.92389141541209,46.49252901546552,47.065252796817916,47.64207110610409,48.22299226451468,48.808024568002054,49.3971762874833,49.9904556690408,50.587870934119984,51.189430279724725,51.79514187861014,52.40501387947288,53.0190544071392,53.637271562750364,54.259673423945976,54.88626804504493,55.517063457223934,56.15206766869424,56.79128866487574,57.43473440856916,58.08241284012621,58.734331877617365,59.39049941699807,60.05092333227251,60.715611475655585,61.38457167773311,62.057811747619894,62.7353394731159,63.417162620860914,64.10328893648692,64.79372614476921,65.48848194977529,66.18756403501224,66.89098006357258,67.59873767827808,68.31084450182222,69.02730813691093,69.74813616640164,70.47333615344107,71.20291564160104,71.93688215501312,72.67524319850172,73.41800625771542,74.16517879925733,74.9167682708136,75.67278210128072,76.43322770089146,77.1981124613393,77.96744375590167,78.74122893956174,79.51947534912904,80.30219030335869,81.08938110306934,81.88105503125999,82.67721935322541,83.4778813166706,84.28304815182372,85.09272707154808,85.90692527145302,86.72564993000343,87.54890820862819,88.3767072518277,89.2090541872801,90.04595612594655,90.88742016217518,91.73345337380438,92.58406282226491,93.43925555268066,94.29903859396902,95.16341895893969,96.03240364439274,96.9059996312159,97.78421388448044,98.6670533535366,99.55452497210776],t.n)
 B.atb=new A.af(0.7078,8.3194)
 B.at4=new A.af(0.7895,2.4523)
 B.atm=new A.af(0.8379,1.8528)
@@ -104291,57 +104291,57 @@ B.J4=s([54,null,null,8589935158],t.Z)
 B.J5=s([55,null,null,8589935159],t.Z)
 B.J6=s([56,null,null,8589935160],t.Z)
 B.J8=s([57,null,null,8589935161],t.Z)
-B.JV=s([8589934852,8589934852,8589934853,null],t.Z)
+B.JU=s([8589934852,8589934852,8589934853,null],t.Z)
 B.IH=s([4294967555,null,4294967555,null],t.Z)
 B.II=s([4294968065,null,null,8589935154],t.Z)
 B.IJ=s([4294968066,null,null,8589935156],t.Z)
 B.IK=s([4294968067,null,null,8589935158],t.Z)
 B.IL=s([4294968068,null,null,8589935160],t.Z)
 B.IQ=s([4294968321,null,null,8589935157],t.Z)
-B.JW=s([8589934848,8589934848,8589934849,null],t.Z)
+B.JV=s([8589934848,8589934848,8589934849,null],t.Z)
 B.IG=s([4294967423,null,null,8589935150],t.Z)
 B.IM=s([4294968069,null,null,8589935153],t.Z)
 B.IF=s([4294967309,null,null,8589935117],t.Z)
 B.IN=s([4294968070,null,null,8589935159],t.Z)
 B.IR=s([4294968327,null,null,8589935152],t.Z)
-B.JX=s([8589934854,8589934854,8589934855,null],t.Z)
+B.JW=s([8589934854,8589934854,8589934855,null],t.Z)
 B.IO=s([4294968071,null,null,8589935155],t.Z)
 B.IP=s([4294968072,null,null,8589935161],t.Z)
-B.JY=s([8589934850,8589934850,8589934851,null],t.Z)
-B.vb=new A.cK(["*",B.IS,"+",B.IT,"-",B.IU,".",B.IV,"/",B.IW,"0",B.IX,"1",B.IY,"2",B.J_,"3",B.J1,"4",B.J2,"5",B.J3,"6",B.J4,"7",B.J5,"8",B.J6,"9",B.J8,"Alt",B.JV,"AltGraph",B.IH,"ArrowDown",B.II,"ArrowLeft",B.IJ,"ArrowRight",B.IK,"ArrowUp",B.IL,"Clear",B.IQ,"Control",B.JW,"Delete",B.IG,"End",B.IM,"Enter",B.IF,"Home",B.IN,"Insert",B.IR,"Meta",B.JX,"PageDown",B.IO,"PageUp",B.IP,"Shift",B.JY],A.a0("cK<k,J<o?>>"))
+B.JX=s([8589934850,8589934850,8589934851,null],t.Z)
+B.vb=new A.cK(["*",B.IS,"+",B.IT,"-",B.IU,".",B.IV,"/",B.IW,"0",B.IX,"1",B.IY,"2",B.J_,"3",B.J1,"4",B.J2,"5",B.J3,"6",B.J4,"7",B.J5,"8",B.J6,"9",B.J8,"Alt",B.JU,"AltGraph",B.IH,"ArrowDown",B.II,"ArrowLeft",B.IJ,"ArrowRight",B.IK,"ArrowUp",B.IL,"Clear",B.IQ,"Control",B.JV,"Delete",B.IG,"End",B.IM,"Enter",B.IF,"Home",B.IN,"Insert",B.IR,"Meta",B.JW,"PageDown",B.IO,"PageUp",B.IP,"Shift",B.JX],A.a0("cK<k,J<o?>>"))
 B.J7=s([B.pb,null,null,B.uS],t.L)
-B.Kw=s([B.uE,null,null,B.uT],t.L)
-B.JA=s([B.uF,null,null,B.uU],t.L)
-B.K_=s([B.uG,null,null,B.cL],t.L)
+B.Kv=s([B.uE,null,null,B.uT],t.L)
+B.Jz=s([B.uF,null,null,B.uU],t.L)
+B.JZ=s([B.uG,null,null,B.cL],t.L)
 B.Iv=s([B.uH,null,null,B.uV],t.L)
-B.KP=s([B.uI,null,null,B.kw],t.L)
-B.KH=s([B.uJ,null,null,B.eC],t.L)
+B.KQ=s([B.uI,null,null,B.kw],t.L)
+B.KI=s([B.uJ,null,null,B.eC],t.L)
 B.Je=s([B.uK,null,null,B.cM],t.L)
-B.KV=s([B.uL,null,null,B.eD],t.L)
-B.KG=s([B.uM,null,null,B.cN],t.L)
+B.KW=s([B.uL,null,null,B.eD],t.L)
+B.KH=s([B.uM,null,null,B.cN],t.L)
 B.Jb=s([B.uN,null,null,B.kx],t.L)
 B.IB=s([B.uO,null,null,B.cO],t.L)
-B.Jo=s([B.uP,null,null,B.eE],t.L)
-B.Kx=s([B.uQ,null,null,B.cP],t.L)
-B.KA=s([B.uR,null,null,B.eF],t.L)
-B.Jh=s([B.eA,B.eA,B.hb,null],t.L)
-B.KQ=s([B.h7,null,B.h7,null],t.L)
+B.Jn=s([B.uP,null,null,B.eE],t.L)
+B.Kw=s([B.uQ,null,null,B.cP],t.L)
+B.Kz=s([B.uR,null,null,B.eF],t.L)
+B.Jg=s([B.eA,B.eA,B.hb,null],t.L)
+B.KR=s([B.h7,null,B.h7,null],t.L)
 B.JG=s([B.bH,null,null,B.cM],t.L)
 B.JH=s([B.bt,null,null,B.cN],t.L)
 B.JI=s([B.bu,null,null,B.cO],t.L)
-B.KU=s([B.bI,null,null,B.cP],t.L)
+B.KV=s([B.bI,null,null,B.cP],t.L)
 B.KE=s([B.kq,null,null,B.kx],t.L)
-B.Ji=s([B.ez,B.ez,B.ha,null],t.L)
-B.K9=s([B.aN,null,null,B.cL],t.L)
+B.Jh=s([B.ez,B.ez,B.ha,null],t.L)
+B.K8=s([B.aN,null,null,B.cL],t.L)
 B.JJ=s([B.cI,null,null,B.eC],t.L)
 B.Ja=s([B.h6,null,null,B.kv],t.L)
 B.JK=s([B.cJ,null,null,B.eE],t.L)
 B.KF=s([B.ey,null,null,B.kw],t.L)
-B.Jj=s([B.eB,B.eB,B.hc,null],t.L)
+B.Ji=s([B.eB,B.eB,B.hc,null],t.L)
 B.JL=s([B.ew,null,null,B.eD],t.L)
-B.Kg=s([B.ex,null,null,B.eF],t.L)
-B.Jk=s([B.cn,B.cn,B.cK,null],t.L)
-B.MS=new A.cK(["*",B.J7,"+",B.Kw,"-",B.JA,".",B.K_,"/",B.Iv,"0",B.KP,"1",B.KH,"2",B.Je,"3",B.KV,"4",B.KG,"5",B.Jb,"6",B.IB,"7",B.Jo,"8",B.Kx,"9",B.KA,"Alt",B.Jh,"AltGraph",B.KQ,"ArrowDown",B.JG,"ArrowLeft",B.JH,"ArrowRight",B.JI,"ArrowUp",B.KU,"Clear",B.KE,"Control",B.Ji,"Delete",B.K9,"End",B.JJ,"Enter",B.Ja,"Home",B.JK,"Insert",B.KF,"Meta",B.Jj,"PageDown",B.JL,"PageUp",B.Kg,"Shift",B.Jk],A.a0("cK<k,J<i?>>"))
+B.Kf=s([B.ex,null,null,B.eF],t.L)
+B.Jj=s([B.cn,B.cn,B.cK,null],t.L)
+B.MS=new A.cK(["*",B.J7,"+",B.Kv,"-",B.Jz,".",B.JZ,"/",B.Iv,"0",B.KQ,"1",B.KI,"2",B.Je,"3",B.KW,"4",B.KH,"5",B.Jb,"6",B.IB,"7",B.Jn,"8",B.Kw,"9",B.Kz,"Alt",B.Jg,"AltGraph",B.KR,"ArrowDown",B.JG,"ArrowLeft",B.JH,"ArrowRight",B.JI,"ArrowUp",B.KV,"Clear",B.KE,"Control",B.Jh,"Delete",B.K8,"End",B.JJ,"Enter",B.Ja,"Home",B.JK,"Insert",B.KF,"Meta",B.Ji,"PageDown",B.JL,"PageUp",B.Kf,"Shift",B.Jj],A.a0("cK<k,J<i?>>"))
 B.GO=new A.m5(0,"arrayUnion")
 B.GP=new A.m5(1,"arrayRemove")
 B.GQ=new A.m5(2,"delete")
@@ -104938,9 +104938,9 @@ B.zz=new A.f_([B.au,B.aU,B.bK,B.aV,B.bd],t.Lu)
 B.EV=new A.M(0.23529411764705882,0,0,0,B.h)
 B.arl=new A.l(0,4)
 B.CN=new A.dG(0.5,B.bR,B.EV,B.arl,10)
-B.Kb=s([B.CN],t.sq)
+B.Ka=s([B.CN],t.sq)
 B.atz=new A.lb(B.mw,B.t)
-B.auu=new A.k9(null,null,null,B.Kb,B.atz)
+B.auu=new A.k9(null,null,null,B.Ka,B.atz)
 B.auv=new A.aqG(0,"standard")
 B.auw=new A.ld(B.ms,"parseAuthorizationCredentialAppleID: `authorizationCode` field was `null`")
 B.aux=new A.Gg("The current platform is not supported")
@@ -105223,8 +105223,8 @@ B.Av=new A.w(!1,null,null,null,null,null,14,B.p,null,-0.15,null,null,null,null,n
 B.aAx=new A.w(!0,null,null,null,null,null,16,B.S,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.aAB=new A.w(!0,B.k,null,null,null,null,11,B.S,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.aAF=new A.w(!0,B.ck,null,null,null,null,11,null,B.ok,null,null,null,1.3,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.KJ=s(["Apple Color Emoji","Noto Color Emoji","sans-serif"],t.s)
-B.aB1=new A.w(!0,null,null,"Segoe UI Emoji",B.KJ,null,40,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.KK=s(["Apple Color Emoji","Noto Color Emoji","sans-serif"],t.s)
+B.aB1=new A.w(!0,null,null,"Segoe UI Emoji",B.KK,null,40,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.aBj=new A.w(!0,null,null,null,null,null,17,B.cF,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.aAw=new A.w(!1,null,null,null,null,null,57,B.p,null,-0.25,null,B.q,1.12,B.w,null,null,null,null,null,null,null,"englishLike displayLarge 2021",null,null,null,null)
 B.ayx=new A.w(!1,null,null,null,null,null,45,B.p,null,0,null,B.q,1.16,B.w,null,null,null,null,null,null,null,"englishLike displayMedium 2021",null,null,null,null)
