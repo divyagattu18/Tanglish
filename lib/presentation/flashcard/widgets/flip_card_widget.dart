@@ -69,27 +69,39 @@ class FlipCardWidget extends StatelessWidget {
                     _DiffBadge(label: difficulty, color: diffColor),
                   ],
                 ),
-                const SizedBox(height: 10),
-                // Telugu word — large and prominent
+                const SizedBox(height: 8),
+                // Tanglish pronunciation — primary (largest, easy to read)
                 Text(
-                  cardData['front'] as String,
+                  cardData['tanglish'] as String,
                   style: const TextStyle(
-                    fontSize: 48,
-                    fontWeight: FontWeight.bold,
+                    fontSize: 28,
+                    fontWeight: FontWeight.w800,
                     color: Colors.white,
                     height: 1.1,
+                    letterSpacing: 0.3,
                   ),
                   textAlign: TextAlign.center,
                 ),
-                const SizedBox(height: 8),
-                // Tanglish · English meaning
+                const SizedBox(height: 4),
+                // English meaning
                 Text(
-                  '${cardData['tanglish']}  ·  ${cardData['meaning']}',
+                  cardData['meaning'] as String,
                   style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.white.withOpacity(0.92),
+                    fontSize: 17,
+                    color: Colors.white.withOpacity(0.90),
                     fontWeight: FontWeight.w500,
-                    letterSpacing: 0.2,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 10),
+                // Telugu script — secondary reference
+                Text(
+                  cardData['front'] as String,
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.white.withOpacity(0.78),
+                    height: 1.1,
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -196,24 +208,28 @@ class _TenseRow extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                text,
-                style: const TextStyle(
-                  fontSize: 13,
-                  color: AppColors.textPrimary,
-                  height: 1.4,
-                ),
-              ),
+              // Roman transliteration — primary for non-Telugu readers
               if (roman != null)
                 Text(
                   roman!,
                   style: const TextStyle(
-                    fontSize: 11,
-                    color: AppColors.textSecondary,
-                    fontStyle: FontStyle.italic,
-                    height: 1.3,
+                    fontSize: 14,
+                    color: AppColors.textPrimary,
+                    fontWeight: FontWeight.w500,
+                    height: 1.4,
                   ),
                 ),
+              // Telugu script — secondary
+              Text(
+                text,
+                style: TextStyle(
+                  fontSize: 11,
+                  color: roman != null
+                      ? AppColors.textSecondary
+                      : AppColors.textPrimary,
+                  height: 1.4,
+                ),
+              ),
             ],
           ),
         ),

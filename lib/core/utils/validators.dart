@@ -29,7 +29,7 @@ class Validators {
       return 'Name must be 50 characters or less';
     }
     // Block HTML/script-injection characters
-    if (RegExp(r'[<>&"\'`]').hasMatch(trimmed)) {
+    if (RegExp("[<>&\"'`]").hasMatch(trimmed)) {
       return 'Name contains invalid characters';
     }
     return null;
@@ -38,7 +38,7 @@ class Validators {
   /// Strips dangerous characters and trims to [maxLength].
   static String sanitize(String input, {int maxLength = 100}) {
     final trimmed = input.trim();
-    final clean = trimmed.replaceAll(RegExp(r'[<>&"\'`]'), '');
+    final clean = trimmed.replaceAll(RegExp("[<>&\"'`]"), '');
     return clean.length > maxLength ? clean.substring(0, maxLength) : clean;
   }
 }

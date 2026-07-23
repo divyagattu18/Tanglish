@@ -58,7 +58,7 @@ final authStateProvider = StreamProvider<UserEntity?>((ref) {
     // Return a fake user immediately — no Firebase call, no login screen.
     return Stream.value(UserEntity(
       uid: 'dev-user-001',
-      displayName: 'Test User',
+      displayName: 'Buddy',
       email: 'test@tanglish.dev',
       createdAt: DateTime(2024, 1, 1),
       streak: 3,
