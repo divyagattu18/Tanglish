@@ -9,18 +9,22 @@ class _CategoryItem {
   const _CategoryItem(this.name, this.icon, this.color);
 }
 
+const _flashCardsColor = Color(0xFFFC5C7D);
+
 const _items = <_CategoryItem>[
   _CategoryItem('Family', Icons.family_restroom_rounded, AppColors.familyColor),
   _CategoryItem('School', Icons.school_rounded, AppColors.schoolColor),
   _CategoryItem('Playground', Icons.sports_soccer_rounded, AppColors.playgroundColor),
   _CategoryItem('Food', Icons.restaurant_rounded, AppColors.foodColor),
   _CategoryItem('Daily Activities', Icons.wb_sunny_rounded, AppColors.dailyColor),
+  _CategoryItem('Flash Cards', Icons.style_rounded, _flashCardsColor),
 ];
 
 class CategoryGrid extends StatelessWidget {
   final void Function(String category) onCategoryTap;
+  final VoidCallback onFlashCardsTap;
 
-  const CategoryGrid({super.key, required this.onCategoryTap});
+  const CategoryGrid({super.key, required this.onCategoryTap, required this.onFlashCardsTap});
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +51,9 @@ class CategoryGrid extends StatelessWidget {
             final item = _items[i];
             return _CategoryCard(
               item: item,
-              onTap: () => onCategoryTap(item.name),
+              onTap: item.name == 'Flash Cards'
+                  ? onFlashCardsTap
+                  : () => onCategoryTap(item.name),
             );
           },
         );

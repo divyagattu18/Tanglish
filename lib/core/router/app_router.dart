@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../presentation/auth/screens/login_screen.dart';
+import '../../presentation/flashcard/screens/flashcard_categories_screen.dart';
 import '../../presentation/flashcard/screens/flashcard_screen.dart';
 import '../../presentation/home/screens/home_screen.dart';
 import '../../presentation/lesson/screens/categories_screen.dart';
@@ -60,6 +61,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/profile',
         builder: (context, state) => const ProfileScreen(),
+      ),
+      GoRoute(
+        path: '/flashcard-categories',
+        builder: (context, state) => const FlashcardCategoriesScreen(),
       ),
       GoRoute(
         path: '/flashcards/:category',

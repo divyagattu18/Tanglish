@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../data/seed/flashcard_seed_data.dart';
+import '../../../data/seed/school_seed_data.dart';
+import '../../../data/seed/playground_seed_data.dart';
+import '../../../data/seed/food_seed_data.dart';
+import '../../../data/seed/daily_activities_seed_data.dart';
 import '../widgets/flip_card_widget.dart';
 
 class FlashcardScreen extends StatefulWidget {
@@ -15,7 +19,6 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   // Difficulty filter: 'All' | 'Beginner' | 'Intermediate' | 'Advanced'
   String _difficulty = 'All';
   int _index = 0;
-  bool _isFlipped = false;
 
   List<Map<String, dynamic>> get _cards {
     final all = _seedForCategory(widget.category);
@@ -24,31 +27,32 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   }
 
   static List<Map<String, dynamic>> _seedForCategory(String category) {
-    // Extend here when more categories get flashcard data
     switch (category) {
       case 'Family':
         return familyFlashcards;
+      case 'School':
+        return schoolFlashcards;
+      case 'Food':
+        return foodFlashcards;
+      case 'Playground':
+        return playgroundFlashcards;
+      case 'Daily Activities':
+        return dailyActivitiesFlashcards;
       default:
-        return familyFlashcards; // fallback until other categories are seeded
+        return familyFlashcards;
     }
   }
 
   void _goNext() {
     final cards = _cards;
     if (_index < cards.length - 1) {
-      setState(() {
-        _index++;
-        _isFlipped = false;
-      });
+      setState(() => _index++);
     }
   }
 
   void _goPrev() {
     if (_index > 0) {
-      setState(() {
-        _index--;
-        _isFlipped = false;
-      });
+      setState(() => _index--);
     }
   }
 
@@ -56,7 +60,6 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
     setState(() {
       _difficulty = d;
       _index = 0;
-      _isFlipped = false;
     });
   }
 
@@ -155,9 +158,6 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                       child: FlipCardWidget(
                         key: ValueKey(card!['id'] as String),
                         cardData: card,
-                        isFlipped: _isFlipped,
-                        onFlip: () =>
-                            setState(() => _isFlipped = !_isFlipped),
                       ),
                     ),
             ),
@@ -230,7 +230,6 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
               Navigator.pop(ctx);
               setState(() {
                 _index = 0;
-                _isFlipped = false;
               });
             },
             child: const Text('Start Over'),

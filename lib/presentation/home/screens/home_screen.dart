@@ -80,17 +80,17 @@ class HomeScreen extends ConsumerWidget {
                       const SizedBox(height: 14),
                       Row(
                         children: [
-                          const Icon(Icons.style_rounded, size: 18, color: AppColors.primary),
+                          const Icon(Icons.grid_view_rounded, size: 18, color: AppColors.primary),
                           const SizedBox(width: 6),
                           Text(
-                            'Flash Cards',
+                            'Explore',
                             style: Theme.of(context).textTheme.headlineMedium,
                           ),
                         ],
                       ),
                       const SizedBox(height: 2),
                       Text(
-                        'Tap a category to practice',
+                        'Pick a topic or tap Flash Cards to practice',
                         style: Theme.of(context).textTheme.bodySmall,
                       ),
                       const SizedBox(height: 8),
@@ -102,8 +102,9 @@ class HomeScreen extends ConsumerWidget {
                     padding: const EdgeInsets.fromLTRB(20, 0, 20, 16),
                     child: CategoryGrid(
                       onCategoryTap: (cat) => context.push(
-                        '/flashcards/${Uri.encodeComponent(cat)}',
+                        '/lesson/${Uri.encodeComponent(cat)}',
                       ),
+                      onFlashCardsTap: () => context.push('/flashcard-categories'),
                     ),
                   ),
                 ),

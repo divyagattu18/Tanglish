@@ -12,6 +12,9 @@ const List<Map<String, dynamic>> familyFlashcards = [
     'present': 'అమ్మ వంట చేస్తుంది',
     'past': 'అమ్మ వంట చేసింది',
     'future': 'అమ్మ వంట చేస్తుంది',
+    'presentRoman': 'Amma vanta chestuundi',
+    'pastRoman': 'Amma vanta chesindi',
+    'futureRoman': 'Amma vanta chestuundi',
     'difficulty': 'Beginner',
   },
   {
@@ -24,6 +27,9 @@ const List<Map<String, dynamic>> familyFlashcards = [
     'present': 'నాన్న పనికి వెళ్తాడు',
     'past': 'నాన్న పనికి వెళ్ళాడు',
     'future': 'నాన్న పనికి వెళ్తాడు',
+    'presentRoman': 'Naanna paniki veltaadu',
+    'pastRoman': 'Naanna paniki vellaadu',
+    'futureRoman': 'Naanna paniki veltaadu',
     'difficulty': 'Beginner',
   },
   {
@@ -36,6 +42,9 @@ const List<Map<String, dynamic>> familyFlashcards = [
     'present': 'అక్క నాకు సహాయం చేస్తుంది',
     'past': 'అక్క నాకు సహాయం చేసింది',
     'future': 'అక్క నాకు సహాయం చేస్తుంది',
+    'presentRoman': 'Akka naaku sahaayam chestuundi',
+    'pastRoman': 'Akka naaku sahaayam chesindi',
+    'futureRoman': 'Akka naaku sahaayam chestuundi',
     'difficulty': 'Beginner',
   },
   {
@@ -48,6 +57,9 @@ const List<Map<String, dynamic>> familyFlashcards = [
     'present': 'చెల్లి బొమ్మలతో ఆడుతుంది',
     'past': 'చెల్లి బొమ్మలతో ఆడింది',
     'future': 'చెల్లి బొమ్మలతో ఆడుతుంది',
+    'presentRoman': 'Chelli bommalato aadutuundi',
+    'pastRoman': 'Chelli bommalato aadindi',
+    'futureRoman': 'Chelli bommalato aadutuundi',
     'difficulty': 'Beginner',
   },
   {
@@ -60,6 +72,9 @@ const List<Map<String, dynamic>> familyFlashcards = [
     'present': 'అన్న క్రికెట్ ఆడతాడు',
     'past': 'అన్న క్రికెట్ ఆడాడు',
     'future': 'అన్న క్రికెట్ ఆడతాడు',
+    'presentRoman': 'Anna cricket aadataadu',
+    'pastRoman': 'Anna cricket aadaadu',
+    'futureRoman': 'Anna cricket aadataadu',
     'difficulty': 'Beginner',
   },
   {
@@ -72,6 +87,9 @@ const List<Map<String, dynamic>> familyFlashcards = [
     'present': 'తమ్ముడు పరిగెత్తుతాడు',
     'past': 'తమ్ముడు పరిగెత్తాడు',
     'future': 'తమ్ముడు పరిగెత్తుతాడు',
+    'presentRoman': 'Thammudu parigettuutaadu',
+    'pastRoman': 'Thammudu parigettaadu',
+    'futureRoman': 'Thammudu parigettuutaadu',
     'difficulty': 'Beginner',
   },
   {
@@ -84,6 +102,9 @@ const List<Map<String, dynamic>> familyFlashcards = [
     'present': 'అమ్మమ్మ కథలు చెప్తుంది',
     'past': 'అమ్మమ్మ కథలు చెప్పింది',
     'future': 'అమ్మమ్మ కథలు చెప్తుంది',
+    'presentRoman': 'Ammamma kathalu cheptuundi',
+    'pastRoman': 'Ammamma kathalu cheppindi',
+    'futureRoman': 'Ammamma kathalu cheptuundi',
     'difficulty': 'Beginner',
   },
   {
@@ -96,6 +117,9 @@ const List<Map<String, dynamic>> familyFlashcards = [
     'present': 'తాత తోటలో నడుస్తాడు',
     'past': 'తాత తోటలో నడిచాడు',
     'future': 'తాత తోటలో నడుస్తాడు',
+    'presentRoman': 'Thaatha thotalo nadustaadu',
+    'pastRoman': 'Thaatha thotalo nadichaadu',
+    'futureRoman': 'Thaatha thotalo nadustaadu',
     'difficulty': 'Beginner',
   },
   {
@@ -108,6 +132,9 @@ const List<Map<String, dynamic>> familyFlashcards = [
     'present': 'మామ మా ఇంటికి వస్తాడు',
     'past': 'మామ మా ఇంటికి వచ్చాడు',
     'future': 'మామ మా ఇంటికి వస్తాడు',
+    'presentRoman': 'Mama maa intiki vastaadu',
+    'pastRoman': 'Mama maa intiki vacchaadu',
+    'futureRoman': 'Mama maa intiki vastaadu',
     'difficulty': 'Intermediate',
   },
   {
@@ -120,6 +147,9 @@ const List<Map<String, dynamic>> familyFlashcards = [
     'present': 'అత్త నవ్వుతుంది',
     'past': 'అత్త నవ్వింది',
     'future': 'అత్త నవ్వుతుంది',
+    'presentRoman': 'Attha navvutuundi',
+    'pastRoman': 'Attha navvindi',
+    'futureRoman': 'Attha navvutuundi',
     'difficulty': 'Intermediate',
   },
   {
@@ -132,6 +162,9 @@ const List<Map<String, dynamic>> familyFlashcards = [
     'present': 'పాపు నిద్రపోతాడు',
     'past': 'పాపు నిద్రపోయాడు',
     'future': 'పాపు నిద్రపోతాడు',
+    'presentRoman': 'Paapu nidrapotaadu',
+    'pastRoman': 'Paapu nidrapoyaadu',
+    'futureRoman': 'Paapu nidrapotaadu',
     'difficulty': 'Beginner',
   },
   {
@@ -144,6 +177,9 @@ const List<Map<String, dynamic>> familyFlashcards = [
     'present': 'కుటుంబం కలిసి ఉంటుంది',
     'past': 'కుటుంబం కలిసి ఉంది',
     'future': 'కుటుంబం కలిసి ఉంటుంది',
+    'presentRoman': 'Kutumbam kalisi untuundi',
+    'pastRoman': 'Kutumbam kalisi undi',
+    'futureRoman': 'Kutumbam kalisi untuundi',
     'difficulty': 'Intermediate',
   },
   {
@@ -156,6 +192,9 @@ const List<Map<String, dynamic>> familyFlashcards = [
     'present': 'నేను ప్రేమిస్తాను',
     'past': 'నేను ప్రేమించాను',
     'future': 'నేను ప్రేమిస్తాను',
+    'presentRoman': 'Nenu premistanu',
+    'pastRoman': 'Nenu preminchaanu',
+    'futureRoman': 'Nenu premistanu',
     'difficulty': 'Beginner',
   },
   {
@@ -168,6 +207,9 @@ const List<Map<String, dynamic>> familyFlashcards = [
     'present': 'నేను ఇంట్లో ఉన్నాను',
     'past': 'నేను ఇంట్లో ఉన్నాను',
     'future': 'నేను ఇంటికి వస్తాను',
+    'presentRoman': 'Nenu intlo unnaanu',
+    'pastRoman': 'Nenu intlo unnaanu',
+    'futureRoman': 'Nenu intiki vastanu',
     'difficulty': 'Beginner',
   },
   {
@@ -180,6 +222,9 @@ const List<Map<String, dynamic>> familyFlashcards = [
     'present': 'కొడుకు ఆడతాడు',
     'past': 'కొడుకు ఆడాడు',
     'future': 'కొడుకు ఆడతాడు',
+    'presentRoman': 'Koduku aadataadu',
+    'pastRoman': 'Koduku aadaadu',
+    'futureRoman': 'Koduku aadataadu',
     'difficulty': 'Intermediate',
   },
   {
@@ -192,6 +237,9 @@ const List<Map<String, dynamic>> familyFlashcards = [
     'present': 'కూతురు పాడుతుంది',
     'past': 'కూతురు పాడింది',
     'future': 'కూతురు పాడుతుంది',
+    'presentRoman': 'Kooturu paadutuundi',
+    'pastRoman': 'Kooturu paadindi',
+    'futureRoman': 'Kooturu paadutuundi',
     'difficulty': 'Intermediate',
   },
   {
@@ -204,6 +252,9 @@ const List<Map<String, dynamic>> familyFlashcards = [
     'present': 'మనం కలిసి ఉన్నాం',
     'past': 'మనం కలిసి ఉన్నాం',
     'future': 'మనం కలిసి ఉంటాం',
+    'presentRoman': 'Manam kalisi unnaam',
+    'pastRoman': 'Manam kalisi unnaam',
+    'futureRoman': 'Manam kalisi untaam',
     'difficulty': 'Intermediate',
   },
   {
@@ -216,6 +267,9 @@ const List<Map<String, dynamic>> familyFlashcards = [
     'present': 'నేను నమ్ముతాను',
     'past': 'నేను నమ్మాను',
     'future': 'నేను నమ్ముతాను',
+    'presentRoman': 'Nenu nammutanu',
+    'pastRoman': 'Nenu nammaanu',
+    'futureRoman': 'Nenu nammutanu',
     'difficulty': 'Advanced',
   },
   {
@@ -228,6 +282,9 @@ const List<Map<String, dynamic>> familyFlashcards = [
     'present': 'నేను ఆలింగనం చేస్తాను',
     'past': 'నేను ఆలింగనం చేశాను',
     'future': 'నేను ఆలింగనం చేస్తాను',
+    'presentRoman': 'Nenu aalinganam chestanu',
+    'pastRoman': 'Nenu aalinganam cheshaanu',
+    'futureRoman': 'Nenu aalinganam chestanu',
     'difficulty': 'Advanced',
   },
   {
@@ -240,6 +297,10 @@ const List<Map<String, dynamic>> familyFlashcards = [
     'present': 'నేను గౌరవిస్తాను',
     'past': 'నేను గౌరవించాను',
     'future': 'నేను గౌరవిస్తాను',
+    'presentRoman': 'Nenu gaurravistanu',
+    'pastRoman': 'Nenu gauravinchaanu',
+    'futureRoman': 'Nenu gaurravistanu',
     'difficulty': 'Advanced',
   },
 ];
+
