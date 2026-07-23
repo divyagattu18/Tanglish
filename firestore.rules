@@ -1,0 +1,90 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── Helpers ────────────────────────────────────────────────────────────
+
+    function isAuth() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return request.auth.uid == uid;
+    }
+
+    function isValidDisplayName(name) {
+      return name is string && name.size() > 0 && name.size() <= 50;
+    }
+
+    function isValidEmail(email) {
+      return email is string && email.matches('.*@.*\\..*');
+    }
+
+    function isValidScore(score) {
+      return score is int && score >= 0 && score <= 100;
+    }
+
+    // ── Users ──────────────────────────────────────────────────────────────
+    // Each user document is keyed by their Firebase UID.
+    // Only the owning user may read or write their document.
+
+    match /users/{uid} {
+      allow read: if isAuth() && isOwner(uid);
+
+      allow create: if isAuth()
+        && isOwner(uid)
+        && request.resource.data.keys().hasAll([
+             'uid', 'displayName', 'email', 'createdAt', 'streak', 'xp'
+           ])
+        && request.resource.data.uid == uid
+        && isValidDisplayName(request.resource.data.displayName)
+        && isValidEmail(request.resource.data.email)
+        && request.resource.data.streak == 0
+        && request.resource.data.xp == 0;
+
+      allow update: if isAuth()
+        && isOwner(uid)
+        // Only mutable fields may change; uid/email/createdAt are immutable
+        && request.resource.data.diff(resource.data)
+             .affectedKeys()
+             .hasOnly(['displayName', 'streak', 'xp', 'photoUrl']);
+
+      // Users cannot be deleted from the client
+      allow delete: if false;
+    }
+
+    // ── Lessons (read-only for authenticated users) ────────────────────────
+    // Lessons are managed by administrators/Cloud Functions only.
+
+    match /lessons/{lessonId} {
+      allow read: if isAuth();
+      allow write: if false;
+    }
+
+    // ── Progress ──────────────────────────────────────────────────────────
+    // Document ID is composite: "{uid}_{lessonId}"
+    // Users can only read/write their own progress records.
+
+    match /progress/{progressId} {
+      allow read: if isAuth()
+        && resource.data.uid == request.auth.uid;
+
+      allow create: if isAuth()
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.keys().hasAll([
+             'uid', 'lessonId', 'completed', 'score', 'completedDate'
+           ])
+        && request.resource.data.completed is bool
+        && isValidScore(request.resource.data.score);
+
+      allow update: if isAuth()
+        && resource.data.uid == request.auth.uid
+        // uid and lessonId are immutable
+        && request.resource.data.diff(resource.data)
+             .affectedKeys()
+             .hasOnly(['completed', 'score', 'completedDate']);
+
+      allow delete: if false;
+    }
+  }
+}
