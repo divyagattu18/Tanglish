@@ -74,7 +74,7 @@ class FlipCardWidget extends StatelessWidget {
                 Text(
                   cardData['tanglish'] as String,
                   style: const TextStyle(
-                    fontSize: 28,
+                    fontSize: 34,
                     fontWeight: FontWeight.w800,
                     color: Colors.white,
                     height: 1.1,
@@ -98,8 +98,8 @@ class FlipCardWidget extends StatelessWidget {
                 Text(
                   cardData['front'] as String,
                   style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.w600,
+                    fontSize: 24,
+                    fontWeight: FontWeight.w500,
                     color: Colors.white.withOpacity(0.78),
                     height: 1.1,
                   ),
@@ -213,9 +213,9 @@ class _TenseRow extends StatelessWidget {
                 Text(
                   roman!,
                   style: const TextStyle(
-                    fontSize: 14,
+                    fontSize: 16,
                     color: AppColors.textPrimary,
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w700,
                     height: 1.4,
                   ),
                 ),
@@ -223,7 +223,7 @@ class _TenseRow extends StatelessWidget {
               Text(
                 text,
                 style: TextStyle(
-                  fontSize: 11,
+                  fontSize: 12,
                   color: roman != null
                       ? AppColors.textSecondary
                       : AppColors.textPrimary,

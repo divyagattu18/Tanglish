@@ -62,8 +62,8 @@ class PhraseCard extends StatelessWidget {
           Text(
             teluguPhrase,
             style: const TextStyle(
-              fontSize: 28,
-              fontWeight: FontWeight.w700,
+              fontSize: 24,
+              fontWeight: FontWeight.w600,
               color: AppColors.textPrimary,
               height: 1.6,
             ),
@@ -74,10 +74,10 @@ class PhraseCard extends StatelessWidget {
           Text(
             transliteration,
             style: const TextStyle(
-              fontSize: 18,
-              fontStyle: FontStyle.italic,
+              fontSize: 30,
               color: AppColors.textSecondary,
-              fontWeight: FontWeight.w500,
+              fontWeight: FontWeight.w800,
+              letterSpacing: 0.2,
             ),
             textAlign: TextAlign.center,
           ),
